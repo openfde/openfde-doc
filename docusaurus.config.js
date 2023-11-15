@@ -14,7 +14,7 @@ const config = {
   url: 'https://openfde.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs',
+  baseUrl: '/docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -92,8 +92,16 @@ const config = {
             title: '文档',
             items: [
               {
-                label: '教程',
-                to: '/docs/intro',
+                label: '用户协议',
+                to: '/docs/docs/user-service-agreement',
+              },
+              {
+                label: '隐私政策',
+                to: '/docs/docs/privacy-policy',
+              },
+              {
+                label: '法律声明',
+                to: '/docs/docs/law-glossary',
               },
             ],
           },

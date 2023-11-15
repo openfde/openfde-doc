@@ -1,35 +1,36 @@
 import React from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 // 首页的网页内容介绍
 const FeatureList = [
   {
     title: '社区资料',
-    href: '/community/',
+    //href: '/docs/community/',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-      <a href="docs/community/community-membership">
-      角色说明 </a><br/>
-      <a href="docs/community/contributor/行为守则">
-      行为守则 </a><br/>
-      <a href="docs/community/contribution&stategy">
-      贡献与攻略 </a><br/>
+      <Link to="/docs/docs/community/community-membership">
+      角色说明 </Link><br/>
+      <Link href="/docs/docs/community/contributor/行为守则">
+      行为守则 </Link><br/>
+      <Link href="/docs/docs/community/contribution&stategy">
+      贡献与攻略 </Link><br/>
       </>
     ),
   },
   {
     title: '关于产品',
-    href: '/documentation/',
+    //href: '/docs/documentation/',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        <a href="docs/documentation/installation-guide">
-        安装指南 </a><br/>
+        <Link href="/docs/docs/documentation/installation-guide">
+        安装指南 </Link><br/>
 
-        <a href="docs/documentation/user-guide"> 
-        用户手册 </a><br/>
+        <Link href="/docs/docs/documentation/user-guide"> 
+        用户手册 </Link><br/>
       </>
     ),
   },
@@ -38,7 +39,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-      <a href="">开发工具</a><br/>
+      <Link href="">开发工具</Link><br/>
       </>
     ),
   },
@@ -51,7 +52,7 @@ function Feature({Svg, title, description,href}) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3><a href={href}>{title}</a></h3>
+        <h3><Link href={href}>{title}</Link></h3>
         <p>{description}</p>
       </div>
     </div>

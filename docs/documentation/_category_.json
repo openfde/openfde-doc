@@ -1,6 +1,6 @@
 {
   "label": "文档库",
-  "position": 2,
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "OpenFDE用户文档."
