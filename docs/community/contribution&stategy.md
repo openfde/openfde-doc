@@ -12,15 +12,14 @@ sidebar_position: 1
 
 ## 2. 签署CLA
 
-在参与社区贡献前，您需要签署OpenFDE社区贡献者许可协议（CLA）。查看[OpenFDE CLA签署]
+在参与社区贡献前，您需要签署OpenFDE社区贡献者许可协议（CLA）。根据您的参与身份，选择签署个人CLA、员工CLA或者企业CLA，请点击[这里](https://gitee.com/organizations/openfde/cla/open-fde-contributor-agreement)前往签署。
 
-根据您的参与身份，选择签署个人CLA、员工CLA或者企业CLA，请点击这里签署。
-
+<!--
+这里需要跳转到签署CLA的协议
 - 个人CLA: 如果您是个人身份，请签署个人CLA
 - 企业CLA: 以企业身份参加社区，请签署企业CLA
 - 员工CLA：以企业员工的身份参加社区，请签署员工CLA
-
-<!--这里需要跳转到签署CLA的协议 -->
+-->
 
 ## 3. 参与OpenFDE社区
 

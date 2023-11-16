@@ -6,8 +6,8 @@ import styles from './styles.module.css';
 // 首页的网页内容介绍
 const FeatureList = [
   {
-    title: '社区资料',
-    //href: '/docs/community/',
+    title: '社区中心',
+    href: 'docs/category/社区中心',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>

@@ -1,8 +1,10 @@
 ---
-sidebar_position: 2
+title: 隐私政策
+description: 隐私政策
+hide_table_of_contents: true
 ---
 
-# 隐私政策
+# <center>隐私政策</center>
 
 ## 1. 重要提示
 
@@ -120,5 +122,5 @@ sidebar_position: 2
 在本隐私政策提及的所有可能需要与我们取得联系的情况下，您可以通过以下方式联系我们：
 
 - 联系电话：
-- 电子邮件: 
+- 电子邮件: community@mail.openfde.com
 

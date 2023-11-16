@@ -89,36 +89,37 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '文档',
+            title: '政策与协议',
             items: [
               {
                 label: '用户协议',
-                to: '/docs/docs/user-service-agreement',
+                to: '/docs/user-service-agreement',
               },
               {
                 label: '隐私政策',
-                to: '/docs/docs/privacy-policy',
+                to: '/docs/privacy-policy',
               },
               {
                 label: '法律声明',
-                to: '/docs/docs/law-glossary',
+                to: '/docs/law-glossary',
               },
             ],
           },
           {
-            title: '社区',
+            title: '加入我们',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '团队介绍',
+                href: '/docs/about-us',
               },
               {
-                label: '社区资讯',
+                label: 'Discord社区',
                 href: 'https://discordapp.com/invite/docusaurus', // OpenFDE社区群
               },
               {
                 label: '公众号',
-                href: 'https://twitter.com/docusaurus', // OpenFDE官方运营公众号
+                // href: 'https://twitter.com/docusaurus', // OpenFDE官方运营公众号
+                to: 'img/WeChat-Official.jpg',
               },
             ],
           },
@@ -132,12 +133,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus', // OpenFDE的开源代码仓库
+                href: 'https://openfde.com', // OpenFDE的开源代码仓库
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} OpenFDE, Inc. `,
+        copyright: `版权所有 © ${new Date().getFullYear()} OpenFDE 保留一切权利`,
       },
       prism: {
         theme: lightCodeTheme,
