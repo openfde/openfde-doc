@@ -13,7 +13,7 @@ const FeatureList = [
       <>
       <Link to="/docs/docs/community/community-membership">
       角色说明 </Link><br/>
-      <Link href="/docs/docs/community/contributor/行为守则">
+      <Link href="/docs/docs/community/behavior-rules">
       行为守则 </Link><br/>
       <Link href="/docs/docs/community/contribution&stategy">
       贡献与攻略 </Link><br/>
