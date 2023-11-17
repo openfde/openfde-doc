@@ -138,7 +138,7 @@ const config = {
             ],
           },
         ],
-        copyright: `版权所有 © ${new Date().getFullYear()} OpenFDE 保留一切权利`,
+        copyright: `版权所有 © ${new Date().getFullYear()} OpenFDE, Inc, 此网站使用[Docusaurus](https://docusaurus.io/)构建.`,
       },
       prism: {
         theme: lightCodeTheme,
