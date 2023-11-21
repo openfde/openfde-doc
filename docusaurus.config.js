@@ -68,7 +68,7 @@ const config = {
         logo: {
           alt: 'OpenFDE Logo',
           src: 'img/logo.svg',
-          "href": 'https://openfde.com'
+          "href": 'https://docs.openfde.com'
         },
         items: [
           // {
