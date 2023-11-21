@@ -2,11 +2,22 @@
 sidebar_position: 2
 ---
 
-# 安装指南
+# 安装指引
 
 本文档主要介绍OpenFDE的安装方法，适用于所有使用OpenFDE的用户，特别是初次使用或想了解OpenFDE的用户，包括研发人员、管理员及维护人员等。使用本手册的用户需要具备基础的Linux系统知识。
 
-### 一、安装准备
+### 一、软硬件要求
+
+#### 硬件要求
+
+- CPU: 支持arm64架构
+- 显卡：X100
+  
+#### 软件要求
+
+- 操作系统：主要支持麒麟、统信、Ubuntu三种操作系统，其他操作系统也可自行使用安装，但可能会遇到安装问题
+
+### 二、安装前准备
 
 在开始安装OpenFDE之前，需要获取完整的软件源，并配置安装源和证书。
 
@@ -41,7 +52,7 @@ sudo sh -c 'echo "deb [arch=arm64 signed-by=/etc/apt/keyrings/packages.openfde.g
 rm -f packages.openfde.gpg
 ```
 
-### 二、开始安装
+### 三、开始安装
 
 #### 更新软件源
 
