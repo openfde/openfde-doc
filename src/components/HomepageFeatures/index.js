@@ -11,11 +11,11 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-      <Link to="/docs/docs/community/community-membership">
+      <Link to="/docs/community/community-membership">
       角色说明 </Link><br/>
-      <Link href="/docs/docs/community/behavior-rules">
+      <Link href="/docs/community/behavior-rules">
       行为守则 </Link><br/>
-      <Link href="/docs/docs/community/contribution&stategy">
+      <Link href="/docs/community/contribution&stategy">
       贡献与攻略 </Link><br/>
       </>
     ),
@@ -26,10 +26,10 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        <Link href="/docs/docs/documentation/installation-guide">
+        <Link href="/docs/documentation/installation-guide">
         安装指南 </Link><br/>
 
-        <Link href="/docs/docs/documentation/user-guide"> 
+        <Link href="/docs/documentation/user-guide"> 
         用户手册 </Link><br/>
       </>
     ),

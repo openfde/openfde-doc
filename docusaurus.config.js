@@ -11,10 +11,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://openfde.com',
+  url: 'https://docs.openfde.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -93,15 +93,15 @@ const config = {
             items: [
               {
                 label: '用户协议',
-                to: '/docs/user-service-agreement',
+                to: 'user-service-agreement',
               },
               {
                 label: '隐私政策',
-                to: '/docs/privacy-policy',
+                to: 'privacy-policy',
               },
               {
                 label: '法律声明',
-                to: '/docs/law-glossary',
+                to: 'law-glossary',
               },
             ],
           },
@@ -110,7 +110,7 @@ const config = {
             items: [
               {
                 label: '团队介绍',
-                href: '/docs/about-us',
+                href: 'about-us',
               },
               {
                 label: 'Discord社区',
