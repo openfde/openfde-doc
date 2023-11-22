@@ -22,12 +22,12 @@ const FeatureList = [
   },
   {
     title: '关于产品',
-    //href: '/docs/documentation/',
+    href: 'docs/category/用户中心',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         <Link href="/docs/documentation/installation-guide">
-        安装指南 </Link><br/>
+        安装指引 </Link><br/>
 
         <Link href="/docs/documentation/user-guide"> 
         用户手册 </Link><br/>
@@ -35,7 +35,7 @@ const FeatureList = [
     ),
   },
   {
-    title: '开发使用',
+    title: '开发者中心',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
