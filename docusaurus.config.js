@@ -67,8 +67,8 @@ const config = {
         title: 'OpenFDE',
         logo: {
           alt: 'OpenFDE Logo',
-          src: 'img/logo.svg',
-          "href": 'https://docs.openfde.com'
+          src: 'img/logo.svg', 
+          href: 'https://docs.openfde.com',
         },
         items: [
           // {
@@ -110,7 +110,7 @@ const config = {
             items: [
               {
                 label: '团队介绍',
-                href: 'about-us',
+                href: '/about-us',
               },
               {
                 label: 'Discord社区',
