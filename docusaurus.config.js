@@ -15,7 +15,8 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
+  trailingSlash: false,
+  
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'OpenFDE', // Usually your GitHub org/user name.
@@ -138,7 +139,7 @@ const config = {
             ],
           },
         ],
-        copyright: `版权所有 © ${new Date().getFullYear()} OpenFDE, 此网站使用Docusaurus构建.`,
+        copyright: `版权所有 © ${new Date().getFullYear()} OpenFDE, 此网站使用<a href="https://docusaurus.io/">Docusaurus</a>构建.`,
       },
       prism: {
         theme: lightCodeTheme,
