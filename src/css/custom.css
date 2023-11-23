@@ -32,3 +32,7 @@
 nav.navbar {
   /* display: none; */
 }
+
+main article a.card > p {
+  display: none;
+}

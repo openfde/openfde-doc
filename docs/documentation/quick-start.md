@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 快速入门指南
+# 快速入门
 
 &emsp;&emsp;OpenFDE(Open Fusion Desktop Environment)是一款全新的基于ASOP的Linux开源桌面，支持Linux上运行原生安卓应用，也可以在安卓系统中运行Linux应用。
 
@@ -22,7 +22,7 @@ sidebar_position: 1
 
 其他Linux 操作系统尚未完全适配和测试，可以尝试手动编译安装，遇到问题请反馈至[这里](https://gitee.com/organizations/openfde/issues)。
 
-## 二、配置安装源和证书
+## 二、安装步骤
 
 以麒麟操作系统为例，进入您当前系统的终端界面，依次执行以下步骤：
 
@@ -43,7 +43,7 @@ sudo apt-get update
 sudo apt-get install openfde
 ```
 
-其他更多操作系统安装OpenFDE详细请看[安装指引](./installation-guide)
+其他更多操作系统安装步骤详细请看[安装指引](./installation-guide)
 <!-- 
 - 对于ubuntu系统
 ```

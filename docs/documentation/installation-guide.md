@@ -84,4 +84,6 @@ sudo apt-get update
 sudo apt-get install openfde
 ```
 
+### 四、升级
+
 升级OpenFDE步骤同第三部分"开始安装"。
