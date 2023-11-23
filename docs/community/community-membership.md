@@ -6,7 +6,7 @@ sidebar_position: 2
 
 本文档简要描述了OpenFDE社区中贡献者角色的各种职责。大部分角色的职责限于这些SIG(Special Interest Group)内：
 
-|   角色 | 职责描述  | 要求  |  定义的文件 |
+|   角色 |  职责描述  | 要求  |  定义的文件 |
 | :----: | :----:   | :----: | :----:  |
 | Contributor |  项目的贡献者 |  无 | Gitee注册成员 | 
 | Maintainer | 项目Owner | 经验丰富，富有责任心、出色的技术能力和管理能力 |  OpenFDE SIG拥有的存储库中OWNERS文件中的Maintainer条目 |

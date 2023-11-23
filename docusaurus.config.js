@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'OpenFDE',
   tagline: 'Open Fusion Desktop Environment',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon1.ico',
 
   // Set the production url of your site here
   url: 'https://docs.openfde.com',
@@ -68,7 +68,7 @@ const config = {
         logo: {
           alt: 'OpenFDE Logo',
           src: 'img/logo.svg', 
-          href: 'https://docs.openfde.com',
+          href: 'https://openfde.com',
         },
         items: [
           // {
@@ -138,7 +138,7 @@ const config = {
             ],
           },
         ],
-        copyright: `版权所有 © ${new Date().getFullYear()} OpenFDE, Inc, 此网站使用Docusaurus构建.`,
+        copyright: `版权所有 © ${new Date().getFullYear()} OpenFDE, 此网站使用Docusaurus构建.`,
       },
       prism: {
         theme: lightCodeTheme,
