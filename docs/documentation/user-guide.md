@@ -6,7 +6,9 @@ sidebar_position: 4
 
 ## 1. 概述
 
-&emsp;&emsp;OpenFDE(Open Fusion Desktop Environment)是一款全新的Linux&安卓融合开源桌面环境，通过将AOSP统一的图形与API设计对接在Linux系统基础上。OpenFDE特点：
+&emsp;&emsp;OpenFDE(Open Fusion Desktop Environment)是一款全新的Linux和安卓融合开源桌面环境，通过将AOSP统一的图形与API设计对接在Linux系统基础上。
+
+&emsp;&emsp;OpenFDE具有如下特点：
 
 - 可原生运行Android和Linux各类应用
 - 可在桌面环境使用鼠标操作Android应用
@@ -77,7 +79,7 @@ sidebar_position: 4
 
 &emsp;&emsp;OpenFDE的软件应用安装包括系统预安装和网络下载安装两种方式。
 
-- OpenFDE会预先在安装系统通用的软件应用，包括图库、录音机、文件、日历、时钟、计算器、音乐、讯飞输入法、via浏览器。用户安装完OpenFDE环境后即可直接使用上述应用。
+- OpenFDE会预先安装系统通用的软件应用，包括图库、录音机、文件、日历、时钟、计算器、音乐、讯飞输入法、via浏览器。用户安装完OpenFDE环境后即可直接使用上述应用。
 
 - 网络下载安装方式：用户可以通过via浏览器在线下载各种软件应用的安装包，也可以在via浏览器下载安装安卓应用市场如应用宝，再从应用宝中安装各种安卓应用。
 
@@ -119,8 +121,10 @@ sidebar_position: 4
 
 其中有两种方式可以访问android的文件系统：
 
-- 直接打开：直接点击左侧"计算机-fde"即可打开android的文件系统，点击具体的文件夹进行访问。
-- 间接打开：点击/home/用户名/fde目录，即可进入android文件系统。**注意**：这里fde目录为当前用户下系统自带的目录，如果用户自己创建的同名fde目录，则无法访问android文件系统。
+- 直接打开：直接点击左侧"计算机-openfde"即可打开android的文件系统，点击具体的文件夹进行访问。
+- 间接打开：点击"计算机-文件系统", 访问/home/用户名/openfde目录，即可进入android文件系统。
+  
+**注意**：这里openfde目录为当前用户下系统自带的目录，如果用户自己创建的同名openfde目录，会无法访问android文件系统。
 
 **(2) 在android文件系统下访问linux的文件**
 

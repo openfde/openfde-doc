@@ -132,8 +132,8 @@ const config = {
                 // to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://openfde.com', // OpenFDE的开源代码仓库
+                label: 'Gitee',
+                href: 'https://gitee.com/openfde', // OpenFDE的开源代码仓库
               },
             ],
           },
