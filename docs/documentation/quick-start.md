@@ -20,7 +20,7 @@ sidebar_position: 1
 **软件要求**
 - 操作系统：支持麒麟、统信、ubuntu
 
-&emsp;&emsp;其他Linux 操作系统尚未完全适配和测试，可以尝试手动编译安装，遇到问题请反馈至[这里](https://gitee.com/organizations/openfde/issues)。
+&emsp;&emsp;其他Linux 操作系统尚未完全适配和测试，可以尝试手动编译安装，遇到问题请反馈至[这里](https://gitee.com/openfde/problem-feedback/issues)。
 
 ## 二、安装步骤
 
@@ -42,7 +42,7 @@ rm -f packages.openfde.gpg
 
 sudo apt-get update
 
-sudo apt-get install openfde
+sudo apt-get install openfde  
 ```
 
 &emsp;&emsp;其他更多操作系统安装步骤详细请看[安装指引](./installation-guide)
@@ -84,7 +84,7 @@ sudo echo \
 
 ### 3. 配置网络
 
-&emsp;&emsp;OpenFDE可以直接使用外部系统(麒麟/统信/ubuntu)等网络，用户可以点击左下角的OpenFDE图标，打开"开始菜单-Fusion Application"，找到Linux的Settings, 在linux设置中配置系统的网络。
+&emsp;&emsp;OpenFDE可以直接使用外部系统(麒麟/统信/ubuntu)等网络，用户可以点击左下角的OpenFDE图标，打开"开始菜单-Fusion Linux Application"，找到Linux的Settings, 在linux设置中配置系统的网络。
 
 ![net-start](./img/net-start.png) 
 
@@ -127,7 +127,7 @@ sudo echo \
 
 #### 5.2 安装linux应用
 
-&emsp;&emsp;OpenFDE融合Linux应用到安卓系统中，内置独立的Linux融合应用窗口。在开始菜单点开企鹅图标"Fusion Application"，就可以打开Linux融合应用窗口。Linux融合应用窗口和正常的Linux图形系统使用方式是一样的，可以直接运行Linux GUI、命令行等，这里不再赘述。
+&emsp;&emsp;OpenFDE融合Linux应用到安卓系统中，内置独立的Linux融合应用窗口。在开始菜单点开企鹅图标"Fusion Linux Application"，就可以打开Linux融合应用窗口。Linux融合应用窗口和正常的Linux图形系统使用方式是一样的，可以直接运行Linux GUI、命令行等，这里不再赘述。
 
 ## 四、更多了解
 

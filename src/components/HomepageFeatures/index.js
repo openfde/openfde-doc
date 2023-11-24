@@ -11,8 +11,6 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-      <Link to="/docs/community/community-membership">
-      角色说明 </Link><br/>
       <Link href="/docs/community/behavior-rules">
       行为守则 </Link><br/>
       <Link href="/docs/community/contribution&stategy">

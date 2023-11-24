@@ -18,7 +18,7 @@ sidebar_position: 2
 
 - 操作系统：支持麒麟、统信、Ubuntu三种操作系统。
 
-备注：其他Linux 操作系统尚未完全适配和测试，可以尝试手动编译安装，遇到问题请反馈至[这里](https://gitee.com/organizations/openfde/issues)。
+备注：其他Linux 操作系统尚未完全适配和测试，可以尝试手动编译安装，遇到问题请反馈至[这里](https://gitee.com/openfde/problem-feedback/issues)。
 
 ### 二、安装前准备
 
@@ -81,7 +81,7 @@ sudo apt-get update
 #### 2. 下载并安装OpenFDE
 
 ```
-sudo apt-get install openfde
+sudo apt-get install openfde 
 ```
 
 ### 四、升级
