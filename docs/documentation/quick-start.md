@@ -4,27 +4,30 @@ sidebar_position: 1
 
 # 快速入门
 
-&emsp;&emsp;OpenFDE(Open Fusion Desktop Environment)是一款全新的基于ASOP的Linux开源桌面，支持Linux上运行原生安卓应用，也可以在安卓系统中运行Linux应用。
+&emsp;&emsp;OpenFDE(Open Fusion Desktop Environment)是一款炫酷的Linux开源桌面。它可以让你在Linux系统上玩安卓的软件，也可以在安卓系统中畅玩Linux应用。
 
-&emsp;&emsp;本快速入门指南旨在指导用户首次安装OpenFDE，快速上手使用OpenFDE开始办公和娱乐。
+&emsp;&emsp;现在让我来带领你们一起轻松愉快地探索OpenFDE吧！本指南将带你快速了解OpenFDE，让你可以在工作和娱乐中畅享它的魅力。这个过程简单又有趣！准备好了吗？
 
-## 一、安装准备
+## 安装准备
 
-&emsp;&emsp;在安装OpenFDE之前请先确认您具备以下环境：
+在开始安装OpenFDE之前，你要检查你的电脑是否符合下面的配置要求：
 
 **硬件要求:**
-- 处理器：飞腾D2000、FT2000/4两种CPU型号
+- 处理器：飞腾D2000、FT2000/4
+  
+**PS:** 目前我们在飞腾生态中研究、开发并适配了上述两种CPU型号，也欢迎大家自行研究探索，让OpenFDE可以适配更多种类的CPU！你可以前往[构建与开发](./../developer/Quick-Start)去开始你的开发研究。
+
 - 显卡：AMD Radeon、Phytium X100
-- 内存：最少8GB，推荐16GB及以上
+- 内存：最少8GB，如果你想享受更流畅的体验，推荐选择16GB及以上
 
 **软件要求**
-- 操作系统：支持麒麟、统信、ubuntu
+- 操作系统：我们目前研究适配了**麒麟、统信、ubuntu**三种操作系统，其他Linux 操作系统尚未完全适配和测试。
 
-&emsp;&emsp;其他Linux 操作系统尚未完全适配和测试，可以尝试手动编译安装，遇到问题请反馈至[这里](https://gitee.com/openfde/problem-feedback/issues)。
+不过，如果你愿意的话，你可以尝试手动编译安装，试试将OpenFDE安装在其他的操作系统上，有更好的想法可以去[这里](https://groups.io/g/openfde/topics)跟大家交流讨论，期待听到你的反馈！
 
 ## 二、安装步骤
 
-&emsp;&emsp;以麒麟操作系统为例，进入您当前系统的终端界面，依次执行以下步骤：
+&emsp;&emsp;让我们以麒麟操作系统为例，首先确保你已经打开了你当前系统的终端界面，执行下列命令：
 
 ```
 sudo apt-get install wget gpg
@@ -45,7 +48,7 @@ sudo apt-get update
 sudo apt-get install openfde  
 ```
 
-&emsp;&emsp;其他更多操作系统安装步骤详细请看[安装指引](./installation-guide)
+&emsp;&emsp;更多详细的安装步骤可以参考[安装指引](./installation-guide)
 <!-- 
 - 对于ubuntu系统
 ```
@@ -56,7 +59,7 @@ sudo echo \
 ```
 -->
 
-## 三、快速使用
+## 三、畅快使用
 
 ### 1. 登录与注销
 
