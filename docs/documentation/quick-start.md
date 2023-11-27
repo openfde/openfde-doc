@@ -8,7 +8,7 @@ sidebar_position: 1
 
 &emsp;&emsp;现在让我来带领你们一起轻松愉快地探索OpenFDE吧！本指南将带你快速了解OpenFDE，让你可以在工作和娱乐中畅享它的魅力。这个过程简单又有趣！准备好了吗？
 
-## 安装准备
+## 一、安装准备
 
 在开始安装OpenFDE之前，你要检查你的电脑是否符合下面的配置要求：
 
@@ -27,28 +27,13 @@ sidebar_position: 1
 
 ## 二、安装步骤
 
-&emsp;&emsp;让我们以麒麟操作系统为例，首先确保你已经打开了你当前系统的终端界面，执行下列命令：
+&emsp;&emsp;让我们以麒麟操作系统为例，首先确保你已经打开了你当前系统的终端界面，执行下列命令一键安装：
 
 ```
-sudo apt-get install wget gpg
-
-wget -qO-  http://openfde.com/keys/openfde.asc | gpg --dearmor > packages.openfde.gpg
-
-sudo install -D -o root -g root -m 644 packages.openfde.gpg /etc/apt/keyrings/packages.openfde.gpg
-
-sudo echo \
-  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/packages.openfde.gpg] http://openfde.com/repos/kylin/ \
-  "$(. /etc/os-release && echo "$PROJECT_CODENAME")" main" | \
-  sudo tee /etc/apt/sources.list.d/openfde.list > /dev/null
-
-rm -f packages.openfde.gpg
-
-sudo apt-get update
-
-sudo apt-get install openfde  
+curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh && sudo sh ./get-openfde.sh
 ```
+在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。更多详细的安装步骤可以参考[安装指引](./installation-guide)
 
-&emsp;&emsp;更多详细的安装步骤可以参考[安装指引](./installation-guide)
 <!-- 
 - 对于ubuntu系统
 ```
