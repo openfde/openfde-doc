@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## 1. 体验OpenFDE
 
-可以前往[OpenFDE官网](https://openfde.com)下载OpenFDE, 安装指南参见[安装指南](./../documentation/installation-guide)
+可以前往[OpenFDE官网](https://openfde.com)下载OpenFDE, 想要快速了解OpenFDE请前往[快速入门](./../documentation/quick-start)
 
 ## 2. 签署CLA
 
@@ -64,9 +64,9 @@ SIG，全称为Special Interest Group, OpenFDE社区按照不同的SIG来组织�
 
 -->
 
-### 3.3 参与社区贡献
+### 3.2 参与社区贡献
 
-#### 3.3.1 提交issue/处理issue任务
+#### 3.2.1 提交issue/处理issue任务
 
 您可以点击[问题反馈](https://gitee.com/openfde/problem-feedback/issues),进入OpenFDE的问题反馈仓库。
 
@@ -74,7 +74,7 @@ SIG，全称为Special Interest Group, OpenFDE社区按照不同的SIG来组织�
 - **处理issue**：如果您愿意处理其中的一个issue，可以将issue分配给自己，将自己设置为负责人。
 - **参与issue内的讨论**：每个issue下面可能已经有参与者们的讨论和交流，如果您感兴趣，也可以在评论框中发表自己的意见。
 
-#### 3.3.2 贡献编码
+#### 3.2.2 贡献编码
 
 - **准备OpenFDE的开发环境**
  
@@ -98,13 +98,13 @@ SIG，全称为Special Interest Group, OpenFDE社区按照不同的SIG来组织�
 
   当你提交一个PR的时候，就意味着您已经开始给社区贡献代码了。请参考[OpenFDE社区PR提交指导](./contributor/PR提交指南)
 
-#### 3.3.3 贡献软件包
+#### 3.2.3 贡献软件包
 
 如果您发现OpenFDE缺失了一个软件包，可以帮OpenFDE把这个软件包补上。实际上贡献软件包的过程就是版主OpenFDE提供更丰富功能的过程。
 
 OpenFDE支持在Gitee新增软件包的同时自动在obs的OpenFDE:Factory上创建同名仓库，这样在向已创建的Gitee仓库提交代码时，会自动对代码编译进行检测。具体流程可参考[如何新增软件包](./contributor/新增软件包)
 
-#### 3.3.4 贡献原创开源项目
+#### 3.2.4 贡献原创开源项目
 
 如果你想将自己原创的开源项目贡献到OpenFDE社区，成为OpenFDE发行版本的一份子，那么可参考以下几种方式：
 
@@ -112,7 +112,7 @@ OpenFDE支持在Gitee新增软件包的同时自动在obs的OpenFDE:Factory上�
 
 - **方式二**: 在OpenFDE社区中开发，【方式待定】
 
-#### 3.3.5 检视代码
+#### 3.2.5 检视代码
 
 OpenFDE是一个开放的社区，我们希望所有参与社区的人都能成为活跃的检视者。
 
@@ -129,15 +129,15 @@ OpenFDE是一个开放的社区，我们希望所有参与社区的人都能成�
 
 <!-- 注意：如果您的PR请求没有引起足够的关注，同样可以在SIG的邮件列表求助。-->
 
-#### 3.3.6 测试
+#### 3.2.6 测试
 
 测试是所有贡献者的责任，详细攻略请参考[社区开发者测试贡献指南](./contributor/测试贡献指南)
 
-#### 3.3.7 选择社区组件打包
+#### 3.2.7 选择社区组件打包
 
 您也可以参与社区组件打包，请参考[如何打包](./contributor/打包指南)
 
-#### 3.3.8 社区安全问题披露
+#### 3.2.8 社区安全问题披露
 
 - [安全处理流程](./security/安全处理流程)--简要描述了处理安全问题的过程。
 - [安全披露信息](./security/安全披露信息)--如果您想要安全报告漏洞，请参考此页面。
