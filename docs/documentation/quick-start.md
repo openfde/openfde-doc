@@ -92,6 +92,10 @@ sudo echo \
 
 ![wlan](./img/wlan.jpg)
 
+#### 3.3 VPN配置
+
+&emsp;&emsp;OpenFDE支持安卓系统和Linux系统VPN互通，也是需要远程办公的办公族一大福利。我们以常见的VPN软件EasyConnect为例，你可以在安卓系统下的应用宝或者浏览器直接下载安卓版的EasyConnect。安装成功后，配置连接上你的办公VPN，重点是在Linux端无需再配置VPN啦，即刻开启你的远程办公啦。
+
 ### 4. 关闭安全控制
 
 &emsp;&emsp;为使用OpenFDE过程更顺畅，建议您关闭电脑的安全控制。具体操作如下：
