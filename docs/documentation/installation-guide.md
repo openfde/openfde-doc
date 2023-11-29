@@ -12,6 +12,17 @@ sidebar_position: 2
 
 - 处理器: 飞腾D2000、FT2000/4两种CPU型号
 - 显卡：AMD Radeon、Phytium X100
+
+> **注意！！！** 对于带x100显卡的笔记本，如果**内核版本低于5.4.18-85**，你需要首先升级你的内核版本才能正常安装和运行OpenFDE。升级内核步骤如下：
+```
+echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restricted universe multiverse  > /etc/apt/sources.list.d/v10sp12303.list
+sudo apt-get update -y
+sudo apt-get full-upgrade -y
+sudo apt-get autoremove -y 
+sudo apt-get autoclean -y 
+sudo apt purge fdeion-dkms
+sudo apt install fdeion-dkms
+```
 - 内存：最少8GB，推荐16GB及以上
   
 #### 软件要求

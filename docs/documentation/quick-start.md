@@ -21,9 +21,21 @@ sidebar_position: 1
 **硬件要求:**
 - 处理器：飞腾D2000、FT2000/4
   
-**PS:** 目前我们在飞腾生态中研究、开发并适配了上述两种CPU型号，也欢迎大家自行研究探索，让OpenFDE可以适配更多种类的CPU！你可以前往[构建与开发](./../developer/Quick-Start)去开始你的开发研究。
+> **PS:** 目前我们在飞腾生态中研究、开发并适配了上述两种CPU型号，也欢迎大家自行研究探索，让OpenFDE可以适配更多种类的CPU！你可以前往[构建与开发](./../developer/Quick-Start)去开始你的开发研究。
 
 - 显卡：AMD Radeon、Phytium X100
+
+> **注意！！！** 对于带x100显卡的笔记本，如果**内核版本低于5.4.18-85**，你需要首先升级你的内核版本才能正常安装和运行OpenFDE。升级内核步骤如下：
+```
+echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restricted universe multiverse  > /etc/apt/sources.list.d/v10sp12303.list
+sudo apt-get update -y
+sudo apt-get full-upgrade -y
+sudo apt-get autoremove -y 
+sudo apt-get autoclean -y 
+sudo apt purge fdeion-dkms
+sudo apt install fdeion-dkms
+```
+
 - 内存：最少8GB，如果你想享受更流畅的体验，推荐选择16GB及以上
 
 **软件要求**
@@ -125,6 +137,29 @@ sudo echo \
 #### 5.2 安装linux应用
 
 &emsp;&emsp;OpenFDE融合Linux应用到安卓系统中，内置独立的Linux融合应用窗口。在开始菜单点开企鹅图标"Fusion Linux Application"，就可以打开Linux融合应用窗口。Linux融合应用窗口和正常的Linux图形系统使用方式是一样的，可以直接运行Linux GUI、命令行等，这里不再赘述。
+
+### 6. 操作技巧
+
+&emsp;&emsp;和一般pc桌面的键鼠操作方式不同，OpenFDE有自己的特别之处，这里给大家列一些基本的操作tips，**很重要！**
+
+#### 单击打开应用
+
+- 安装好的应用通常会在桌面显示应用图标，你只需要在桌面**单击应用图标**，就可以快速打开应用啦。
+- 你也可以在开始菜单的应用列表里找到目标应用，同样只需要**单击**就可以打开应用。
+
+#### 右键开启应用快捷菜单
+
+- 在桌面上鼠标放置在目标应用图标上，右键，会显示"打开"和"移除"。
+  - 点击打开，即可快速打开应用。
+  - 点击移除，就会将该应用的快捷方式在桌面上移除。
+- 你也可以在开始菜单的应用列表里，将鼠标放置在目标应用图标上，右键，会显示"打开"、"快捷方式","卸载"。
+  - 点击打开，即可快速打开应用。
+  - 点击快捷方式，即可将应用图标添加快捷方式到桌面。
+  - 点击卸载，即可直接卸载应用。
+
+#### 图标拖动
+
+&emsp;&emsp;如果你想拖动桌面的应用图标或者小组件，首先你需要用鼠标放在目标应用或组件上，然后**长按**，再开始拖动图标到你想去的位置。
 
 ## 四、更多了解
 
