@@ -114,13 +114,12 @@ const config = {
                 href: '/about-us',
               },
               {
-                label: 'Discord社区',
-                href: 'https://discordapp.com/invite/docusaurus', // OpenFDE社区群
+                label: '公众号',
+                href: 'https://internal.docs.openfde.com/img/WeChat-Official.jpg', // OpenFDE社区群
               },
               {
-                label: '公众号',
-                // href: 'https://twitter.com/docusaurus', // OpenFDE官方运营公众号
-                to: 'img/WeChat-Official.jpg',
+                label: 'Discord社区',
+                href: 'https://internal.docs.openfde.com/img/discord-openfde.jpg', 
               },
             ],
           },

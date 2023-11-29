@@ -36,3 +36,7 @@ nav.navbar {
 main article a.card > p {
   display: none;
 }
+
+a.breadcrumbs__link[aria-label="Home page"] {
+  pointer-events: none;
+}

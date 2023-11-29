@@ -8,6 +8,12 @@ sidebar_position: 1
 
 &emsp;&emsp;现在让我来带领你们一起轻松愉快地探索OpenFDE吧！本指南将带你快速了解OpenFDE，让你可以在工作和娱乐中畅享它的魅力。这个过程简单又有趣！准备好了吗？
 
+<video width="720" height="405" controls>
+    <source src="/img/install-guide.mp4" type="video/mp4" />
+</video>
+
+更多详细的安装和使用了解也可以继续阅读下面的文字版哦~
+
 ## 一、安装准备
 
 在开始安装OpenFDE之前，你要检查你的电脑是否符合下面的配置要求：
@@ -30,6 +36,8 @@ sidebar_position: 1
 &emsp;&emsp;让我们以麒麟操作系统为例，首先确保你已经打开了你当前系统的终端界面，执行下列命令一键安装：
 
 ```
+sudo apt-get install curl 
+
 curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh && sudo sh ./get-openfde.sh
 ```
 在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。更多详细的安装步骤可以参考[安装指引](./installation-guide)
