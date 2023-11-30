@@ -23,6 +23,6 @@ OpenFDE是一款基于AOSP、Linux应用和安卓应用互通融合的开源桌�
 ### 网站和工具
 ---
 
-- [官网](http://openfde.com)
-- [代码仓库](http://openfde.com) 
+- [官网](https://openfde.com)
+- [代码仓库](https://gitee.com/openfde) 
 - [用户文档](/docs/category/用户中心)

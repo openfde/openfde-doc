@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # 安装指引
 
-本文档主要介绍OpenFDE的安装方法，适用于所有使用OpenFDE的用户，特别是初次使用或想了解OpenFDE的用户，包括研发人员、管理员及维护人员等。使用本手册的用户需要具备基础的Linux系统知识。
+&emsp;&emsp;本文档主要介绍OpenFDE的安装方法，适用于所有使用OpenFDE的用户，特别是初次使用或想了解OpenFDE的用户，包括研发人员、管理员及维护人员等。使用本手册的用户需要具备基础的Linux系统知识。
 
 ### 一、软硬件要求
 
@@ -15,7 +15,7 @@ sidebar_position: 2
 
 > **注意！！！** 对于带x100显卡的笔记本，如果**内核版本低于5.4.18-85**，你需要首先升级你的内核版本才能正常安装和运行OpenFDE。升级内核步骤如下：
 ```
-echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restricted universe multiverse  > /etc/apt/sources.list.d/v10sp12303.list
+echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restricted universe multiverse | sudo tee /etc/apt/sources.list.d/v10sp12303.list
 sudo apt-get update -y
 sudo apt-get full-upgrade -y
 sudo apt-get autoremove -y 
