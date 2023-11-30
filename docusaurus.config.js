@@ -4,6 +4,16 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const isDev = process.env.NODE_ENV !== 'production';
+const isInternalEnv = process.env.DEPLOY_ENV === 'internal';
+
+const siteUrl = isDev
+  ? 'http://localhost:3000'
+  : isInternalEnv
+  ? 'https://internal.docs.openfde.com'
+  : 'https://docs.openfde.com';
+console.debug('>>> siteUrl =', siteUrl);
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'OpenFDE',
@@ -16,7 +26,7 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
   trailingSlash: false,
-  
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'OpenFDE', // Usually your GitHub org/user name.
@@ -43,7 +53,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
-            //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -68,7 +78,7 @@ const config = {
         title: 'OpenFDE',
         logo: {
           alt: 'OpenFDE Logo',
-          src: 'img/logo.svg', 
+          src: 'img/logo.svg',
           href: 'https://openfde.com',
         },
         items: [
@@ -115,11 +125,11 @@ const config = {
               },
               {
                 label: '公众号',
-                href: 'https://internal.docs.openfde.com/img/WeChat-Official.jpg', // OpenFDE社区群
+                href: siteUrl + '/img/WeChat-Official.jpg', // OpenFDE社区群
               },
               {
                 label: 'Discord社区',
-                href: 'https://internal.docs.openfde.com/img/discord-openfde.jpg', 
+                href: siteUrl + '/img/discord-openfde.jpg',
               },
             ],
           },
@@ -128,7 +138,7 @@ const config = {
             items: [
               {
                 label: 'OpenFDE官网',
-                href: 'https://openfde.com'
+                href: 'https://openfde.com',
                 // to: '/blog',
               },
               {
@@ -143,7 +153,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      }
+      },
     }),
 };
 
