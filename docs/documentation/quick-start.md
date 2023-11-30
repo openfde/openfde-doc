@@ -31,7 +31,7 @@ echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restri
 sudo apt-get update -y
 sudo apt-get full-upgrade -y
 sudo apt-get autoremove -y 
-sudo apt-get autoclean -y 
+sudo apt-get autoclean -y & reboot # 这里必须要重启系统，待新内核生效后再执行下面的两条命令
 sudo apt purge fdeion-dkms
 sudo apt install fdeion-dkms
 ```
