@@ -86,8 +86,6 @@ sudo echo \
 
 - 切换登录系统：点击"FDE"后，既可切换到OpenFDE桌面环境进行登录。OpenFDE的账户和密码与您当前系统的账户密码是一致的。
 
-&emsp;&emsp;**注意：** 这里首次选择"FDE"输入密码登录时可能会又跳回当前登录界面，再次输入密码登录即可成功登录进OpenFDE。登录OpenFDE成功后，可以看到OpenFDE的启动画面。
-
 ![start](./img/start.jpg)
 
 #### 2.2 注销
