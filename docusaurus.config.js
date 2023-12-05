@@ -82,17 +82,17 @@ const config = {
           href: 'https://openfde.com',
         },
         items: [
-           {
-             type: 'docSidebar',
-             sidebarId: 'tutorialSidebar',
-             position: 'left',
-             label: '文档',
-           },
-          {to: '/blog', label: '博客', position: 'left'},
-            {
-             href: 'https://github.com/facebook/docusaurus', // OpenFDE的开源代码仓库
-             label: 'GitHub',
-             position: 'right',
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '文档',
+          },
+          { to: '/blog', label: '博客', position: 'left' },
+          {
+            href: 'https://github.com/facebook/docusaurus', // OpenFDE的开源代码仓库
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },
@@ -155,6 +155,8 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  scripts: [{ src: '/js/baidu-stats.js' }],
 };
 
 module.exports = config;
