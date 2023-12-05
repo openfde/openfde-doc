@@ -21,10 +21,12 @@ echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restri
 sudo apt-get update -y
 sudo apt-get full-upgrade -y
 sudo apt-get autoremove -y 
-sudo apt-get autoclean -y & reboot # 这里必须要重启系统，待新内核生效后再执行下面的两条命令
-sudo apt purge fdeion-dkms
-sudo apt install fdeion-dkms
+sudo apt-get autoclean -y & reboot # 这里必须要重启系统，待新内核生效后再进行后续操作
 ```
+> 如果你的X100笔记本不是首次安装OpenFDE：在升级完内核后，安装OpenFDE之前，先执行```sudo apt purge fdeion-dkms```
+> 
+> 如果是首次安装OpenFDE：在升级完内核版本后，执行```sudo apt install fdeion-dkms`` 安装OpenFDE的dkm源
+
 - 内存：最少8GB，推荐16GB及以上
   
 #### 软件要求
