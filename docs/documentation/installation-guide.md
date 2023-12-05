@@ -6,6 +6,8 @@ sidebar_position: 2
 
 &emsp;&emsp;本文档主要介绍OpenFDE的安装方法，适用于所有使用OpenFDE的用户，特别是初次使用或想了解OpenFDE的用户，包括研发人员、管理员及维护人员等。使用本手册的用户需要具备基础的Linux系统知识。
 
+&emsp;&emsp;当然，如果你想快速安装OpenFDE,可以前往[快速入门](./quick-start#一安装准备)。
+
 ### 一、软硬件要求
 
 #### 硬件要求

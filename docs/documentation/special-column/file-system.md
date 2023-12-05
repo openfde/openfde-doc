@@ -6,11 +6,11 @@ sidebar_position: 4
 
 ## 写在前面
 
-&emsp;&emsp;如果你对OpenFDE已经有一定的了解，你大概已经知道在OpenFDE里可以运行安卓系统，也可以运行Linux应用，OpenFDE的特色功能就是文件系统融合。你肯定会好奇OpenFDE的文件到底应该放在哪一端？应用数据和文件到底如何组织呢？
+&emsp;&emsp;如果你对OpenFDE已经有一定的了解，你大概已经知道在OpenFDE里可以运行安卓应用，也可以运行Linux应用，OpenFDE的特色功能就是文件系统融合。你肯定会好奇OpenFDE的文件到底应该放在哪一端？应用数据和文件到底如何组织呢？
 
 &emsp;&emsp;下面，我们来详细聊聊OpenFDE的文件系统。
 
-### 总的原则
+### 总原则
 
 &emsp;&emsp;OpenFDE将Linux文件系统和Android的文件系统进行融合，两者之间文件系统可以互相访问。
 
@@ -24,7 +24,7 @@ sidebar_position: 4
 
 ![file_list](./../img/list-file.jpg)
 
-### 挂载Linux卷
+### Android访问Linux卷
 
 &emsp;&emsp;在文件管理界面左侧目录树中可以看到"Linux Volume"，Linux Volume可以看到Linux文件系统的分区。
 
@@ -38,7 +38,7 @@ sidebar_position: 4
 
 **/HOME/openfde目录**
 
-&emsp;&emsp;重点这里介绍一下home目录，在Linux Volume卷下的home目录下，有个openfde目录，该目录为Android文件系统在linux文件系统处的挂载目录。
+&emsp;&emsp;重点这里介绍一下home目录，在Linux Volume卷下的home目录下，有个openfde目录，该目录为Android文件系统在linux文件系统处的挂载目录,以方便linux应用访问android内文件。
 
 ![img](./../img/linux-home.png)
 
@@ -54,6 +54,16 @@ sidebar_position: 4
 ```
 fde_fs -m 
 ```
+
+### Android的WPS应用打开Linux下的文件
+
+&emsp;&emsp;Linux下的文件可以通过Android文件管理器访问，并使用Android的应用打开，这里以WPS打开文档为例。在开始菜单打开Android文件管理器，访问Linux Volume下/home/kyy/文档/目录下的test-work.wps文件。
+
+![open-file](./../img/open-file.jpg)
+
+&emsp;&emsp;双击test-work.wps文件后，如果是第一次使用OpenFDE的Android文件管理器，这里会弹出提示，可以选择WPS或应用宝打开当前文件，你可以选择"仅一次"或"始终"以该应用打开当前文件。
+
+![wps-file](./../img/wps-file.jpg)
 
 ### Linux文件系统
 
@@ -71,7 +81,7 @@ fde_fs -m
 
 **从Linux文件系统访问Android的文件**
 
-&emsp;&emsp;可以上述的两个Linux文件系统主文件夹中访问Android的文件系统,两种方式：
+&emsp;&emsp;可以从上述的两个Linux文件系统主文件夹中访问Android的文件系统,两种方式：
 
 - 直接打开：直接点击左侧"计算机-openfde(fde_fs)"即可打开android的文件系统，点击具体的文件夹进行访问。
 - 间接打开：点击"计算机-文件系统", 访问/home/用户名/openfde目录，即可进入android文件系统。

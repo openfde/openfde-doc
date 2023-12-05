@@ -52,7 +52,7 @@ sudo apt-get install curl
 
 curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh && sudo sh ./get-openfde.sh
 ```
-在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。更多详细的安装步骤可以参考[安装指引](./installation-guide)
+在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。想要了解详细的安装过程可以参见[安装指引](./installation-guide#二安装前准备)
 
 <!-- 
 - 对于ubuntu系统
