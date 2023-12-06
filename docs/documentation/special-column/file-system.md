@@ -98,7 +98,7 @@ fde_fs -m
 
 ![cp-file-to-android](./../img/cp-file-to-android.png)
 
-- 也可以使用鼠标操作：在/home/kyy/文档/下选中文件邮件，点击复制；到/home/kyy/openfde/Download/空白处右键鼠标点击复制。
+- 也可以使用鼠标操作：在/home/kyy/文档/下选中文件右键，点击复制；到/home/kyy/openfde/Download/空白处右键鼠标点击粘贴。
 
 **将Android文件拷贝到Linux文件系统下**
 
@@ -108,4 +108,4 @@ fde_fs -m
   
 ![cp-file-to-linux](./../img/cp-file-to-linux.png)
 
-- 也可以通过鼠标操作进行拷贝复制
+- 也可以通过鼠标操作进行拷贝复制：在/home/kyy/openfde/Download/下选中文件右键，点击复制，到linux的/home/kyy/下载/空白处右键，点击粘贴。
