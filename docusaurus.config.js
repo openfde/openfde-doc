@@ -155,6 +155,8 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  scripts: [{ src: '/js/baidu-stats.js' }],
 };
 
 module.exports = config;
