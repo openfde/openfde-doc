@@ -27,5 +27,5 @@
 
 ![send-request](./images/send-blog.png)
 
-当然，在本博客站编写博客文章需要遵循一定的规范，具体规范参见[博客编写规范](./specification)。
+当然，在本博客站编写博客文章需要遵循一定的规范，具体规范参见[博客编写规范](https://internal.docs.openfde.com/blog/specification)。
 
