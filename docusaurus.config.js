@@ -57,6 +57,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 5, // 博客侧边栏展示最近访问的5篇博客
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
