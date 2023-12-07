@@ -1,16 +1,17 @@
 ---
 sidebar_position: 1
+title: Contribution and Stategy
 ---
 
-# 贡献和攻略
+# 贡献和攻略{#contribution-and-stategy}
 
 欢迎来到OpenFDE社区！
 
-## 1. 体验OpenFDE
+## 1. 体验OpenFDE{#try-openfde}
 
 可以前往[OpenFDE官网](https://openfde.com)下载OpenFDE, 想要快速了解OpenFDE请前往[快速入门](./../documentation/quick-start)
 
-## 2. 签署CLA
+## 2. 签署CLA{#sign-cla}
 
 在参与社区贡献前，您需要签署OpenFDE社区贡献者许可协议（CLA）。根据您的参与身份，选择签署个人CLA、员工CLA或者企业CLA，请点击[这里](https://gitee.com/organizations/openfde/cla/open-fde-contributor-agreement)前往签署。
 
@@ -21,9 +22,9 @@ sidebar_position: 1
 - 员工CLA：以企业员工的身份参加社区，请签署员工CLA
 -->
 
-## 3. 参与OpenFDE社区
+## 3. 参与OpenFDE社区{#join-in-openfde}
 
-### 3.1 参与社区活动
+### 3.1 参与社区活动{#join-in-activity}
 
 更多社区活动正在筹备中.....敬请期待！！
 
@@ -64,9 +65,9 @@ SIG，全称为Special Interest Group, OpenFDE社区按照不同的SIG来组织�
 
 -->
 
-### 3.2 参与社区贡献
+### 3.2 参与社区贡献{#join-in-contribution}
 
-#### 3.2.1 提交issue/处理issue任务
+#### 3.2.1 提交issue/处理issue任务{#commit-issues}
 
 您可以点击[问题反馈](https://gitee.com/openfde/problem-feedback/issues),进入OpenFDE的问题反馈仓库。
 
@@ -74,7 +75,7 @@ SIG，全称为Special Interest Group, OpenFDE社区按照不同的SIG来组织�
 - **处理issue**：如果您愿意处理其中的一个issue，可以将issue分配给自己，将自己设置为负责人。
 - **参与issue内的讨论**：每个issue下面可能已经有参与者们的讨论和交流，如果您感兴趣，也可以在评论框中发表自己的意见。
 
-#### 3.2.2 贡献编码
+#### 3.2.2 贡献编码{#commit-codes}
 
 - **准备OpenFDE的开发环境**
  
@@ -92,27 +93,27 @@ SIG，全称为Special Interest Group, OpenFDE社区按照不同的SIG来组织�
 
 - **修改、构建和本地验证**
 
-  在本地分支上完成修改后，进行构建和本地验证，请参考[构建软件包](./contributor/构建软件包)
+  在本地分支上完成修改后，进行构建和本地验证，请参考[构建软件包](./contributor/build-software-packages)
 
 - **提交一个Pull-Request**
 
-  当你提交一个PR的时候，就意味着您已经开始给社区贡献代码了。请参考[OpenFDE社区PR提交指导](./contributor/PR提交指南)
+  当你提交一个PR的时候，就意味着您已经开始给社区贡献代码了。请参考[OpenFDE社区PR提交指导](./contributor/commit-pr)
 
-#### 3.2.3 贡献软件包
+#### 3.2.3 贡献软件包{#commit-packages}
 
 如果您发现OpenFDE缺失了一个软件包，可以帮OpenFDE把这个软件包补上。实际上贡献软件包的过程就是版主OpenFDE提供更丰富功能的过程。
 
-OpenFDE支持在Gitee新增软件包的同时自动在obs的OpenFDE:Factory上创建同名仓库，这样在向已创建的Gitee仓库提交代码时，会自动对代码编译进行检测。具体流程可参考[如何新增软件包](./contributor/新增软件包)
+OpenFDE支持在Gitee新增软件包的同时自动在obs的OpenFDE:Factory上创建同名仓库，这样在向已创建的Gitee仓库提交代码时，会自动对代码编译进行检测。具体流程可参考[如何新增软件包](./contributor/add-software-packages)
 
-#### 3.2.4 贡献原创开源项目
+#### 3.2.4 贡献原创开源项目{#commit-projects}
 
 如果你想将自己原创的开源项目贡献到OpenFDE社区，成为OpenFDE发行版本的一份子，那么可参考以下几种方式：
 
-- **方式一**: 在其他社区开发，集成到OpenFDE中。只需要按照[如何新增软件包](./contributor/新增软件包),将软件加入到OpenFDE的repo仓即可。
+- **方式一**: 在其他社区开发，集成到OpenFDE中。只需要按照[如何新增软件包](./contributor/add-software-packages),将软件加入到OpenFDE的repo仓即可。
 
 - **方式二**: 在OpenFDE社区中开发，【方式待定】
 
-#### 3.2.5 检视代码
+#### 3.2.5 检视代码{#review-codes}
 
 OpenFDE是一个开放的社区，我们希望所有参与社区的人都能成为活跃的检视者。
 
@@ -129,22 +130,22 @@ OpenFDE是一个开放的社区，我们希望所有参与社区的人都能成�
 
 <!-- 注意：如果您的PR请求没有引起足够的关注，同样可以在SIG的邮件列表求助。-->
 
-#### 3.2.6 测试
+#### 3.2.6 测试{#test}
 
-测试是所有贡献者的责任，详细攻略请参考[社区开发者测试贡献指南](./contributor/测试贡献指南)
+测试是所有贡献者的责任，详细攻略请参考[社区开发者测试贡献指南](./contributor/test-contribution-guides)
 
-#### 3.2.7 文档贡献
+#### 3.2.7 文档贡献{#doc-contribution}
 
 你可以向本社区贡献你的技术文章，前往OpenFDE的[博客入门指导](https://gitee.com/openfde/openfde-doc/blob/master/blog-guide.md)获取帮助。
 
-#### 3.2.8 选择社区组件打包
+#### 3.2.8 选择社区组件打包{#patch}
 
-您也可以参与社区组件打包，请参考[如何打包](./contributor/打包指南)
+您也可以参与社区组件打包，请参考[如何打包](./contributor/patch-guides)
 
-#### 3.2.9 社区安全问题披露
+#### 3.2.9 社区安全问题披露{#find-security-risks}
 
-- [安全处理流程](./security/安全处理流程)--简要描述了处理安全问题的过程。
-- [安全披露信息](./security/安全披露信息)--如果您想要安全报告漏洞，请参考此页面。
+- [安全处理流程](./security/security-process-rules)--简要描述了处理安全问题的过程。
+- [安全披露信息](./security/report-security-risks)--如果您想要安全报告漏洞，请参考此页面。
 
 <!-- 
 ## 4. 和社区一起成长

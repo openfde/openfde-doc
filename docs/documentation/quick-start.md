@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Quick Start
 ---
 
 # 快速入门
@@ -14,7 +15,7 @@ sidebar_position: 1
 
 更多详细的安装和使用了解也可以继续阅读下面的文字版哦~
 
-## 一、安装准备
+## 一、安装准备{#preparation-before-install}
 
 在开始安装OpenFDE之前，你要检查你的电脑是否符合下面的配置要求：
 
@@ -43,7 +44,7 @@ sudo apt-get autoclean -y & reboot # 这里必须要重启系统，待新内核�
 
 不过，如果你愿意的话，你可以尝试手动编译安装，试试将OpenFDE安装在其他的操作系统上，有更好的想法可以去[这里](https://groups.io/g/openfde/topics)跟大家交流讨论，期待听到你的反馈！
 
-## 二、安装步骤
+## 二、安装步骤{#installtion-steps}
 
 &emsp;&emsp;让我们以麒麟操作系统为例，首先确保你已经打开了你当前系统的终端界面，执行下列命令一键安装：
 
@@ -52,7 +53,7 @@ sudo apt-get install curl
 
 curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh && sudo sh ./get-openfde.sh
 ```
-在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。想要了解详细的安装过程可以参见[安装指引](./installation-guide#二安装前准备)
+在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。想要了解详细的安装过程可以参见[安装指引](./installation-guide#preparation-before-install)
 
 <!-- 
 - 对于ubuntu系统
@@ -66,7 +67,7 @@ sudo echo \
 
 ## 三、畅快使用{#happy-use}
 
-### 1. 关闭安全控制
+### 1. 关闭安全控制{#close-security-control}
 
 &emsp;&emsp;为使用OpenFDE过程更顺畅，在进入OpenFDE之前，建议您关闭当前系统的安全控制，如在麒麟系统中选择设置-安全，进入安全中心。
   
@@ -76,9 +77,9 @@ sudo echo \
 
 ![protect](./img/protect.png)
 
-### 2. 登录与注销
+### 2. 登录与注销{#login-and-logout}
 
-#### 2.1 登录
+#### 2.1 登录{#login}
 
 - 进入登录页面：首次安装OpenFDE完成后，注销您的当前系统，进入到登录界面，此时在系统图标处可以看到新增有OpenFDE的选项。
   
@@ -88,23 +89,23 @@ sudo echo \
 
 ![start](./img/start.jpg)
 
-#### 2.2 注销
+#### 2.2 注销{#logout}
 
 &emsp;&emsp;点击开始菜单，点击右上角的电源键按钮，会依次出现三个按钮，依次为关机、重启、注销。点击注销按钮即可退出到登录界面。
 
 ![logout](./img/logout.png)
 
-### 3. 配置输入法
+### 3. 配置输入法{#config-ime}
 
 &emsp;&emsp;OpenFDE内置默认输入法为讯飞输入法，在"开始菜单"中找到"讯飞输入法"，即可快速打开讯飞输入法。选择启用讯飞输入法，同意隐私条款概要，即可自行配置输入键盘、键盘布局和皮肤字体等。
 
-### 4. 配置网络
+### 4. 配置网络{#config-network}
 
 &emsp;&emsp;OpenFDE可以直接使用外部系统(麒麟/统信/ubuntu)等网络，用户可以点击左下角的OpenFDE图标，打开"开始菜单-Fusion Linux Application"，找到Linux的Settings, 在linux设置中配置系统的网络。
 
 ![net-start](./img/net-start.png) 
 
-#### 4.1 有线网络配置
+#### 4.1 有线网络配置{#config-wired-network}
 
 在有线网络中点击高级设置，在右侧弹出以太网的设置窗口：
 - **添加新的有线网络**：点击左下角的"+"即可添加新的有线网络连接。
@@ -112,7 +113,7 @@ sudo echo \
 
 ![ipv4](./img/net-set1.jpg)
 
-#### 4.2 无线网络配置
+#### 4.2 无线网络配置{#config-wlan}
 
 在无线网络中点击高级设置，在右侧弹出无线局域网的设置窗口：
 - **添加新的无线网络**：点击左下角的"+"即可添加新的无线网络连接。
@@ -120,33 +121,33 @@ sudo echo \
 
 ![wlan](./img/wlan.jpg)
 
-#### 4.3 VPN配置
+#### 4.3 VPN配置{#config-vpn}
 
 &emsp;&emsp;OpenFDE支持安卓系统和Linux系统VPN互通，也是需要远程办公的办公族一大福利。我们以常见的VPN软件EasyConnect为例，你可以在安卓系统下的应用宝或者浏览器直接下载安卓版的EasyConnect。安装成功后，配置连接上你的办公VPN，重点是在Linux端无需再配置VPN啦，即刻开启你的远程办公啦。
 
-### 5. 安装应用
+### 5. 安装应用{#install-app}
 
-#### 5.1 安装安卓应用
+#### 5.1 安装安卓应用{#install-android-app}
 
 安装安卓应用有两种方式：
 
 - 方式一：OpenFDE内置via浏览器，在“开始菜单”中打开via浏览器，可以直接在浏览器搜索想要安装的应用软件包。
 - 方式二：使用方式一安装安卓应用市场如"应用宝"，再从应用宝中安装各种安卓应用。
 
-#### 5.2 安装linux应用
+#### 5.2 安装linux应用{#install-linux-app}
 
 &emsp;&emsp;OpenFDE融合Linux应用到安卓系统中，内置独立的Linux融合应用窗口。在开始菜单点开企鹅图标"Fusion Linux Application"，就可以打开Linux融合应用窗口。Linux融合应用窗口和正常的Linux图形系统使用方式是一样的，可以直接运行Linux GUI、命令行等，这里不再赘述。
 
-### 6. 操作技巧
+### 6. 操作技巧{#use-skills}
 
 &emsp;&emsp;和一般pc桌面的键鼠操作方式不同，OpenFDE有自己的特别之处，这里给大家列一些基本的操作tips，**很重要！**
 
-#### 单击打开应用
+#### 单击打开应用{#open-app}
 
 - 安装好的应用通常会在桌面显示应用图标，你只需要在桌面**单击应用图标**，就可以快速打开应用啦。
 - 你也可以在开始菜单的应用列表里找到目标应用，同样只需要**单击**就可以打开应用。
 
-#### 右键开启应用快捷菜单
+#### 右键开启应用快捷菜单{#right-click}
 
 - 在桌面上鼠标放置在目标应用图标上，右键，会显示"打开"和"移除"。
   - 点击打开，即可快速打开应用。
@@ -156,10 +157,10 @@ sudo echo \
   - 点击快捷方式，即可将应用图标添加快捷方式到桌面。
   - 点击卸载，即可直接卸载应用。
 
-#### 图标拖动
+#### 图标拖动{#drag-icon}
 
 &emsp;&emsp;如果你想拖动桌面的应用图标或者小组件，首先你需要用鼠标放在目标应用或组件上，然后**长按**，再开始拖动图标到你想去的位置。
 
-## 四、更多了解
+## 四、更多了解{#know-more}
 
-你可以继续使用OpenFDE来帮助你办公和娱乐啦！更多详细的使用指导参见[用户手册](./user-guide)。
+你可以继续使用OpenFDE来帮助你办公和娱乐啦！更多详细的使用指导参见[用户手册](./user-manual)。

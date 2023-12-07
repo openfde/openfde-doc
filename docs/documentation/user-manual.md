@@ -1,10 +1,11 @@
 ---
 sidebar_position: 5
+title: User Manual
 ---
 
-# 用户手册
+# 用户手册{#user-manual}
 
-## 1. 概述
+## 1. 概述{#summary}
 
 &emsp;&emsp;OpenFDE(Open Fusion Desktop Environment)是一款全新的Linux和安卓融合开源桌面环境，通过将AOSP统一的图形与API设计对接在Linux系统基础上。
 
@@ -19,9 +20,9 @@ sidebar_position: 5
 
 &emsp;&emsp;OpenFDE下载和安装指南可参见 [安装指南](./installation-guide) <!-- 注意这里文档链接不要加md后缀 -->
 
-## 2. 自定义功能
+## 2. 自定义功能{#definition-function}
 
-### 2.1 开始菜单
+### 2.1 开始菜单{#start-menu}
 
 &emsp;&emsp;在OpenFDE桌面左下角点击OpenFDE图标，打开应用菜单，显示已安装的应用列表，包括系统自带应用（图库、文件、日历、时钟等） 和已安装的第三方应用。
 
@@ -30,7 +31,7 @@ sidebar_position: 5
 - 应用菜单支持搜索应用，用户在搜索栏中输入应用名，可快速找到和打开目标应。 
 - 应用菜单支持将应用以快捷方式添加到桌面。
 
-### 2.2 任务栏
+### 2.2 任务栏{#task-column}
 
 &emsp;&emsp;任务栏位于桌面的屏幕底部，用于快速启动应用程序，支持单机图标、鼠标右键或者拖动应用。
 
@@ -38,7 +39,7 @@ sidebar_position: 5
 
 ![task](./img/任务栏.jpg)
 
-### 2.3 状态栏
+### 2.3 状态栏{#status-column}
 
 &emsp;&emsp;状态栏显示系统当前状态，位于屏幕底部的右下方，主要显示的系统状态有：
 
@@ -62,20 +63,20 @@ sidebar_position: 5
 - 快捷录屏: 点击可弹出录屏弹窗，确认"开始"后即可进行屏幕的视频录制。
 - 快捷设置: 点击跳转到设置中心，可以快速打开系统设置。
 
-### 2.4 网络
+### 2.4 网络{#network}
 
 &emsp;&emsp;OpenFDE支持Linux网络和Android系统网络互通，Linux和Android可以共享有限网络、VPN等设置。
 
 - 有线网络设置：用户在Linux系统中插入网线，配置IPV4和DNS信息后，在安卓系统中无需再连接WLAN。
 - VPN设置：用户只需在Linux或Android其中一端配置VPN信息，即可在另一端系统中直接使用该VPN。
 
-### 2.5 输入法
+### 2.5 输入法{#ime}
 
 &emsp;&emsp;OpenFDE支持内置输入法讯飞输入法，用户可在设置-系统-语言和输入法中添加新的语言、输入法和键盘。
 
-## 3. 软件应用
+## 3. 软件应用{#software}
 
-### 3.1 应用安装
+### 3.1 应用安装{#install-software}
 
 &emsp;&emsp;OpenFDE的软件应用安装包括系统预安装和网络下载安装两种方式。
 
@@ -87,7 +88,7 @@ sidebar_position: 5
 
 &emsp;&emsp;对于安卓应用来说，用户可以通过via浏览器在线下载各种软件应用的安装包，下载的apk安装包会放在安卓文件系统的Download目录下，直接在当前下载目录下双击apk安装包，即可开始安装。
 
-### 3.2 应用快捷方式
+### 3.2 应用快捷方式{#shorcut}
 
 &emsp;&emsp;OpenFDE支持多种方法添加应用快捷方式。
 
@@ -95,17 +96,17 @@ sidebar_position: 5
   
 - 已经安装的软件应用还会在"开始菜单"里自动添加快捷方式，用户可以在"开始菜单"中点击应用图标快速打开软件应用。
 
-### 3.3 应用全屏
+### 3.3 应用全屏{#fullscreen}
 
 &emsp;&emsp;对于已经打开的应用，OpenFDE支持标准显示、最大化、最小化和全屏显示。
 
-## 4. Linux融合应用
+## 4. Linux融合应用{#linux-fusion}
 
-### 4.1 概述
+### 4.1 概述{#linux-summary}
 
 &emsp;&emsp;OpenFDE基于标准Linux系统基础环境，支持Linux原生应用在安卓系统上运行，包括但不限于已有的Linux GUI、命令行应用。
 
-### 4.2 Linux应用列表
+### 4.2 Linux应用列表{#linux-app-list}
 
 &emsp;&emsp;在"开始菜单"点击企鹅图标"Fusion Linux Application"即可打开Linux融合应用的独立窗口(以下称为"linux融合桌面")。在linux融合桌面中显示linux应用列表，支持MATE Terminal、Tabby等应用运行Linux GUI终端。
 
@@ -113,7 +114,7 @@ sidebar_position: 5
 
 &emsp;&emsp;用户可以在Linux终端应用中使用终端命令安装linux应用，应用安装成功后会直接在linux融合桌面的应用列表中显示。
 
-## 5. 文件系统融合
+## 5. 文件系统融合{#fusion-file-system}
 
 &emsp;&emsp;OpenFDE将安卓和Linux的文件系统融合互通，两者之间文件系统可以互相访问。
 
@@ -136,7 +137,7 @@ sidebar_position: 5
 
 ![android-file](./img/android-file.jpg)
 
-## 6. 开发者工具
+## 6. 开发者工具{#developer-tools}
 
 &emsp;&emsp;在OpenFDE平台上，Android应用开发者在使用android studio进行开发时，可以不再需要android virtual device。用户只需要在android studio中选择设备"Google Pixel5",即可直接连接OpenFDE，实现一边开发安卓应用，同步在OpenFDE中进行调试。
 

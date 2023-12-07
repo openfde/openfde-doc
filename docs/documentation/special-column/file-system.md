@@ -1,20 +1,21 @@
 ---
 sidebar_position: 4
+title: File System 
 ---
 
-# 探秘OpenFDE文件系统
+# 探秘OpenFDE文件系统{#file-system}
 
-## 写在前面
+## 写在前面{#before-start}
 
 &emsp;&emsp;如果你对OpenFDE已经有一定的了解，你大概已经知道在OpenFDE里可以运行安卓应用，也可以运行Linux应用，OpenFDE的特色功能就是文件系统融合。你肯定会好奇OpenFDE的文件到底应该放在哪一端？应用数据和文件到底如何组织呢？
 
 &emsp;&emsp;下面，我们来详细聊聊OpenFDE的文件系统。
 
-### 总原则
+### 总原则{#rules}
 
 &emsp;&emsp;OpenFDE将Linux文件系统和Android的文件系统进行融合，两者之间文件系统可以互相访问。
 
-### Android文件管理
+### Android文件管理{#android-file}
 
 &emsp;&emsp;在OpenFDE开始菜单打开"文件"，可以直观地看到文件管理界面，点开最大化按钮，以方便你可以更轻松地浏览和操作文件。
 
@@ -24,7 +25,7 @@ sidebar_position: 4
 
 ![file_list](./../img/list-file.jpg)
 
-### Android访问Linux卷
+### Android访问Linux卷{#android-access-linux}
 
 &emsp;&emsp;在文件管理界面左侧目录树中可以看到"Linux Volume"，Linux Volume可以看到Linux文件系统的分区。
 
@@ -55,7 +56,7 @@ sidebar_position: 4
 fde_fs -m 
 ```
 
-### Android的WPS应用打开Linux下的文件
+### Android的WPS应用打开Linux下的文件{#android-open-linux}
 
 &emsp;&emsp;Linux下的文件可以通过Android文件管理器访问，并使用Android的应用打开，这里以WPS打开文档为例。在开始菜单打开Android文件管理器，访问Linux Volume下/home/kyy/文档/目录下的test-work.wps文件。
 
@@ -65,7 +66,7 @@ fde_fs -m
 
 ![wps-file](./../img/wps-file.jpg)
 
-### Linux文件系统
+### Linux文件系统{#linux-file-system}
 
 &emsp;&emsp;在OpenFDE中打开"开始菜单-Fusion Linux Application",在Linux应用列表中找到"Pony",点击打开linux文件系统管理器。
 
@@ -86,7 +87,7 @@ fde_fs -m
 - 直接打开：直接点击左侧"计算机-openfde(fde_fs)"即可打开android的文件系统，点击具体的文件夹进行访问。
 - 间接打开：点击"计算机-文件系统", 访问/home/用户名/openfde目录，即可进入android文件系统。
 
-### 文件传输
+### 文件传输{#transport-file}
 
 **前提：**打开Linux的文件管理系统Pony,在Pony下进行文件的传输操作。
 
