@@ -27,7 +27,7 @@ const FeatureList = [
         <Link href="/docs/documentation/installation-guide">
         安装指引 </Link><br/>
 
-        <Link href="/docs/documentation/user-guide"> 
+        <Link href="/docs/documentation/user-manual"> 
         用户手册 </Link><br/>
       </>
     ),
