@@ -3,6 +3,7 @@ slug: writing-standards
 title: Writing Standards
 description: 博客编写请遵循本文的规范
 date: 2023-12-06T14:00
+author: kuangyangyang
 ---
 
 &emsp;&emsp;介绍OpenFDE开源社区发布博客需要遵循的规范，包括如何添加新的博客、博客命名规范和一些常用的编写格式技巧。
@@ -27,8 +28,8 @@ date: 2023-12-06T14:00
 ---
 title: 博客标题
 descripiton: 简要描述本博客文章
-slug: 本博客用于url显示的名字
-authors: # 作者信息
+slug: 本博客用于url显示的名
+author: 作者名
 tags: [hello, world] # 该博客所属的标签
 ---
 ```
