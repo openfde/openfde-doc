@@ -3,81 +3,37 @@ sidebar_position: 1
 title: Contribution and Stategy
 ---
 
-# 贡献和攻略{#contribution-and-stategy}
+# Contributions and Strategies{#contribution-and-stategy}
 
-欢迎来到OpenFDE社区！
+Welcome tot OpenFDE Community！
 
-## 1. 体验OpenFDE{#try-openfde}
+## 1. Explore OpenFDE{#try-openfde}
 
-可以前往[OpenFDE官网](https://openfde.com)下载OpenFDE, 想要快速了解OpenFDE请前往[快速入门](./../documentation/quick-start)
+To quickly learn about [OpenFDE](https://openfde.com), please click [here](./../documentation/quick-start).
 
-## 2. 签署CLA{#sign-cla}
+## 2. Sign in CLA{#sign-cla}
 
-在参与社区贡献前，您需要签署OpenFDE社区贡献者许可协议（CLA）。根据您的参与身份，选择签署个人CLA、员工CLA或者企业CLA，请点击[这里](https://gitee.com/organizations/openfde/cla/open-fde-contributor-agreement)前往签署。
+Before participating in community contributions, you are required to sign the OpenFDE Contributor License Agreement (CLA). Depending on your role, you can choose to sign the Individual CLA, Employee CLA, or Corporate CLA. Please click in [here](https://gitee.com/organizations/openfde/cla/open-fde-contributor-agreement).
 
-<!--
-这里需要跳转到签署CLA的协议
-- 个人CLA: 如果您是个人身份，请签署个人CLA
-- 企业CLA: 以企业身份参加社区，请签署企业CLA
-- 员工CLA：以企业员工的身份参加社区，请签署员工CLA
--->
+## 3. Join in OpenFDE Community{#join-in-openfde}
 
-## 3. 参与OpenFDE社区{#join-in-openfde}
+### 3.1 Participate in Community Activites{#join-in-activity}
 
-### 3.1 参与社区活动{#join-in-activity}
+More community activities are being prepared... Stay tuned for updates!
 
-更多社区活动正在筹备中.....敬请期待！！
+### 3.2 Participating in Community Contributions{#join-in-contribution}
 
-<!-- 
-您可以了解并参与丰富多彩的社区活动：
-- 技术沙龙： 查看官网首页SIG的技术沙龙活动安排，可参与你感兴趣的沙龙活动
-- 直播
-- 峰会
+#### 3.2.1 submit an issue/process an issue task{#commit-issues}
 
-### 3.2 找到你想参与的SIG
+Your can clear [Feedback on Issues](https://gitee.com/openfde/problem-feedback/issues) to access the issue feedback repository for OpenFDE.
 
-SIG，全称为Special Interest Group, OpenFDE社区按照不同的SIG来组织，以便于更好的管理和改善工作流程。
+- **submit an issue**：Clicking on the "New issue" button allows you to create an issue and document the problem you want to raise.
+- **process an issue**：If you are willing to handle one of the issues, you can assign the issue to yourself and set yourself as the assignee.
+- **participate in discussions within an issue**：Under each issue, there may already be discussions and exchanges among participants. If you are interested, you can also share your opinions in the comment box.
 
-- SIG组是开放的，欢迎任何人加入并参与贡献。
-- SIG都是针对特定的一个或多个技术主题而成立的。SIG内的成员推动交付成果输出，并争取让成果成为OpenFDE社区发行的一部分。
-- SIG的核心成员主导SIG的治理。请查看[SIG的角色说明](./community-membership)
-- 每一个SIG在Gitee上都会拥有一个或多个项目，这些项目拥有一个或多个Repository。SIG的交付成果会保存在这些Repository内。
-- 可以在SIG对应的Repository内提交Issue、针对特定问题参与讨论，提交和解决问题，参与评审。
-- 您也可以通过邮件列表、视频会议和SIG内的成员进行交流。
+#### 3.2.2 contribute codes{#commit-codes}
 
-#### 3.2.1 了解SIG并找到您感兴趣的SIG
-
-找到您感兴趣的SIG组，可以帮助您在正确的地方提出问题，并得到更快的社区相应。
-
-**方式一**: 首先，查看[SIG列表](./SIG/sig-list)，它包含当前OpenFDE社区成立的所有SIG团队的清单。您可以通过该列表快速地定位到您感兴趣的领域所对应的SIG团队。同时还为您提供该SIG团队的如下信息：
-- SIG下的项目以及Repository地址
-- SIG内的交流方式，包括邮件列表。
-- Maintainer的联系方式
-
-**另一种方式**: 如果您知道感兴趣的项目名称，可以在OpenFDE的Repository列表下进行模糊搜索，从而快速定位到对应项目的首页地址。通常情况下，在该项目首页地址的README.md中，可以找到该项目所属的SIG信息、交流方式、成员和联系方式等。
-
-
-如果上述方式定位不到您感兴趣的SIG，您可以发邮件求助【这里邮箱待定】。建议您在邮件列表内用"【开发过程疑问】"作为标题，在内容中写出你寻找的SIG或项目的特征，我们会为您提供帮助。
-
-#### 3.2.2 成立新的SIG
-
-如果在已有的SIG组列表里面没有找到您感兴趣的SIG，而您对某个方向有浓厚的兴趣，希望在OpenFDE社区成立一个新的相关SIG进行维护和发展，那您可以参考[申请新SIG流程指南](./SIG/apply-sig-guide)来申请创建新的SIG。
-
--->
-
-### 3.2 参与社区贡献{#join-in-contribution}
-
-#### 3.2.1 提交issue/处理issue任务{#commit-issues}
-
-您可以点击[问题反馈](https://gitee.com/openfde/problem-feedback/issues),进入OpenFDE的问题反馈仓库。
-
-- **提交issue**：点击"新建Issue"按钮，就可以新建Issue，记录你想提出的问题。
-- **处理issue**：如果您愿意处理其中的一个issue，可以将issue分配给自己，将自己设置为负责人。
-- **参与issue内的讨论**：每个issue下面可能已经有参与者们的讨论和交流，如果您感兴趣，也可以在评论框中发表自己的意见。
-
-#### 3.2.2 贡献编码{#commit-codes}
-
-- **准备OpenFDE的开发环境**
+- **Set up the development environment for OpenFDE**
  
    如果您想参与编码贡献，需要准备OpenFDE的开发环境，请参考[开发环境准备](./contributor/dev-environment)
 

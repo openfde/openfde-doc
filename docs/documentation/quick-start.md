@@ -32,7 +32,7 @@ echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restri
 sudo apt-get update -y
 sudo apt-get full-upgrade -y
 sudo apt-get autoremove -y 
-sudo apt-get autoclean -y & reboot # 这里必须要重启系统，待新内核生效后再进行后续的操作
+sudo apt-get autoclean -y && reboot # 这里必须要重启系统，待新内核生效后再进行后续的操作
 ```
 
 **注意：**如果你的X100笔记本不是首次安装OpenFDE：在升级完内核后，安装OpenFDE之前，先执行```sudo apt purge fdeion-dkms```

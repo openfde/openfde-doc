@@ -1,6 +1,6 @@
 ---
 slug: writing-standards
-title: Writing Standards
+title: 博客编写规范
 description: 博客编写请遵循本文的规范
 date: 2023-12-06T14:00
 author: kuangyangyang

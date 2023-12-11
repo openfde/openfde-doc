@@ -40,7 +40,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en','zh-CN'],
+    locales: ['en', 'zh-CN'],
   },
 
   presets: [
@@ -96,11 +96,11 @@ const config = {
           //    label: 'GitHub',
           //    position: 'right',
           // },
-           {
-             type: 'localeDropdown',
-             position: 'left',
-             persistLocale: true,
-           }
+          //  {
+          //    type: 'localeDropdown',
+          //    position: 'left',
+          //    persistLocale: true,
+          //  }
         ],
       },
       footer: {
