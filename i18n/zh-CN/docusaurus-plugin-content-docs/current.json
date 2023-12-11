@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.User Guides": {
+    "message": "User Guides",
+    "description": "The label for category User Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.User Guides.link.generated-index.description": {
+    "message": " ",
+    "description": "The generated-index page description for category User Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Special Column": {
+    "message": "Special Column",
+    "description": "The label for category Special Column in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Developer Guides": {
+    "message": "Developer Guides",
+    "description": "The label for category Developer Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Developer Guides.link.generated-index.description": {
+    "message": " ",
+    "description": "The generated-index page description for category Developer Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Community Guides": {
+    "message": "Community Guides",
+    "description": "The label for category Community Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Community Guides.link.generated-index.description": {
+    "message": " ",
+    "description": "The generated-index page description for category Community Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contribution Guides": {
+    "message": "Contribution Guides",
+    "description": "The label for category Contribution Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contribution Guides.link.generated-index.description": {
+    "message": " ",
+    "description": "The generated-index page description for category Contribution Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Security Center": {
+    "message": "Security Center",
+    "description": "The label for category Security Center in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FAQ.link.generated-index.description": {
+    "message": " ",
+    "description": "The generated-index page description for category FAQ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Version Update": {
+    "message": "Version Update",
+    "description": "The label for category Version Update in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Version Update.link.generated-index.description": {
+    "message": " ",
+    "description": "The generated-index page description for category Version Update in sidebar tutorialSidebar"
+  }
+}

@@ -20,7 +20,7 @@ const FeatureList = [
   },
   {
     title: '关于产品',
-    href: 'docs/category/用户中心',
+    href: 'docs/category/user-guides',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>

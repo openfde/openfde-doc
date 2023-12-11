@@ -96,11 +96,11 @@ const config = {
           //    label: 'GitHub',
           //    position: 'right',
           // },
-          // {
-          //   type: 'localeDropdown',
-          //   position: 'left',
-          //   persistLocale: true,
-          // }
+           {
+             type: 'localeDropdown',
+             position: 'left',
+             persistLocale: true,
+           }
         ],
       },
       footer: {
