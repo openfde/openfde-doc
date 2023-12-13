@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "OpenFDE",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "OpenFDE Logo",
+    "description": "The alt text of navbar logo"
+  }
+}

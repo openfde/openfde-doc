@@ -3,57 +3,59 @@ sidebar_position: 1
 title: Quick Start
 ---
 
-# 快速入门
+# Quick Start
 
-&emsp;&emsp;OpenFDE(Open Fusion Desktop Environment)是一款炫酷的Linux开源桌面。它可以让你在Linux系统上玩安卓的软件，也可以在安卓系统中畅玩Linux应用。
+OpenFDE(Open Fusion Desktop Environment) is a cool Linux open-source desktop environment. It allows you to run Android software on Linux systems and enjoy Linux applications on Android systems.
 
-&emsp;&emsp;现在让我来带领你们一起轻松愉快地探索OpenFDE吧！本指南将带你快速了解OpenFDE，让你可以在工作和娱乐中畅享它的魅力。这个过程简单又有趣！准备好了吗？
+Now let me guide you on an easy and enjoyable exploration of OpenFDE! This guide will quickly introduce you to OpenFDE and help you experience its charm in both work and leisure. It's a simple and fun process! Are you ready?
 
 <video width="720" height="405" controls>
     <source src="/img/install-guide.mp4" type="video/mp4" />
 </video>
 
-更多详细的安装和使用了解也可以继续阅读下面的文字版哦~
+For more detailed information on installation and usage, you can continue reading the text version below.
 
-## 一、安装准备{#preparation-before-install}
+## 1. Installation Preparation{#preparation-before-install}
 
-在开始安装OpenFDE之前，你要检查你的电脑是否符合下面的配置要求：
+Before starting the installation of OpenFDE, you need to check if your computer whether meets the following system requirements.
 
-**硬件要求:**
-- 处理器：飞腾D2000、FT2000/4
+**Hardware:**
+- Processor：Phytium D2000、FT2000/4
   
-> **PS:** 目前我们在飞腾生态中研究、开发并适配了上述两种CPU型号，也欢迎大家自行研究探索，让OpenFDE可以适配更多种类的CPU！你可以前往[构建与开发](./../developer/Quick-Start)去开始你的开发研究。
+> **Attention:** Currently, we have conducted research, development, and adaptation for the two CPU models mentioned within the Phytium ecosystem. We also welcome everyone to conduct their own research and exploration, enabling OpenFDE to be compatible with a broader range of CPU types! You can proceed to [Build and Development](./../developer/Quick-Start) to start your exploration and research.
 
-- 显卡：AMD Radeon、Phytium X100
+- Graphics Card：AMD Radeon、Phytium X100
 
-> **注意！！！** 对于带x100显卡的笔记本，如果**内核版本低于5.4.18-85**，你需要首先升级你的内核版本才能正常安装和运行OpenFDE。升级内核步骤如下：
+> **Attention:** If your laptop with an x100 graphics card has **a kernel version lower than 5.4.18-85**, you need to upgrade your kernel before installing and running OpenFDE. Here are the steps to upgrade your kernel:
+
 ```
 echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restricted universe multiverse | sudo tee /etc/apt/sources.list.d/v10sp12303.list
 sudo apt-get update -y
 sudo apt-get full-upgrade -y
 sudo apt-get autoremove -y 
-sudo apt-get autoclean -y && reboot # 这里必须要重启系统，待新内核生效后再进行后续的操作
+sudo apt-get autoclean -y && reboot # You must reboot your system. After the new kernel takes effect, you can proceed with next steps.
 ```
 
-**注意：**如果你的X100笔记本不是首次安装OpenFDE：在升级完内核后，安装OpenFDE之前，先执行```sudo apt purge fdeion-dkms```
+**If you already have OpenFDE installed on your X100 laptop**：After upgrading the kernel and before installing OpenFDE, it's recommended to perform the step ```sudo apt purge fdeion-dkms```
 
-- 内存：最少8GB，如果你想享受更流畅的体验，推荐选择16GB及以上
+- RAM：At least 8GB. If you want to enjoy a smoother experience, I recommend choosing 16GB or more of RAM. 
+  
+**Software**:
+- Operating System：Currently, we have researched and adapted OpenFDE for three operating systems: **Kylin, UOS, and Ubuntu**. However, other Linux operating systems have not been fully adapted and tested yet.
 
-**软件要求**
-- 操作系统：我们目前研究适配了**麒麟、统信、ubuntu**三种操作系统，其他Linux 操作系统尚未完全适配和测试。
+You can also try manually compiling and installing OpenFDE and see if it can be installed on other operating systems. If you have any better ideas, you can join the discussion [here](https://groups.io/g/openfde/topics) and share your feedback! We look forward to hearing from you!
 
-不过，如果你愿意的话，你可以尝试手动编译安装，试试将OpenFDE安装在其他的操作系统上，有更好的想法可以去[这里](https://groups.io/g/openfde/topics)跟大家交流讨论，期待听到你的反馈！
+## 2. Installation Steps{#installtion-steps}
 
-## 二、安装步骤{#installtion-steps}
-
-&emsp;&emsp;让我们以麒麟操作系统为例，首先确保你已经打开了你当前系统的终端界面，执行下列命令一键安装：
+Let's take the example of Kylin operating system. First, make sure you have opened the terminal of your current system. Execute the following command for a one-click installation:
 
 ```
 sudo apt-get install curl 
 
 curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh && sudo sh ./get-openfde.sh
 ```
-在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。想要了解详细的安装过程可以参见[安装指引](./installation-guide#preparation-before-install)
+
+During the installation process, you may be prompted to enter "y" to confirm certain actions. Simply follow the prompts and enter the requested input as necessary. If you want detailed installation instructions, please refer to the [installation guide](./installation-guide#preparation-before-install) provided by the OpenFDE project.
 
 <!-- 
 - 对于ubuntu系统
@@ -65,67 +67,76 @@ sudo echo \
 ```
 -->
 
-## 三、畅快使用{#happy-use}
+## 3. Get Started{#happy-use}
 
-### 1. 关闭安全控制{#close-security-control}
+### 3.1 Disable Security Controls{#close-security-control}
 
-&emsp;&emsp;为使用OpenFDE过程更顺畅，在进入OpenFDE之前，建议您关闭当前系统的安全控制，如在麒麟系统中选择设置-安全，进入安全中心。
+To ensure a smoother experience while using OpenFDE, it is recommended to disable the security controls on your current system before entering OpenFDE. In the case of Kylin system, you can follow these steps:
+
+- Select "Settings" from the menu.
+- Go to "Security" to access the Security Center.
   
 ![control](./img/control.png)
 
-以网络控制为例，关闭应用联网控制。同时，建议您关闭应用保护、设备安全的相关控制。
+Using network control as an example, you should disable application internet access control. Additionally, it is recommended to disable controls related to application protection and device security.
 
 ![protect](./img/protect.png)
 
-### 2. 登录与注销{#login-and-logout}
+### 3.2 Login and Logout{#login-and-logout}
 
-#### 2.1 登录{#login}
+#### 3.2.1 Login{#login}
 
-- 进入登录页面：首次安装OpenFDE完成后，注销您的当前系统，进入到登录界面，此时在系统图标处可以看到新增有OpenFDE的选项。
+- Accessing the Login Page: After completing the initial installation of OpenFDE, follow these steps to reach the login page:
+  - Log out of your current system.
+  - Return to the login screen.
+  - Select the OpenFDE option: enter your username and password in the designated fields.
   
 ![login](./img/login.jpg)
 
-- 切换登录系统：点击"FDE"后，既可切换到OpenFDE桌面环境进行登录。OpenFDE的账户和密码与您当前系统的账户密码是一致的。
+- Switching to OpenFDE Login System: On the login screen, locate the "OpenFDE" option. You will be prompted to enter your account credentials. And the system will switch to the OpenFDE desktop environment. 
+- The account and password for OpenFDE are the same as your current system's account and password.
 
 ![start](./img/start.jpg)
 
-#### 2.2 注销{#logout}
+#### 3.2.2 Logout{#logout}
 
-&emsp;&emsp;点击开始菜单，点击右上角的电源键按钮，会依次出现三个按钮，依次为关机、重启、注销。点击注销按钮即可退出到登录界面。
+Clicking on the Start menu, then clicking on the power button icon in the top right corner will bring up three buttons in sequence: Shutdown, Restart, and Logout. Clicking on the Logout button will allow you to exit to the login screen.
 
 ![logout](./img/logout.png)
 
-### 3. 配置输入法{#config-ime}
+### 3.3 Configure Input Method{#config-ime}
 
-&emsp;&emsp;OpenFDE内置默认输入法为讯飞输入法，在"开始菜单"中找到"讯飞输入法"，即可快速打开讯飞输入法。选择启用讯飞输入法，同意隐私条款概要，即可自行配置输入键盘、键盘布局和皮肤字体等。
+OpenFDE comes with the default input method of 'iFlytek Voice Input Method'. To quickly open the iFlytek Voice Input Method, locate it in the Start menu. Selecting the iFlytek Voice Input Method option allows you to enable it and agree to the summary of privacy terms. You can configure input methods, keyboard layouts, and skin fonts according to your preferences.
 
-### 4. 配置网络{#config-network}
+### 3.4 Configure Network{#config-network}
 
-&emsp;&emsp;OpenFDE可以直接使用外部系统(麒麟/统信/ubuntu)等网络，用户可以点击左下角的OpenFDE图标，打开"开始菜单-Fusion Linux Application"，找到Linux的Settings, 在linux设置中配置系统的网络。
+OpenFDE can directly utilize external systems such as Kylin, UOS, Ubuntu for networking. Users can click on the OpenFDE icon in the bottom left corner and open Start Menu, Fusion Linux Application to find the Linux Settings. In the Linux Settings, you can configure the network settings for the system.
 
 ![net-start](./img/net-start.png) 
 
-#### 4.1 有线网络配置{#config-wired-network}
+#### 3.4.1 Wired Network Configuration{#config-wired-network}
 
-在有线网络中点击高级设置，在右侧弹出以太网的设置窗口：
-- **添加新的有线网络**：点击左下角的"+"即可添加新的有线网络连接。
-- **配置现有的有线网络**：选中需要修改配置的有线网络连接，点击左下角"设置"按钮，即可弹出窗口修改当前网络连接的配置。
+In the wired network settings, click on Advanced Settings. A pop-up window titled "Ethernet Settings" will appear on the right side.
+
+- Add a New Wired Network: To add a new wired network connection, click on the "+" button located in the bottom left corner.
+- Configure an Existing Wired Network: select the desired wired network connection, then click on the Settings button located in the bottom left corner. This will open a window where you can modify the configuration of the current network connection.
 
 ![ipv4](./img/net-set1.jpg)
 
-#### 4.2 无线网络配置{#config-wlan}
+#### 3.4.2 Wireless Network Configuration{#config-wlan}
 
-在无线网络中点击高级设置，在右侧弹出无线局域网的设置窗口：
-- **添加新的无线网络**：点击左下角的"+"即可添加新的无线网络连接。
-- **配置现有的无线网络**：选中需要修改配置的无线网络连接，点击左下角"设置"按钮，即可弹出窗口修改当前网络连接的配置。
+In the wireless network settings, click on Advanced Settings. A pop-up window titled "Wireless LAN Settings" will appear on the right side.
+
+- Add a New Wireless Network: To add a new wireless network connection, click on the "+" button located in the bottom left corner.
+- Configure an Existing Wireless Network: select the desired wireless network connection, then click on the Settings button located in the bottom left corner. This will open a window where you can modify the configuration of the current network connection.
 
 ![wlan](./img/wlan.jpg)
 
-#### 4.3 VPN配置{#config-vpn}
+#### 4.3 VPN Configuration{#config-vpn}
 
 &emsp;&emsp;OpenFDE支持安卓系统和Linux系统VPN互通，也是需要远程办公的办公族一大福利。我们以常见的VPN软件EasyConnect为例，你可以在安卓系统下的应用宝或者浏览器直接下载安卓版的EasyConnect。安装成功后，配置连接上你的办公VPN，重点是在Linux端无需再配置VPN啦，即刻开启你的远程办公啦。
 
-### 5. 安装应用{#install-app}
+### 3.5 安装应用{#install-app}
 
 #### 5.1 安装安卓应用{#install-android-app}
 
@@ -138,7 +149,7 @@ sudo echo \
 
 &emsp;&emsp;OpenFDE融合Linux应用到安卓系统中，内置独立的Linux融合应用窗口。在开始菜单点开企鹅图标"Fusion Linux Application"，就可以打开Linux融合应用窗口。Linux融合应用窗口和正常的Linux图形系统使用方式是一样的，可以直接运行Linux GUI、命令行等，这里不再赘述。
 
-### 6. 操作技巧{#use-skills}
+### 3.6 操作技巧{#use-skills}
 
 &emsp;&emsp;和一般pc桌面的键鼠操作方式不同，OpenFDE有自己的特别之处，这里给大家列一些基本的操作tips，**很重要！**
 
