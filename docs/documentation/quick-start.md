@@ -37,7 +37,9 @@ sudo apt-get autoclean -y && reboot
 ```
 you must reboot your computer and wait for the new kernel to take effect before proceeding with further operation
 
-**If you already have OpenFDE installed on your X100 laptop**：After upgrading the kernel and before installing OpenFDE, it's recommended to perform the step ```sudo apt purge fdeion-dkms```
+>**If you already have OpenFDE installed on your X100 laptop**：After upgrading the kernel and before installing OpenFDE, it's recommended to perform the step ```sudo apt purge fdeion-dkms```
+>
+> If you are installing OpenFDE for the first time, after upgrading the kernel version, execute the command ```sudo apt install fdeion-dkms``` to install the OpenFDE DKMS source.
 
 - RAM：At least 8GB. If you want to enjoy a smoother experience, I recommend choosing 16GB or more of RAM. 
   

@@ -53,7 +53,7 @@ sudo apt-get install wget gpg
 wget -qO-  http://openfde.com/keys/openfde.asc | gpg --dearmor > packages.openfde.gpg
 ```
 
-#### 3. 将解密后的密钥文件拷贝到本地apt工具的密钥文件夹下{#decode-keys}
+#### 3. 将解密后的密钥文件拷贝到本地apt工具的密钥文件夹下{#decrypted-keys}
 
 ```
 sudo install -D -o root -g root -m 644 packages.openfde.gpg /etc/apt/keyrings/packages.openfde.gpg
