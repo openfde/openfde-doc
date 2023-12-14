@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Contribution and Stategy
+title: Contribution and Strategy
 ---
 
 # Contributions and Strategies{#contribution-and-stategy}

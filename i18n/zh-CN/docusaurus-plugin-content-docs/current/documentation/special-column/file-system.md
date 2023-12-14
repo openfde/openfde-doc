@@ -87,7 +87,7 @@ fde_fs -m
 - 直接打开：直接点击左侧"计算机-openfde(fde_fs)"即可打开android的文件系统，点击具体的文件夹进行访问。
 - 间接打开：点击"计算机-文件系统", 访问/home/用户名/openfde目录，即可进入android文件系统。
 
-### 文件传输{#transport-file}
+### 文件传输{#transfer-file}
 
 **前提：**打开Linux的文件管理系统Pony,在Pony下进行文件的传输操作。
 
