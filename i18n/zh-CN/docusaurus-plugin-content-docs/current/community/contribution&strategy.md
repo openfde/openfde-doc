@@ -3,7 +3,7 @@ sidebar_position: 1
 title: 贡献和攻略
 ---
 
-# 贡献和攻略{#contribution-and-stategy}
+# 贡献和攻略{#contribution-and-strategy}
 
 欢迎来到OpenFDE社区！
 

@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Contribution and Strategy
 ---
 
-# Contributions and Strategies{#contribution-and-stategy}
+# Contributions and Strategies{#contribution-and-strategy}
 
 Welcome tot OpenFDE Community！
 
