@@ -33,7 +33,7 @@ echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restri
 sudo apt-get update -y
 sudo apt-get full-upgrade -y
 sudo apt-get autoremove -y 
-sudo apt-get autoclean -y && reboot # You must reboot your system. After the new kernel takes effect, you can proceed with next steps.
+sudo apt-get autoclean -y && reboot # 这里必须要重启系统，待新内核生效后再进行后续的操作
 ```
 
 **If you already have OpenFDE installed on your X100 laptop**：After upgrading the kernel and before installing OpenFDE, it's recommended to perform the step ```sudo apt purge fdeion-dkms```
