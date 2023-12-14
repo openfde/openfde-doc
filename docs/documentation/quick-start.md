@@ -33,8 +33,9 @@ echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restri
 sudo apt-get update -y
 sudo apt-get full-upgrade -y
 sudo apt-get autoremove -y 
-sudo apt-get autoclean -y && reboot # 这里必须要重启系统，待新内核生效后再进行后续的操作
+sudo apt-get autoclean -y && reboot  
 ```
+you must reboot your computer and wait for the new kernel to take effect before proceeding with further operation
 
 **If you already have OpenFDE installed on your X100 laptop**：After upgrading the kernel and before installing OpenFDE, it's recommended to perform the step ```sudo apt purge fdeion-dkms```
 
@@ -134,44 +135,47 @@ In the wireless network settings, click on Advanced Settings. A pop-up window ti
 
 #### 4.3 VPN Configuration{#config-vpn}
 
-&emsp;&emsp;OpenFDE支持安卓系统和Linux系统VPN互通，也是需要远程办公的办公族一大福利。我们以常见的VPN软件EasyConnect为例，你可以在安卓系统下的应用宝或者浏览器直接下载安卓版的EasyConnect。安装成功后，配置连接上你的办公VPN，重点是在Linux端无需再配置VPN啦，即刻开启你的远程办公啦。
+OpenFDE supports interoperability between Android and Linux systems for VPN connectivity, which is a major benefit for remote workers. Taking the popular VPN software EasyConnect as an example, you can directly download the Android version of EasyConnect from the app store or a browser on your Android device.
 
-### 3.5 安装应用{#install-app}
+Once installed, configure the connection to your work VPN. The key point is that there is no need to configure the VPN on the Linux side. You can immediately start your remote work.
 
-#### 5.1 安装安卓应用{#install-android-app}
+### 3.5 Install Application{#install-app}
 
-安装安卓应用有两种方式：
+#### 3.5.1 Install Android Application{#install-android-app}
 
-- 方式一：OpenFDE内置via浏览器，在“开始菜单”中打开via浏览器，可以直接在浏览器搜索想要安装的应用软件包。
-- 方式二：使用方式一安装安卓应用市场如"应用宝"，再从应用宝中安装各种安卓应用。
+There are two ways to install Android applications:
 
-#### 5.2 安装linux应用{#install-linux-app}
+- OpenFDE comes with the built-in Via browser. To open Via browser, locate it in the Start Menu and launch it. You can directly search for the application package you want to install using the browser.
 
-&emsp;&emsp;OpenFDE融合Linux应用到安卓系统中，内置独立的Linux融合应用窗口。在开始菜单点开企鹅图标"Fusion Linux Application"，就可以打开Linux融合应用窗口。Linux融合应用窗口和正常的Linux图形系统使用方式是一样的，可以直接运行Linux GUI、命令行等，这里不再赘述。
+- Using the built-in Via browser, you can install Android app marketplaces like "AppGallery" and then proceed to install various Android applications from within the app marketplace.
 
-### 3.6 操作技巧{#use-skills}
+#### 3.5.2 Install Linux Application{#install-linux-app}
 
-&emsp;&emsp;和一般pc桌面的键鼠操作方式不同，OpenFDE有自己的特别之处，这里给大家列一些基本的操作tips，**很重要！**
+OpenFDE integrates Linux applications into the Android system and provides a built-in standalone Linux Fusion Application window. To open the Linux Fusion Application window, click on the penguin icon labeled "Fusion Linux Application" in the Start Menu. The Linux Fusion Application window operates similarly to a regular Linux graphical system, allowing you to run Linux GUI, command-line interfaces, and more. The usage is identical to a typical Linux environment, and further elaboration is unnecessary.
 
-#### 单击打开应用{#open-app}
+### 3.6 Operational Tips{#use-skills}
 
-- 安装好的应用通常会在桌面显示应用图标，你只需要在桌面**单击应用图标**，就可以快速打开应用啦。
-- 你也可以在开始菜单的应用列表里找到目标应用，同样只需要**单击**就可以打开应用。
+Different from the typical PC desktop's keyboard and mouse operation, OpenFDE has its own unique features. Here are some basic operation tips.
 
-#### 右键开启应用快捷菜单{#right-click}
+#### Open Application by Single Click{#open-app}
 
-- 在桌面上鼠标放置在目标应用图标上，右键，会显示"打开"和"移除"。
-  - 点击打开，即可快速打开应用。
-  - 点击移除，就会将该应用的快捷方式在桌面上移除。
-- 你也可以在开始菜单的应用列表里，将鼠标放置在目标应用图标上，右键，会显示"打开"、"快捷方式","卸载"。
-  - 点击打开，即可快速打开应用。
-  - 点击快捷方式，即可将应用图标添加快捷方式到桌面。
-  - 点击卸载，即可直接卸载应用。
+- Installed applications are typically displayed on the desktop with their respective app icons. To quickly open an application, you simply need to **single-click the app icon** on the desktop.
+- You can also find the desired application in the application list within the Start Menu. Similarly, you only need to **single-click** to open the application.
 
-#### 图标拖动{#drag-icon}
+#### Open Application Shortcut by Right-Clicking{#right-click}
 
-&emsp;&emsp;如果你想拖动桌面的应用图标或者小组件，首先你需要用鼠标放在目标应用或组件上，然后**长按**，再开始拖动图标到你想去的位置。
+- When you place your mouse cursor over the target application icon on the desktop, right-clicking will display options such as "Open" and "Remove."
+  - Clicking on "Open" will quickly launch the application.
+  - Clicking on "Remove" will remove the shortcut of the application from the desktop.
+- You can also place your mouse cursor over the target application icon in the application list within the Start Menu. Right-clicking will display options such as "Open," "Pin to Start," and "Uninstall."
+  - Clicking on "Open" will quickly launch the application.
+  - Clicking on "Pin to Start" will add a shortcut of the application to the Start Menu.
+  - Clicking on "Uninstall" will directly uninstall the application.
 
-## 四、更多了解{#know-more}
+#### Drag and Drop Icons{#drag-icon}
 
-你可以继续使用OpenFDE来帮助你办公和娱乐啦！更多详细的使用指导参见[用户手册](./user-manual)。
+If you want to drag the desktop application icons or widgets, first, you need to place your mouse cursor over the target application or widget, then **long-press** it, and finally, start dragging the icon to the desired location.
+
+## 4. Learn More{#learn-more}
+
+You can continue using OpenFDE to assist you with work and entertainment! For more detailed usage instructions, please refer to the [User Manual](./user-manual)。
