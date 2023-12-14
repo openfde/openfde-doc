@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Quick Start
+title: 快速开始
 ---
 
 # 快速开始{#quick-start}

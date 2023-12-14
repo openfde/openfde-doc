@@ -1,4 +1,4 @@
 ---
 sidebar_position: 4
-title: add software packages
+title: 新增软件包
 ---

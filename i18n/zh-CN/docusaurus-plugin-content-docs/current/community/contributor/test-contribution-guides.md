@@ -1,4 +1,4 @@
 ---
 sidebar_position: 6
-title: test contribution guides
+title: 测试贡献指南
 ---

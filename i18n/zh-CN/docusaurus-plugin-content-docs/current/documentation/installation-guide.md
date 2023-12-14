@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Installation Guide
+title: 安装指引
 ---
 
 # 安装指引{#install-guide}

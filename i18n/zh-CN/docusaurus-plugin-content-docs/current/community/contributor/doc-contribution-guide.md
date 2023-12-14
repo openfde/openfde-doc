@@ -1,4 +1,4 @@
 ---
 sidebar_position: 8
-title: docu contribution guides
+title: 文档贡献指南
 ---

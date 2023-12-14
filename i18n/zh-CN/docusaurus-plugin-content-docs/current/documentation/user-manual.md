@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: User Manual
+title: 用户手册
 ---
 
 # 用户手册{#user-manual}

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: Agguestion APP
+title: APP推荐秘籍
 ---
 
 # APP推荐秘籍{#agguestion-app}

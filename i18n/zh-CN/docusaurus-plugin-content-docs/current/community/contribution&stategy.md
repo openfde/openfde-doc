@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Contribution and Stategy
+title: 贡献和攻略
 ---
 
 # 贡献和攻略{#contribution-and-stategy}

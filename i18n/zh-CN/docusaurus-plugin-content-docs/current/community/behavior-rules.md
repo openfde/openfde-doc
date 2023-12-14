@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Behavior Rules
+title: 社区行为守则
 ---
 
 # 社区行为守则{#behavior-rules}

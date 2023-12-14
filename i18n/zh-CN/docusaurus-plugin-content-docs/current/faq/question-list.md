@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Question Lists
+title: 问题列表
 ---
 
 # 问题列表

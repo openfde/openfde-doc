@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Debug Skills
+title: 调试技巧
 ---
 
 # 调试技巧{#debug-skills}
