@@ -3,28 +3,28 @@ sidebar_position: 5
 title: User Manual
 ---
 
-# 用户手册{#user-manual}
+# User Manual{#user-manual}
 
-## 1. 概述{#summary}
+## Overview{#summary}
 
-&emsp;&emsp;OpenFDE(Open Fusion Desktop Environment)是一款全新的Linux和安卓融合开源桌面环境，通过将AOSP统一的图形与API设计对接在Linux系统基础上。
+Openfde(Open Fusion Desktop Enviroment) is a new open-source desktop environment that combines Linux and Android by integrating the unified graphics and API design of AOSP into the Linux system foundation.
 
-&emsp;&emsp;OpenFDE具有如下特点：
+OpenFDE features the following characteristics:
 
-- 可原生运行Android和Linux各类应用
-- 可在桌面环境使用鼠标操作Android应用
-- 开发者 + 统一API
-- Android和Linux网络共用
-- 以文件融合的方式兼顾Android文件访问的高效性和Linux文件访问的安全性
-- 提供Android开发环境和平台，开发者可直接在OpenFDE上进行移动应用开发
+- It can natively run various types of Android and Linux applications.
+- You can use mouse input to interact with Android applications in the desktop environment.
+- Developer and Unified API.
+- Shared networking between Android and Linux.
+- Efficiently combining Android file access and Linux file access in a unified manner that prioritizes both efficiency and security.
+- OpenFDE provides an Android development environment and platform, allowing developers to directly perform mobile application development on OpenFDE.
 
-&emsp;&emsp;OpenFDE下载和安装指南可参见 [安装指南](./installation-guide) <!-- 注意这里文档链接不要加md后缀 -->
+For instructions on downloading and installing OpenFDE, please refer to the [Installation Guide](./installation-guide).
 
-## 2. 自定义功能{#definition-function}
+## 1. Customizable Features{#definition-function}
 
-### 2.1 开始菜单{#start-menu}
+### 1.1 Start Menu{#start-menu}
 
-&emsp;&emsp;在OpenFDE桌面左下角点击OpenFDE图标，打开应用菜单，显示已安装的应用列表，包括系统自带应用（图库、文件、日历、时钟等） 和已安装的第三方应用。
+Click on the OpenFDE icon in the bottom-left corner of the desktop and open the application menu. There will display a list of installed applications, including system default apps (Gallery, File Manager, Calendar, Clock, etc.) and installed third-party applications.
 
 ![menu](./img/开始菜单.png) 
 
