@@ -176,8 +176,12 @@ Different from the typical PC desktop's keyboard and mouse operation, OpenFDE ha
 
 #### Drag and Drop Icons{#drag-icon}
 
+<<<<<<< HEAD
 If you want to drag the desktop application icons or widgets, first, you need to place your mouse cursor over the target application or widget, then **long-press** it, and finally, start dragging the icon to the desired location.
 
 ## 4. Learn More{#learn-more}
 
 You can continue using OpenFDE to assist you with work and entertainment! For more detailed usage instructions, please refer to the [User Manual](./user-manual)。
+=======
+你可以继续使用OpenFDE来帮助你办公和娱乐啦！更多详细的使用指导参见[用户手册](./user-manual)。
+>>>>>>> master
