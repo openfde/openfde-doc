@@ -13,7 +13,7 @@ const FeatureList = [
       <>
       <Link href="/docs/community/behavior-rules">
       Code of Conduct </Link><br/>
-      <Link href="/docs/community/contribution&strategy">
+      <Link href="/docs/community/contribution-strategy">
       Contribution and Strategy </Link><br/>
       </>
     ),
