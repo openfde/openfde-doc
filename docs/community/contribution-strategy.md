@@ -33,87 +33,66 @@ Your can clear [Feedback on Issues](https://gitee.com/openfde/problem-feedback/i
 
 #### 3.2.2 contribute codes{#commit-codes}
 
-- **Set up the development environment for OpenFDE**
- 
-   如果您想参与编码贡献，需要准备OpenFDE的开发环境，请参考[开发环境准备](./contributor/dev-environment)
+- **set up the development environment for OpenFDE**
+  
+  If you want to contribute to coding development and prepare the development environment for OpenFDE, please refer to [development environment preparation](./contributor/dev-environment)
 
-<!-- 
-- 了解SIG和项目内的开发注意事项
+- **get codes and pull branches**
+  
+  If you want to contribute code, it is important to understand how to download code from Gitee and merge code through pull requests. OpenFDE utilizes the Gitee code hosting platform. For detailed instructions, please refer to [Gitee Workflow Guide](https://gitee.com/openeuler/community/blob/master/zh/contributors/Gitee-workflow.md).
 
-  每个SIG内的项目使用的编码语言、开发环境、编码约定等可能存在差异。如果您想了解并参与到编码类贡献，可以先找到该项目给开发者提供的贡献者指南--这个指南一般是在该SIG的首页地址内，以CONTRIBUTING.md文件的形式提供，或者直接在该项目的README.md内。
--->
+  The usage of Gitee is similar to GitHub. If you have prior experience with GitHub, you can have a general understanding of the content in this section and even skip it if you wish.
 
-- **下载代码和拉取分支**
- 
-  如果想要参与代码贡献，您还需要了解如何在Gitee下载代码、通过PR合并代码等。OpenFDE使用的是Gitee代码托管平台，想了解具体的指导，请参考[Gitee Workflow Guide](https://gitee.com/openeuler/community/blob/master/zh/contributors/Gitee-workflow.md).该托管平台的使用方式和GitHub类似，如果您以前使用过GitHub，本节的内容您可以大致了解甚至跳过。
+- **modify, build, and locally verificate**
 
-- **修改、构建和本地验证**
+  After making modifications on the local branch, proceed with building and locally verifying the changes. Please refer to [Building Software Packages](./contributor/build-software-packages) for detailed instructions.
 
-  在本地分支上完成修改后，进行构建和本地验证，请参考[构建软件包](./contributor/build-software-packages)
+- **submit a pull-request**
 
-- **提交一个Pull-Request**
+  When you submit a PR, it means that you have started contributing code to the community. Please refer to [OpenFDE Community PR Submission Guidelines](./contributor/commit-pr) for more information.
 
-  当你提交一个PR的时候，就意味着您已经开始给社区贡献代码了。请参考[OpenFDE社区PR提交指导](./contributor/commit-pr)
+#### 3.2.3 contribute a software package{#commit-packages}
 
-#### 3.2.3 贡献软件包{#commit-packages}
+If you notice that OpenFDE is missing a software package, you can help by adding that package to OpenFDE. In fact, the process of contributing a software package is the process of enriching the functionality provided by OpenFDE.
 
-如果您发现OpenFDE缺失了一个软件包，可以帮OpenFDE把这个软件包补上。实际上贡献软件包的过程就是版主OpenFDE提供更丰富功能的过程。
+OpenFDE supports automatically creating a corresponding repository on the OpenFDE in [Gitee](https://gitee.com/openfde) when a new software package is added on Gitee. This allows for automatic code compilation checks when submitting code to the created Gitee repository. For the specific process, please refer to [How to Add a New Software Package](./contributor/add-software-packages).
 
-OpenFDE支持在Gitee新增软件包的同时自动在obs的OpenFDE:Factory上创建同名仓库，这样在向已创建的Gitee仓库提交代码时，会自动对代码编译进行检测。具体流程可参考[如何新增软件包](./contributor/add-software-packages)
+#### 3.2.4 contribute an original open-source project{#commit-projects}
 
-#### 3.2.4 贡献原创开源项目{#commit-projects}
+If you want to contribute your own original open-source project to the OpenFDE community and become part of the OpenFDE distribution, you can consider the following methods:
 
-如果你想将自己原创的开源项目贡献到OpenFDE社区，成为OpenFDE发行版本的一份子，那么可参考以下几种方式：
+- To develop in other communities and integrate it into OpenFDE, you simply need to follow [How to Add a New Software Package](./contributor/add-software-packages) and add the software to the OpenFDE repository.
 
-- **方式一**: 在其他社区开发，集成到OpenFDE中。只需要按照[如何新增软件包](./contributor/add-software-packages),将软件加入到OpenFDE的repo仓即可。
+#### 3.2.5 review codes{#review-codes}
 
-- **方式二**: 在OpenFDE社区中开发，【方式待定】
+OpenFDE is an open community, and we encourage everyone participating in the community to become active reviewers.
 
-#### 3.2.5 检视代码{#review-codes}
+For contributors, to make your code more likely to be accepted, you need to:
+  
+- Prepare detailed commit messages.
+- If the amount of code in a single commit is substantial, it is advisable to break down large changes into a series of logically smaller ones. Submitting them separately will make it easier for reviewers to understand your logic.
 
-OpenFDE是一个开放的社区，我们希望所有参与社区的人都能成为活跃的检视者。
+For reviewers, it is strongly recommended to abide by the [Code of Conduct](./behavior-rules), go beyond self-interest, respect each other, and promote collaboration. The focus of the review can be referred to as [Gentle Art of Patch Review](https://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review/). During the review, you can focus on the following aspects:
 
-对于**贡献者**，为了使您的代码更容易被接受，您需要：<!-- 遵守SIG组的编码约定 -->
-- 准备完善的提交信息
-- 如果一次提交的代码量较大，建议将大型的内容分解为一系列逻辑上较小的内容，分别进行提交会更便于检视者理解您的逻辑
- <!--使用适当的SIG组和检视者标签去标记PR:社区机器人会给您发送消息，以方便您更好地完成整个PR的过程。-->
+- Whether the ideas behind the contribution are reasonable.
+- Whether the architecture of the contribution is correct.
+- Whether the contribution is complete.
 
-对于**检视者**，强烈建议本着[行为准则](./behavior-rules)，超越自我，相互尊重和促进协作。检视的重点可以参考[补丁审核的柔和艺术](https://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review/)。检视的时候，可以重点关注包括：
+#### 3.2.6 test{#test}
 
-1. 贡献背后的想法是否合理
-2. 贡献的架构是否正确
-3. 贡献是否完善
+Testing is the responsibility of all contributors. For detailed guidelines, please refer to [Community Developer Testing Contribution Guide](./contributor/test-contribution-guides).
 
-<!-- 注意：如果您的PR请求没有引起足够的关注，同样可以在SIG的邮件列表求助。-->
+#### 3.2.7 documentation contribution{#doc-contribution}
 
-#### 3.2.6 测试{#test}
+You can contribute your technical articles to this community by following [Blog Contribution Guide](https://gitee.com/openfde/openfde-doc/blob/master/blog-guide.md) provided by OpenFDE.
 
-测试是所有贡献者的责任，详细攻略请参考[社区开发者测试贡献指南](./contributor/test-contribution-guides)
+#### 3.2.8 selecting community components for packaging {#patch}
 
-#### 3.2.7 文档贡献{#doc-contribution}
+You can also participate in packaging community components. Please refer to [How to Package](./contributor/patch-guides) for more information.
 
-你可以向本社区贡献你的技术文章，前往OpenFDE的[博客入门指导](https://gitee.com/openfde/openfde-doc/blob/master/blog-guide.md)获取帮助。
+#### 3.2.9 community security issue disclosure{#find-security-risks}
 
-#### 3.2.8 选择社区组件打包{#patch}
-
-您也可以参与社区组件打包，请参考[如何打包](./contributor/patch-guides)
-
-#### 3.2.9 社区安全问题披露{#find-security-risks}
-
-- [安全处理流程](./security/security-process-rules)--简要描述了处理安全问题的过程。
-- [安全披露信息](./security/report-security-risks)--如果您想要安全报告漏洞，请参考此页面。
-
-<!-- 
-## 4. 和社区一起成长
-
-### 4.1 社区角色说明
-
-社区不同角色对应不同的责任与权利，每种角色都是社区不可或缺的一部分，您可以通过积极贡献不断积累经验和影响力，并获得角色上的成长。更详细的角色说明与责任权利描述请查看[角色说明](./community-membership).
-
-### 4.2 技术委员会
-
-OpenFDE技术委员会(Technical Committee, 简称TC)是OpenFDE社区的技术决策机构，负责社区技术决策和技术资源的协调。详细请查看[OpenFDE技术委员会介绍]
-
--->
+- [Security Incident Response Process](./security/security-process-rules)--briefly describe the process of handling security issues.
+- [Security Disclosure Information](./security/report-security-risks)--If you wish to report a security vulnerability, please refer to this page.
 
 
