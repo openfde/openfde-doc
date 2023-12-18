@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.User Guides": {
-    "message": "User Guides",
+    "message": "用户指南",
     "description": "The label for category User Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.User Guides.link.generated-index.description": {
@@ -12,11 +12,11 @@
     "description": "The generated-index page description for category User Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Special Column": {
-    "message": "Special Column",
+    "message": "特色专栏",
     "description": "The label for category Special Column in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Developer Guides": {
-    "message": "Developer Guides",
+    "message": "开发者指南",
     "description": "The label for category Developer Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Developer Guides.link.generated-index.description": {
@@ -24,7 +24,7 @@
     "description": "The generated-index page description for category Developer Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Community Guides": {
-    "message": "Community Guides",
+    "message": "社区指南",
     "description": "The label for category Community Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Community Guides.link.generated-index.description": {
@@ -32,7 +32,7 @@
     "description": "The generated-index page description for category Community Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Contribution Guides": {
-    "message": "Contribution Guides",
+    "message": "贡献指南",
     "description": "The label for category Contribution Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Contribution Guides.link.generated-index.description": {
@@ -40,11 +40,11 @@
     "description": "The generated-index page description for category Contribution Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Security Center": {
-    "message": "Security Center",
+    "message": "安全中心",
     "description": "The label for category Security Center in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.FAQ": {
-    "message": "FAQ",
+    "message": "常见问题",
     "description": "The label for category FAQ in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.FAQ.link.generated-index.description": {
@@ -52,7 +52,7 @@
     "description": "The generated-index page description for category FAQ in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Version Update": {
-    "message": "Version Update",
+    "message": "版本更新",
     "description": "The label for category Version Update in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Version Update.link.generated-index.description": {
