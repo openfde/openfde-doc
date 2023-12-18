@@ -136,15 +136,17 @@ There are two ways to access the Android file system：
 - Access Directly: Simply click on "Computer - OpenFDE" on the left side to directly open the Android file system. Click on specific folders to access them.
 - Access Indirectly: Click on "Computer - File System" to access the /home/username/openfde, which will take you to the Android file system.
   
-**注意**：这里openfde目录为当前用户下系统自带的目录，如果用户自己创建的同名openfde目录，会无法访问android文件系统。
+**Attention**: the "openfde" directory is a system-provided directory under the current user. If the user has created their own directory with the same name, they will be unable to access the Android file system.
 
-**(2) 在android文件系统下访问linux的文件**
+**(2) access Linux files from the Android file system**
 
-&emsp;&emsp;打开"开始菜单"，选择"文件"打开应用，即可打开android文件管理器。点击左侧工具栏"Linux Volume"访问linux系统的文件。
+- Open Start Menu, and open "File" application. This will open the Android file manager.
+
+- Click on the "Linux Volume" option in the left sidebar or toolbar to access the Linux system's files.
 
 ![android-file](./img/android-file.jpg)
 
-## 5. 开发者工具{#developer-tools}
+## 5. Develop Tools{#developer-tools}
 
-&emsp;&emsp;在OpenFDE平台上，Android应用开发者在使用android studio进行开发时，可以不再需要android virtual device。用户只需要在android studio中选择设备"Google Pixel5",即可直接连接OpenFDE，实现一边开发安卓应用，同步在OpenFDE中进行调试。
+In OpenFDE, Android application developers using Android Studio no longer require an Android Virtual Device (AVD). Instead, users can simply select the "Google Pixel 5" device within Android Studio to directly connect to OpenFDE. This allows developers to develop Android applications and debug them simultaneously within OpenFDE, providing a seamless development and testing experience.
 
