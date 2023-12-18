@@ -3,6 +3,6 @@ sidebar_position: 2
 title: Debug Skills
 ---
 
-# 调试技巧{#debug-skills}
+# Debug Skills{#debug-skills}
 
-莫急！小O正在加速编辑中...
+Hold on! The editor is speeding up the process.
