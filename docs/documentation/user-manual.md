@@ -26,108 +26,115 @@ For instructions on downloading and installing OpenFDE, please refer to the [Ins
 
 Click on the OpenFDE icon in the bottom-left corner of the desktop and open the application menu. There will display a list of installed applications, including system default apps (Gallery, File Manager, Calendar, Clock, etc.) and installed third-party applications.
 
-![menu](./img/开始菜单.png) 
+![menu](./img/start-menu.png) 
 
-- 应用菜单支持搜索应用，用户在搜索栏中输入应用名，可快速找到和打开目标应。 
-- 应用菜单支持将应用以快捷方式添加到桌面。
+- The application menu supports app search, allowing users to quickly find and open the desired application by entering its name in the search bar.
+- The application menu supports adding applications to the desktop as shortcuts.
 
-### 2.2 任务栏{#task-column}
+### 1.2 Taskbar{#taskbar}
 
-&emsp;&emsp;任务栏位于桌面的屏幕底部，用于快速启动应用程序，支持单机图标、鼠标右键或者拖动应用。
+The taskbar is located at the bottom of the desktop screen and is used for quickly launching applications. It supports single-clicking on icons, right-clicking with the mouse, or dragging applications.
 
-&emsp;&emsp;任务栏显示当前正在打开的应用；也可以应用图标固定在任务栏，用于快捷启动应用。
+The taskbar displays the currently open applications. Additionally, application icons can be pinned to the taskbar for quick access and launching.
 
-![task](./img/任务栏.jpg)
+![task](./img/task-column.jpg)
 
-### 2.3 状态栏{#status-column}
+### 1.3 Status Bar{#status-bar}
 
-&emsp;&emsp;状态栏显示系统当前状态，位于屏幕底部的右下方，主要显示的系统状态有：
+The status bar displays the current system status and is located at the bottom-right of the screen. It primarily shows the following system statuses:
 
-- 网络状态
-- 蓝牙状态
-- 声音状态
-- 当前时间
+- network status
+- bluetooth status
+- voice status
+- current time
 
-&emsp;&emsp;状态栏还包括以下功能按钮：
+The status bar also includes the following functional buttons:
 
-- 后退按钮：点击后退按钮可以返回到应用程序上一步
-- 最近使用应用按钮：显示最近使用过的应用
-- 显示桌面按钮：点击后直接显示桌面
+- Back button: Clicking the back button allows you to return to the previous step of an application.
+- Recent apps button: Displays recently used applications.
+- Show desktop button: Clicking this button directly displays the desktop.
 
-&emsp;&emsp;状态栏还包括通知中心和快捷方式，显示当前系统的消息通知，包括应用通知消息和系统通知消息。点击状态栏的大圆圈按钮(带数字图标)，即可弹出消息中心与快捷方式的弹窗，从左至右图标依次表示以下功能：
+The status bar also includes the notification center and quick settings, which display current system notifications, including app notifications and system notifications. Clicking the large circle button on the status bar (with a number icon) will pop up the notification center and quick settings panel. The icons from left to right represent the following functions:
 
-![message](./img/消息中心和快捷方式.jpg)
+![message](./img/message.jpg)
 
-- 消息中心：展示具体的消息通知内容
-- 快捷截图: 点击可直接进行截图操作，支持对截取的图片进行编辑。
-- 快捷录屏: 点击可弹出录屏弹窗，确认"开始"后即可进行屏幕的视频录制。
-- 快捷设置: 点击跳转到设置中心，可以快速打开系统设置。
+- Notification Center: Displays detailed notification content.
+- Screenshot: Clicking it allows you to directly take a screenshot, and it supports editing the captured image.
+- Screen recording: Clicking it will bring up a screen recording popup, and after confirming "Start," you can begin recording your screen.
+- Quick settings: Clicking it will navigate to the Settings menu, allowing you to quickly access system settings.
 
-### 2.4 网络{#network}
+### 1.4 Network{#network}
 
-&emsp;&emsp;OpenFDE支持Linux网络和Android系统网络互通，Linux和Android可以共享有限网络、VPN等设置。
+OpenFDE supports network interoperability between Linux and Android systems, allowing them to share network configurations such as limited networks, VPNs, and more.
 
-- 有线网络设置：用户在Linux系统中插入网线，配置IPV4和DNS信息后，在安卓系统中无需再连接WLAN。
-- VPN设置：用户只需在Linux或Android其中一端配置VPN信息，即可在另一端系统中直接使用该VPN。
+- Wired network settings: When a user connects an Ethernet cable to their Linux system and configures the IPv4 and DNS information, there is no need to connect to WLAN again in the Android system.
+- VPN settings: Users only need to configure the VPN information on either the Linux or Android side, and they can directly use that VPN on the other system.
 
-### 2.5 输入法{#ime}
+### 1.5 Input Method{#ime}
 
-&emsp;&emsp;OpenFDE支持内置输入法讯飞输入法，用户可在设置-系统-语言和输入法中添加新的语言、输入法和键盘。
+OpenFDE supports the built-in iFlytek Voice Input Method. Users can add new languages, input methods, and keyboards in the Settings -> System -> Language and Input section.
 
-## 3. 软件应用{#software}
+## 2. Applications{#applications}
 
-### 3.1 应用安装{#install-software}
+### 2.1 Install applications{#install-software}
 
-&emsp;&emsp;OpenFDE的软件应用安装包括系统预安装和网络下载安装两种方式。
+The application installation includes two methods: system pre-installation and download installation online.
 
-**预安装应用**
+**pre-installed applications**
 
-&emsp;&emsp;OpenFDE会预先安装系统通用的软件应用，包括图库、录音机、文件、日历、时钟、计算器、音乐、讯飞输入法、via浏览器。用户安装完OpenFDE环境后即可直接使用上述应用。
+OpenFDE comes with pre-installed common software applications, including Gallery, Voice Recorder, File Manager, Calendar, Clock, Calculator, Music Player, iFlytek Voice Input Method, and Via Browser. Users can directly use these applications after installing the OpenFDE environment
 
-**网络下载安装** 
+**download applications online** 
 
-&emsp;&emsp;对于安卓应用来说，用户可以通过via浏览器在线下载各种软件应用的安装包，下载的apk安装包会放在安卓文件系统的Download目录下，直接在当前下载目录下双击apk安装包，即可开始安装。
+For Android applications, users can utilize the Via Browser to download various software application installation packages online. The downloaded APK installation packages are stored in the Download directory of the Android file system. To begin the installation, simply double-click the APK installation package within the current download directory.
 
-### 3.2 应用快捷方式{#shorcut}
+### 2.2 Shortcut{#shorcut}
 
-&emsp;&emsp;OpenFDE支持多种方法添加应用快捷方式。
+OpenFDE supports multiple methods for adding application shortcuts.
 
-- 软件应用在安装完成时会自动添加快捷方式图标到桌面，鼠标长按桌面的快捷方式图标可以选择"打开"应用或者选择"移除"应用快捷方式。
+- Upon installation completion, applications will automatically add shortcut icons to the desktop. By long-pressing the shortcut icon on the desktop with a mouse, you can choose to "Open" the application or select "Remove" to delete the application shortcut.
   
-- 已经安装的软件应用还会在"开始菜单"里自动添加快捷方式，用户可以在"开始菜单"中点击应用图标快速打开软件应用。
+- Indeed, installed applications will also be automatically added to the Start Menu as shortcuts. Users can simply click on the application icon in the Start Menu to quickly open the software application.
 
-### 3.3 应用全屏{#fullscreen}
+### 2.3 Fullscreen{#fullscreen}
 
-&emsp;&emsp;对于已经打开的应用，OpenFDE支持标准显示、最大化、最小化和全屏显示。
+For opened applications, OpenFDE supports standard display, maximize, minimize, and fullscreen modes.
 
-## 4. Linux融合应用{#linux-fusion}
+## 3. Linux Fusion Application{#linux-fusion}
 
-### 4.1 概述{#linux-summary}
+### 3.1 overview{#linux-summary}
 
-&emsp;&emsp;OpenFDE基于标准Linux系统基础环境，支持Linux原生应用在安卓系统上运行，包括但不限于已有的Linux GUI、命令行应用。
+OpenFDE is based on a standard Linux system foundation and supports running native Linux applications on the Android system. This includes, but is not limited to, existing Linux GUI and command-line applications.
 
-### 4.2 Linux应用列表{#linux-app-list}
+### 3.2 Linux Application Lists{#linux-app-list}
 
-&emsp;&emsp;在"开始菜单"点击企鹅图标"Fusion Linux Application"即可打开Linux融合应用的独立窗口(以下称为"linux融合桌面")。在linux融合桌面中显示linux应用列表，支持MATE Terminal、Tabby等应用运行Linux GUI终端。
+Clicking the penguin icon Fusion Linux Application in the Start menu opens a separate window for the Linux Fusion Application. The Linux Fusion Application displays a list of Linux applications, including support for running Linux GUI terminals such as MATE Terminal and Tabby.
 
-![fusion linux](./img/linux桌面.png)
+![fusion linux](./img/linux-desk.png)
 
-&emsp;&emsp;用户可以在Linux终端应用中使用终端命令安装linux应用，应用安装成功后会直接在linux融合桌面的应用列表中显示。
+Users can use terminal commands in the Linux terminal application to install Linux applications. Once the application is successfully installed, it will directly appear in the application list of the Linux Fusion Desktop.
 
-## 5. 文件系统融合{#fusion-file-system}
+## 4. File System Fusion{#fusion-file-system}
 
-&emsp;&emsp;OpenFDE将安卓和Linux的文件系统融合互通，两者之间文件系统可以互相访问。
+OpenFDE facilitates the fusion and interoperability of the Android and Linux file systems, allowing seamless access and interaction between the two. This integration enables mutual access to files and folders between the Android and Linux file systems, providing users with the convenience of sharing files and data between both environments.
 
-**(1) 在linux文件系统下访问android的文件**
+**(1) access Android files from the Linux file system**
 
-&emsp;&emsp;打开Linux融合桌面，在应用列表中找到"Peony"，点击打开linux文件系统管理器
+To open the Linux file system manager in the Linux Fusion Desktop, follow these steps:
+
+1. Open the Linux Fusion Desktop by clicking on the penguin icon "Fusion Linux Application" in the Start menu.
+2. Locate the application called "Peony" in the application list.
+3. Click on "Peony" to open the Linux file system manager.
+4. Once Peony opens, you can navigate through the Linux file system, access files and folders, and perform various file management tasks like copying, moving, deleting, and creating directories.
+
+Peony is a Linux file manager that provides a graphical interface to explore and manage files within the Linux environment.
 
 ![linux-file](./img/linux-file.jpg)
 
-其中有两种方式可以访问android的文件系统：
+There are two ways to access the Android file system：
 
-- 直接打开：直接点击左侧"计算机-openfde"即可打开android的文件系统，点击具体的文件夹进行访问。
-- 间接打开：点击"计算机-文件系统", 访问/home/用户名/openfde目录，即可进入android文件系统。
+- Access Directly: Simply click on "Computer - OpenFDE" on the left side to directly open the Android file system. Click on specific folders to access them.
+- Access Indirectly: Click on "Computer - File System" to access the /home/username/openfde, which will take you to the Android file system.
   
 **注意**：这里openfde目录为当前用户下系统自带的目录，如果用户自己创建的同名openfde目录，会无法访问android文件系统。
 
@@ -137,7 +144,7 @@ Click on the OpenFDE icon in the bottom-left corner of the desktop and open the 
 
 ![android-file](./img/android-file.jpg)
 
-## 6. 开发者工具{#developer-tools}
+## 5. 开发者工具{#developer-tools}
 
 &emsp;&emsp;在OpenFDE平台上，Android应用开发者在使用android studio进行开发时，可以不再需要android virtual device。用户只需要在android studio中选择设备"Google Pixel5",即可直接连接OpenFDE，实现一边开发安卓应用，同步在OpenFDE中进行调试。
 
