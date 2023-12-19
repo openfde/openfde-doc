@@ -40,7 +40,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-CN',],
   },
 
   presets: [
@@ -52,8 +52,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+           editUrl:
+          'https://gitee.com/openfde/openfde-doc/tree/master',
         },
         blog: {
           showReadingTime: true,
@@ -61,8 +61,8 @@ const config = {
           blogSidebarCount: 5, // 博客侧边栏展示最近访问的5篇博客
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://gitee.com/openfde/openfde-doc/tree/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -96,50 +96,55 @@ const config = {
           //    label: 'GitHub',
           //    position: 'right',
           // },
+          //  {
+          //    type: 'localeDropdown',
+          //    position: 'left',
+          //    persistLocale: true,
+          //  }
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: '政策与协议',
+            title: 'Policy and Agreements',
             items: [
               {
-                label: '用户协议',
+                label: 'User Agreements',
                 to: 'user-service-agreement',
               },
               {
-                label: '隐私政策',
+                label: 'Privacy Policy',
                 to: 'privacy-policy',
               },
               {
-                label: '法律声明',
+                label: 'Legal Statements',
                 to: 'law-glossary',
               },
             ],
           },
           {
-            title: '加入我们',
+            title: 'Join in Us',
             items: [
               {
-                label: '团队介绍',
+                label: 'About Our Teams',
                 href: '/about-us',
               },
               {
-                label: '公众号',
+                label: 'Official Account',
                 href: siteUrl + '/img/WeChat-Official.jpg', // OpenFDE社区群
               },
               {
-                label: 'Discord社区',
+                label: 'Discord Community',
                 href: siteUrl + '/img/discord-openfde.jpg',
               },
             ],
           },
           {
-            title: '更多',
+            title: 'More',
             items: [
               {
-                label: 'OpenFDE官网',
+                label: 'Official Website',
                 href: 'https://openfde.com',
                 // to: '/blog',
               },
@@ -150,7 +155,7 @@ const config = {
             ],
           },
         ],
-        copyright: `版权所有 © ${new Date().getFullYear()} OpenFDE, 此网站使用<a href="https://docusaurus.io/">Docusaurus</a>构建.`,
+        copyright: `Copyright © ${new Date().getFullYear()} OpenFDE, this website built using <a href="https://docusaurus.io/">Docusaurus</a>.`,
       },
       prism: {
         theme: lightCodeTheme,

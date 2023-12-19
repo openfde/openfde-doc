@@ -9,9 +9,9 @@
 
 &emsp;&emsp;当前你看到是本站点的快速指引文档，下面我们将详细指导你如何参与到OpenFDE社区的博客站点来贡献你自己的内容。-->
 
-## 如何获取OpenFDE文档资源
+## 如何获取OpenFDE文档资源{#get-openfde-doc}
 
-### Fork OpenFDE文档仓库
+### Fork OpenFDE文档仓库{#fork-openfde-doc}
 
 &emsp;&emsp;首先前往OpenFDE的[Gitee](https://gitee.com/openfde/openfde-doc)fork文档仓库到你本地。
 
@@ -19,7 +19,7 @@
 
 &emsp;&emsp;然后就可以通过```git clone```对你这个复制的远程仓库进行克隆，后续你的任何更改都可以在本地完成，通过```git push```命令推到你复制的远程仓库。
 
-### 发送Pull Requests
+### 发送Pull Requests{#send-pr}
 
 &emsp;&emsp;如果你想将你新增的内容发布到OpenFDE的文档站上，请向我们发送```Pull Requests```请求。待管理人员审核通过后，就可以将你添加的内容发布到OpenFDE的文档站上了。
 

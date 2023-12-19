@@ -6,39 +6,42 @@ import styles from './styles.module.css';
 // 首页的网页内容介绍
 const FeatureList = [
   {
-    title: '社区中心',
-    href: 'docs/category/社区中心',
+    title: 'Community Guides',
+    href: 'docs/category/community-guides',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
       <Link href="/docs/community/behavior-rules">
-      行为守则 </Link><br/>
+      Code of Conduct </Link><br/>
       <Link href="/docs/community/contribution-strategy">
-      贡献与攻略 </Link><br/>
+      Contribution and Strategy </Link><br/>
       </>
     ),
   },
   {
-    title: '关于产品',
-    href: 'docs/category/用户中心',
+    title: 'User Guides',
+    href: 'docs/category/user-guides',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         <Link href="/docs/documentation/installation-guide">
-        安装指引 </Link><br/>
+        Installation Guide </Link><br/>
 
         <Link href="/docs/documentation/user-manual"> 
-        用户手册 </Link><br/>
+        User manual </Link><br/>
       </>
     ),
   },
   {
-    title: '开发者中心',
+    title: 'Developer Guide',
+    href: 'docs/category/developer-guides',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-      <Link href="">开发工具</Link><br/>
+      <Link href="/docs/developer/debug-skills">Debug Skills</Link><br/>
+      <Link href="/docs/developer/Quick-Start">Quick Start </Link><br/>
       </>
+    
     ),
   },
 ];

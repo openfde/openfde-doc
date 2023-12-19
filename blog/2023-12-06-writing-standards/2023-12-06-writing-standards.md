@@ -1,41 +1,42 @@
 ---
 slug: writing-standards
 title: Writing Standards
-description: 博客编写请遵循本文的规范
+description: Please follow the guidelines for blog writing.
 date: 2023-12-06T14:00
 author: kuangyangyang
 ---
 
-&emsp;&emsp;介绍OpenFDE开源社区发布博客需要遵循的规范，包括如何添加新的博客、博客命名规范和一些常用的编写格式技巧。
+This blog introduces the guidelines you need to foloow for publishing blogs in the OpenFDE community, including how to add new blogs, blog naming conventions, and some common writing style tips.
 <!--truncate-->
 
-> 博客文章源文件以markdown文件为主，遵循markdown编写规则。
+> The source files of blog posts are mainly markdown files and follow the rules of markdown writing.
 
-## 添加新的博客{#add-new-blog}
+## Add a New Blog{#add-new-blog}
 
-&emsp;&emsp;首先在openfde-doc/blog/下创建一个新的文件夹，用来存放你的markdown源文件，文件夹的命名格式统一约定为：```YYYY-MM-DD-blog-title```。
+First, create a new folder under openfde-doc/blog/ to store your markdown source files, and the folder naming format is as follows: ```YYYY-MM-DD-blog-title```
 
 ![blog-specification](./blog-specification.png)
 
-- 本站点基于Docusaurus构建，可以自动提取文件名中的日期，将博客文章按时间顺序进行排列展示。
+- This website is built on Docusaurus, which automatically extracts the dates in the file name and displays the blog posts in chronological order.
 
-- 每篇博客创建一个独立的文件夹，可以将你自己的博客文章图片和markdown文件放在一起，方便管理。
+- Create a separate folder for each blog post, and you can put your own blog post images and markdown files together for easy management.
 
 ## Front Matter{#front-matter}
 
-&emsp;&emsp;每篇博客文章写在前面的话可以自行添加博客标题、作者信息、博客日期等多种元数据信息。示例如下：
+If each blog post is written at the front, you can add a variety of metadata information such as the blog title, author information, blog date, etc. For example:
+
 ```
 ---
-title: 博客标题
-descripiton: 简要描述本博客文章
-slug: 本博客用于url显示的名字
-author: 作者名
-tags: [hello, world] # 该博客所属的标签
+title: the title of the blog
+descripiton: a brief summary of what this blog is about
+slug: the name used for the URL display
+author: the author of the blog
+tags: [hello, world] The tag to which the blog belongs
 ---
 ```
 
-## 编辑当前博客{#edit-this-blog}
+## Edit the Current Blog{#edit-this-blog}
 
-如果想修改当前的博客内容，你可以点击本文最左下角的```Edit this page```，前往Gitee仓库进行编辑内容。
+If you want to edit the current blog content, you can click ```Edit this page``` in the bottom left corner of this article to go to the Gitee repository to edit the content.
 
 

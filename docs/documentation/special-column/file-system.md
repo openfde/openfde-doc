@@ -1,111 +1,113 @@
 ---
 sidebar_position: 4
+title: File System 
 ---
 
-# 探秘OpenFDE文件系统
+# Expore OpenFDE File System{#file-system}
 
-## 写在前面
+If you already have some knowledge about OpenFDE, you probably know that it can run Android applications and Linux applications, and its distinctive feature is the integration of file systems. You must be curious about where the files in OpenFDE should be placed and how application data and files are organized.
 
-&emsp;&emsp;如果你对OpenFDE已经有一定的了解，你大概已经知道在OpenFDE里可以运行安卓应用，也可以运行Linux应用，OpenFDE的特色功能就是文件系统融合。你肯定会好奇OpenFDE的文件到底应该放在哪一端？应用数据和文件到底如何组织呢？
+Now, let's delve into the file system of OpenFDE in detail.
 
-&emsp;&emsp;下面，我们来详细聊聊OpenFDE的文件系统。
+### Overview{#rules}
 
-### 总原则
+OpenFDE integrates the Linux file system with the Android file system, enabling mutual access between the two file systems.
 
-&emsp;&emsp;OpenFDE将Linux文件系统和Android的文件系统进行融合，两者之间文件系统可以互相访问。
+### Android File Management{#android-file}
 
-### Android文件管理
-
-&emsp;&emsp;在OpenFDE开始菜单打开"文件"，可以直观地看到文件管理界面，点开最大化按钮，以方便你可以更轻松地浏览和操作文件。
+You can open the "Files" application from the start menu to access the intuitive file management interface. Clicking on the maximize button allows you to easily browse and operate files.
 
 ![android_file_sys](./../img/android_file_sys.jpg)
 
-&emsp;&emsp;安卓文件管理器以图标和网格视图来展示文件和文件夹，你也可以选择切换成列表视图。文件管理界面左侧的包含一系列子文件夹：图片、视频、音频、文档和下载。在OpenFDE中下载的数据、图片、视频都会保存在对应的文件夹中。
+The Android file manager displays files and folders using icon and grid views, and you can also choose to switch to the list view. On the left side of the file management interface, there is a series of subfolders: Images, Videos, Audio, Documents, and Downloads. In OpenFDE, downloaded data, images, and videos are saved in their respective folders.
 
 ![file_list](./../img/list-file.jpg)
 
-### Android访问Linux卷
+### Access Linux Volumes from Android{#android-access-linux}
 
-&emsp;&emsp;在文件管理界面左侧目录树中可以看到"Linux Volume"，Linux Volume可以看到Linux文件系统的分区。
+In the directory tree on the left side of the file management interface, you can see "Linux Volume," which allows you to access the partitions of the Linux file system.
 
-&emsp;&emsp;OpenFDE将**Linux文件系统按卷挂载到Android文件系统**，Linux卷以文件夹的形式显示在"Linux Volume"界面下，其中文件夹的名字为当前卷的uuid。在下图示例中，Linux文件系统只有一个区，所以可以看到的只有一个文件夹。
+OpenFDE mounts the Linux file system **by volume** to the Android file system. The Linux volumes are displayed as folders under the "Linux Volume" interface, with each folder named after the UUID of the corresponding volume. In the example below, there is only one partition in the Linux file system, so you can see only one folder.
 
 ![linux-sys](./../img/Linux-Volume.png)
 
-&emsp;&emsp;点击目标卷，即可进入Liux的文件系统，可以看到Linux文件系统常见的一些文件目录。
+By clicking on the desired volume, you can access the Linux file system and view common directories within it.
 
 ![fenqu](./../img/fenqu-linux.png)
 
-**/HOME/openfde目录**
+**/HOME/openfde**
 
-&emsp;&emsp;重点这里介绍一下home目录，在Linux Volume卷下的home目录下，有个openfde目录，该目录为Android文件系统在linux文件系统处的挂载目录,以方便linux应用访问android内文件。
+An important directory to highlight here is the HOME directory. Under the Linux Volume, within the HOME directory, there is a folder named "openfde." This directory serves as the mount point for the Android file system within the Linux file system, facilitating access to Android's internal files by Linux applications.
 
 ![img](./../img/linux-home.png)
 
-&emsp;&emsp;该openfde也可以直接在你的麒麟系统中直接看到，例如当你切换到麒麟系统时，打开文件系统。
+You can also directly see the "openfde" directory within your Kirin system. For example, when you switch to the Kylin system and open the file system, it will be visible.
 
 ![qilin-linux](./img/../../img/qilin-linux.png)
 
-&emsp;&emsp;**注意：在未启动OpenFDE的情况下**，不要往HOME/openfde下存放文件。这样会导致OpenFDE启动时，无法将Android目录挂载到该openfde目录。因为目前在fuse默认参数下，针对该目录有文件的情况是不会挂载的。
+**Note: Do not store files in HOME/openfde when OpenFDE is not running**. This will prevent OpenFDE from mounting the Android directory to the openfde directory upon startup. Because, under the default fuse parameters, the presence of files in that directory will prevent the mounting process.
 
-- 如果一定要拷贝文件进Android目录，可以拷贝到HOME/.local/share/openfde/Download下，**拷贝时需要使用sudo**
+- If you need to copy files into the Android directory, you can copy them to HOME/.local/share/openfde/Download. Please note that **you need to use sudo** when copying files.
 
-> 如果发现openfde目录挂载失败，即/HOME/目录下没有openfde目录，可以尝试手动在终端执行以下命令：
+> Furthermore, if you find that the openfde directory fails to mount, meaning there is no openfde directory under /HOME/, you can try executing the following command manually in the terminal.
+> 
 ```
 fde_fs -m 
 ```
 
-### Android的WPS应用打开Linux下的文件
+### Opening files from Linux in the Android WPS app{#android-open-linux}
 
-&emsp;&emsp;Linux下的文件可以通过Android文件管理器访问，并使用Android的应用打开，这里以WPS打开文档为例。在开始菜单打开Android文件管理器，访问Linux Volume下/home/kyy/文档/目录下的test-work.wps文件。
+Files in Linux can be accessed through the Android file manager and opened using Android applications, such as WPS. Let's take an example of opening a document using WPS.
+
+Open the Android file manager from the start menu and navigate to the test-work.wps file located in the /home/kyy/Documents/ directory under the Linux Volume.
 
 ![open-file](./../img/open-file.jpg)
 
-&emsp;&emsp;双击test-work.wps文件后，如果是第一次使用OpenFDE的Android文件管理器，这里会弹出提示，可以选择WPS或应用宝打开当前文件，你可以选择"仅一次"或"始终"以该应用打开当前文件。
+After double-clicking the test-work.wps file, if it's your first time using the Android file manager in OpenFDE, a prompt will appear, giving you the option to choose between opening the file with WPS or the App Store. You can select "Just Once" or "Always" to open the file with the chosen application.
 
 ![wps-file](./../img/wps-file.jpg)
 
-### Linux文件系统
+### Linux File System{#linux-file-system}
 
-&emsp;&emsp;在OpenFDE中打开"开始菜单-Fusion Linux Application",在Linux应用列表中找到"Pony",点击打开linux文件系统管理器。
+To open the "Start Menu - Fusion Linux Application" in OpenFDE, locate "Pony" in the Linux application list and click to open the Linux file system manager.
 
 ![pony](./../img/pony.png)
 
-- 左侧"计算机-文件系统"中可以看到linux常见的一些文件夹。
+- On the left side, under "Computer - File System," you can see some common folders in Linux.
   
 ![pony-file](./../img/pony-file.png)
 
-- 左侧"计算机-openfde(fde_fs)表示挂载的Android文件系统。
+- On the left side, "Computer - openfde (fde_fs)" represents the mounted Android file system.
   
 ![pony-android](./../img/pony-android.png)
 
-**从Linux文件系统访问Android的文件**
+**Access Android files from Linux**
 
-&emsp;&emsp;可以从上述的两个Linux文件系统主文件夹中访问Android的文件系统,两种方式：
+You can access the Android file system from the two main folders in the Linux file system mentioned above in two ways.
 
-- 直接打开：直接点击左侧"计算机-openfde(fde_fs)"即可打开android的文件系统，点击具体的文件夹进行访问。
-- 间接打开：点击"计算机-文件系统", 访问/home/用户名/openfde目录，即可进入android文件系统。
+- Directly opening: Simply click on the left side "Computer - openfde (fde_fs)" to open the Android file system and click on specific folders to access them.
+- Indirect opening: Click on "Computer - File System" to access the /home/username/openfde directory, which will take you to the Android file system.
 
-### 文件传输
+### File Transfer{#transfer-file}
 
-**前提：**打开Linux的文件管理系统Pony,在Pony下进行文件的传输操作。
+**Prerequisite:** Open the Linux file management system Pony and perform file transfer operations within Pony.
 
-**将Linux的文件或文件夹拷贝到Android文件系统下**
+**Copying files or folders from Linux to the Android file system**
 
-&emsp;&emsp;进入你的linux的home目录下，将所需要拷贝的文件从linux路径拷到安卓路径(openfde)下，例如从/home/kyy/文档/路径下拷贝一个文件到/home/kyy/openfde/Download目录下：
+Navigate to your home directory in Linux and copy the required file from the Linux path to the Android path (openfde). For example, copy a file from /home/kyy/Documents/ to /home/kyy/openfde/Download directory.
 
-- 直接使用cp命令
+- use the "cp" command
 
 ![cp-file-to-android](./../img/cp-file-to-android.png)
 
-- 也可以使用鼠标操作：在/home/kyy/文档/下选中文件右键，点击复制；到/home/kyy/openfde/Download/空白处右键鼠标点击粘贴。
+- You can also use mouse operations: Right-click on the file in /home/kyy/Documents/ and select "Copy." Then, right-click on an empty space in /home/kyy/openfde/Download/ and select "Paste."
 
-**将Android文件拷贝到Linux文件系统下**
+**Copying Android files to the Linux file system**
 
-&emsp;&emsp;同理，进入你的安卓目录/home/kyy/openfde/,将一个文件从/home/kyy/openfde/Download目录拷贝到linux的/home/kyy/下载/目录下：
+Similarly, navigate to your Android directory at /home/kyy/openfde/ and copy a file from /home/kyy/openfde/Download directory to the Linux /home/kyy/Downloads/ directory.
 
-- 使用cp命令直接拷贝
+- use the "cp" command
   
 ![cp-file-to-linux](./../img/cp-file-to-linux.png)
 
-- 也可以通过鼠标操作进行拷贝复制：在/home/kyy/openfde/Download/下选中文件右键，点击复制，到linux的/home/kyy/下载/空白处右键，点击粘贴。
+- You can also use mouse operations to copy and paste: Right-click on the file in /home/kyy/openfde/Download/ and select "Copy," then right-click on an empty space in Linux's /home/kyy/Downloads/ directory and choose "Paste."

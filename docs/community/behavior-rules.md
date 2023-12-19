@@ -2,38 +2,39 @@
 sidebar_position: 1
 ---
 
-# 社区行为守则
+# Codes of Conduct{#behavior-rules}
 
-### 价值观和原则
+### Values and Principles{#values-and-principles}
 
-&emsp;&emsp;为建设开放友好的社区环境，社区明确禁止任何形式的骚扰、歧视、威胁、恶意行为或仇恨言论。本项目群贡献者和维护者承诺：不论年龄、体型、身体健全与否、民族、经验水平、受教育程度、社会地位、国籍、相貌、种族等，本项目群和社区的参与者皆免于任何骚扰。
+In order to foster an open and inclusive community environment, the community explicitly prohibits any form of harassment, discrimination, threats, malicious behavior, or hate speech. Contributors and maintainers of this project pledge that all participants in the project and community are free from any form of harassment, regardless of age, body size, physical abilities, ethnicity, experience level, educational background, social status, nationality, appearance, race, or any other characteristic.
 
-### 被鼓励的积极行为包括但不限于：
+### The encouraged positive behaviors include, but are not limited to:{#positive-behaviors}
 
-- 措辞友好且宽容
-- 尊重不同的观点和经验
-- 虚心接受他人友好的批评
-- 关注对社区最有利的事情
-- 和社区其他成员友好相处
+- Using friendly and tolerant language.
+- Respecting different viewpoints and experiences.
+- Being open to constructive criticism from others.
+- Focusing on what is best for the community.
+- Interacting with other community members in a friendly manner.
 
-### 被禁止的恶意行为包括但不限于：
+### The prohibited malicious behaviors include, but are not limited to:{#prohibited-behaviors}
 
-- 发布与色情、暴力、赌、毒相关的任何言论或图像；
-- 捣乱/煽动/造谣行为、侮辱/贬损的评论、人身和政治攻击；
-- 公开或私下骚扰本项目群和社区的其他参与者；
-- 未经明确授权而发布他人的个人信息等资料，如住址、电话、电子邮箱等；
-- 其他有理由认定违反社区行为准则的所有不当行为。
+- Posting any content or images related to pornography, violence, gambling, or drugs.
+- Engaging in disruptive/instigating/rumormongering behavior, making insulting/degrading comments, engaging in personal and political attacks.
+- Publicly or privately harassing other participants of this project and community.
+- Sharing personal information of others, such as addresses, phone numbers, email addresses, without explicit authorization.
+- Any other inappropriate behavior reasonably deemed to violate the community code of conduct.
 
-### 社区处理冲突和争议
+### Community Conflict Resolution and Dispute Handling{#process-conflicts}
 
-- 社区项目维护者有权利和义务诠释何谓"不当行为",并妥善公正地纠正和处理不妥当的行为。
-- 社区项目维护者有权利和义务删除和编辑违背本行为准则的言论、commit、代码、issues等任何贡献。
-- 社区项目维护者可暂时或永久地封禁人和其认为有威胁与冒犯、有害社区秩序的不当行为参与者。
+- the maintainers have the right and responsibility to interpret what constitutes "inappropriate behavior" and to address and resolve such behavior in a fair and appropriate manner.
+- The maintainers have the right and responsibility to remove or edit any contributions, such as comments, commits, code, issues, or other content that violates the code of conduct or guidelines established within the community.
+- the maintainers have the authority to temporarily or permanently ban individuals who engage in behavior that they deem threatening, offensive, or harmful to the community's order.
 
-### 最后
+### Last{#last}
 
-本行为准则适用于本社区。当有人代表本社区时，本准则亦适用于此人所处的公共平台。
+These codes of conduct apply to our community. When individuals represent our community, these codes of conduct also apply to their behavior on public platforms.
 
-代表本社区的情形包括但不限于：使用本社区的官方电子邮件、通过本社区官方媒体账号发布消息、作为本社区指定代表参与在线或线下活动等。
-
-代表本社区的行为准则可由项目群办公室进一步定义及解释，并报本项目群OpenFDE委员会审批发布。
+Instances where someone represents our community include, but are not limited to:
+- using the official email of our community
+- posting messages through official community media accounts
+- acting as a designated representative of our community in online or offline activities

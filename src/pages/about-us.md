@@ -1,28 +1,26 @@
 ---
-title: 关于我们
-description: my hello page description
+title: About Us
+description: introduction to our team
 hide_table_of_contents: true
 ---
 
-<div align='center' ><font size='70'>团队介绍</font></div>
+<div align='center' ><font size='70'>About Our Team</font></div>
 
-### 理念
+### Concept
 ---
 
-随着开源的浪潮奔涌向前，Linux开源生态正在逐步拓展范围，形成从微控制器到HPC全方位渗透，可用性、易用性与交互能力也在逐步改善。但是碎片化的桌面交互逻辑与运行环境、主流游戏的统一开发、运行与调优方法缺位、关键“生产力”软件缺失、以及软硬件兼容适配和开发生态等问题，是横在Linux开源生态发展道路上绕不过去的几座“大山”。
+With the wave of open source surging forward, the Linux open source ecosystem is gradually expanding its scope, forming an all-round penetration from microcontrollers to HPC, and the usability, ease of use, and interaction capabilities are also gradually improving. However, problems such as fragmented desktop interaction logic and operating environment, unified development of mainstream games, lack of operation and optimization methods, lack of key "productivity" software, and software and hardware compatibility and adaptation and development ecology are several "mountains" that cannot be bypassed on the road of Linux open source ecological development.
 
-我们是一群热衷于使用国产系统进行开发的工程师，为了探索能解决这些问题的可能方案，我们决定打造一个全新的融合桌面，期望能帮助解决生态问题，以助力全球Linux软硬件生态发展的突破。在我们这群志同道合的开发者不断努力、探索和尝试下，OpenFDE应运而生。
+We are a group of engineers who are keen to use domestic systems for development, in order to explore possible solutions to solve these problems. We decided to build a new converged desktop, hoping to help solve ecological problems, in order to help the global Linux software and hardware ecological development breakthrough. With the continuous efforts, exploration and experimentation of our group of like-minded developers, OpenFDE came into being.
 
-OpenFDE是一款基于AOSP、Linux应用和安卓应用互通融合的开源桌面，支持在Linux上体验安卓最新应用的全部功能，也可以在安卓系统上使用Linux GUI和多种原生应用等。目前可以满足用户的
-基础社交、娱乐和对关键"生产力"软件的使用需求。
+OpenFDE is an open-source desktop based on the integration of AOSP, Linux applications and Android applications, which supports experiencing all the functions of the latest Android applications on Linux, and can also use Linux GUI and a variety of native applications on the Android system. It can now meet the user's basic social, entertainment, and use of key "productivity" software.
 
-我们的产品还有很多待完善的地方，我们期待通过建立OpenFDE开源社区，集结各路"能人异士"，通过社区开发与协作，为所有人提供自由、开发的交流平台和最好的开源桌面系统，以推动Linux生态发展。
+Our products still have a lot to be improved, and we look forward to establishing an OpenFDE open source community, gathering talented people from all walks of life, and providing everyone with a free and developed communication platform and the best open source desktop system through community development and collaboration, so as to promote the development of the Linux ecosystem.
 
-无论你是经验丰富的技术达人、深耕Linux开源领域的专业人士或是小白新手，或是作为一个普通用户，我们都欢迎你加入我们，一起创造更好的技术、建立更强大的社区!
+Whether you are a seasoned technologist, a professional in the field of Linux open source, a novice, or an ordinary user, we welcome you to join us to create better technology and build a stronger community!
 
-### 网站和工具
----
+### Websites and Tools
 
-- [官网](https://openfde.com)
-- [代码仓库](https://gitee.com/openfde) 
-- [用户文档](/docs/category/用户中心)
+- [Official Website](https://openfde.com/en)
+- [Code Repositories](https://gitee.com/openfde) 
+- [User Documentation](/docs/category/user-guides)

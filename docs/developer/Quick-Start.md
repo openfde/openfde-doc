@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: Quick Start
 ---
 
-# 快速开始
+# Quick Start{#quick-start}
 
-莫急！小O正在加速编辑中...
+Hold on! The editor is speeding up the process.
 
