@@ -121,6 +121,5 @@ hide_table_of_contents: true
 
 在本隐私政策提及的所有可能需要与我们取得联系的情况下，您可以通过以下方式联系我们：
 
-- 联系电话：
 - 电子邮件: community@mail.openfde.com
 

@@ -1,30 +1,37 @@
 ---
-title: 法律声明
-description: 法律声明
+title: Legal Statements
+description: Legal Statements
 hide_table_of_contents: true
 ---
 
-# <center>法律声明</center>
+# <center>Legal Statements</center>
 
-## 1. 使用条款
-&emsp;&emsp;以下规则适用于所有访问本网站的任何网络用户（以下称“您”），OpenFDE社区保留随时修改这些规则的权利。您访问、使用本网站，即表示您同意本声明的全部内容；如果您不同意下列任何条款，请停止访问、使用本网站。如您在本声明变更信息发布之后继续访问、使用本网站，即表示您同意且接受该变更。
+## Terms of Use
 
-## 2. 著作权说明
-&emsp;&emsp;本网站所载的所有材料或内容受著作权法的保护，所有著作权由OpenFDE社区所有，但注明引用其他方的除外。未经OpenFDE社区事先书面许可，任何人不得将本网站上的任何材料或内容以任何方式进行复制、分发、传播、销售、翻印、播放、拆解、反向工程、反编译、以超级链路连接或传送、以"镜像法"载入其他服务器上、存储于信息检索系统或者其他任何商业目的的使用。但对于非商业目的的、个人使用的浏览、复制、分发、播放和传播等行为可以不需要获得许可，前提是未对使用的材料或内容进行修改，且保留了该材料或内容中的版权说明或其他说明。
+The following rules apply to all web users who access this website (hereinafter referred to as "you"), and the OpenFDE community reserves the right to modify these rules at any time. If you do not agree to any of the following terms, please stop accessing and using this website. If you continue to access and use this website after the announcement of changes to this statement, it means that you agree to and accept the changes.
 
-## 3. 商标
-&emsp;&emsp;本网站上使用和显示的所有商标、标志皆属OpenFDE社区所有，但注明属于其他方拥有的商标、标志除外。未经事先书面许可，任何人不得以任何方式使用 OpenFDE社区名称及OpenFDE社区的商标、标志。
+## Copyright Notice
 
-## 4. 不承诺责任声明
-&emsp;&emsp;本网站所载的材料和信息包括但不限于文本、图片、数据、网页或链接等是基于“现状”提供。尽管OpenFDE社区有意愿在网站上提供尽可能准确的材料和信息，但OpenFDE社区不为这些材料和信息的准确性、完整性、可靠性、正确性等做任何形式的保证，也不对这些材料和信息作出任何明示或默示的、包括但不限于有关所有权担保、不侵犯知识产权和第三方权利、质量和没有计算机病毒的保证。
+All materials or contents contained in this website are protected by copyright law, and all copyrights are owned by the OpenFDE community, except for those quoted by other parties. Without the prior written permission of the OpenFDE community, no one shall copy, distribute, disseminate, sell, photocopy, play, disassemble, reverse engineer, decompile, connect or transmit any materials or content on this website in any way, load it on other servers by "mirroring method", store it in an information retrieval system or use it for any other commercial purpose. However, for non-commercial purposes and personal use of browsing, copying, distribution, playback and dissemination may not be subject to permission, provided that the material or content used has not been modified and the copyright notice or other notices in the material or content have been retained.
 
-## 5. 第三方链接
-&emsp;&emsp;本网站可能含有其他独立第三方网站的链接，所述链接仅为方便您访问，访问这些链接将由您作出决定。OpenFDE社区不对您与链接网站的交互承担任何责任，OpenFDE社区也不对所述链接网站的内容、服务、信息等提供任何明示或默示保证。所述链接不视为OpenFDE社区对所述链接网站的推荐或授权，也不是用于宣传或广告目的。
+## Trademark
 
-## 6. 个人信息的保护及隐私
-&emsp;&emsp;OpenFDE社区充分尊重您的隐私权，并且不遗余力保护您的个人信息。本网站的隐私政策适用于本网站的使用行为，其具体内容在首页网页下方的“隐私政策”一栏中可以查看，请您特别注意。同时您知悉并同意您与本网站之间的网络连接、数据传输并非绝对安全或保密的，您发送至本网站的信息、数据可能会被他人拦截的，本网站无法对您与本网站之间的网络连接、数据传输的安全性与保密性进行保证。
+All trademarks and logos used and displayed on this website belong to the OpenFDE community, except for trademarks and logos owned by other parties. Without prior written permission, no one may use the name of the OpenFDE community and the trademarks and logos of the OpenFDE community in any way.
 
-## 7. 适用法律和管辖权
-您同意，您访问或使用本网站相关的所有事项，即表示您同意该访问及该使用受中华人民共和国法律的约束，应根据中华人民共和国法律解释、理解和管辖。您同意，中国天津市有管辖权的人民法院具有相关的管辖权。
+## No Disclaimer of Liability
+
+The materials and information contained in this website, including but not limited to text, images, data, web pages or links, are provided on the status quo. Although OpenFDE community is willing to provide as accurate materials and information as possible on the website, OpenFDE community does not make any form of guarantee for the accuracy, completeness, reliability, correctness, etc, of these materials and information, nor does it make any express or implied guarantee for these materials and information, including but not limited to the guarantee of ownership, non-infringement of intellectual property rights and third-party rights, quality and no computer virus.
+
+## Third-Party Links
+
+This website may contain links to other independent third-party websites, which are provided for your convenience only and access to these links is at your discretion. The OpenFDE community does not assume any responsibility for your interaction with the linked websites, and the OpenFDE community does not provide any express or implied guarantee for the content, services, information, etc, of the said linked websites. Said link is not considered as a recommendation or authorization by the OpenFDE community for said linked website, nor is it used for publicity or advertising purposes.
+
+## Protection and Privacy of Personal Information
+
+The OpenFDE community fully respects your privacy and spares no effort to protect your personal information. The privacy policy of this website applies to the use of this website, and the specific content of it can be viewed in the "Privacy Policy" column at the bottom of the home page. At the same time, you understand and agree that the network connection and data transmission between you and this website are not absolutely secure or confidential, and that the information and data you send to this website may be intercepted by others, and this website cannot guarantee the security and confidentiality of the network connection and data transmission between you and this website.
+
+## Governing Law and Jurisdiction
+
+You agree that by accessing or using this website, you agree that such access and use are subject to the laws of the People's Republic of China and shall be construed, understood and governed in accordance with the laws of the People's Republic of China. You agree that the People's Court of Tianjin, China, which has jurisdiction, shall have relevant jurisdiction.
 
 

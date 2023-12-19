@@ -1,69 +1,64 @@
 ---
-title: 用户服务协议
-description: 用户服务协议
+title: User Service Agreement
+description: User Service Agreement
 hide_table_of_contents: true
 ---
 
-# <center>用户服务协议</center>
+# <center>User Service Agreement</center>
 
-&emsp;&emsp;欢迎您注册并使用[OpenFDE社区](https://openfde.com)（以下简称"OpenFDE"或者"我们"）！
+Welcome to register and use the [OpenFDE Community](https://openfde.com)!
 
-&emsp;&emsp;本用户服务协议（以下称"本协议"）约定您作为最终用户使用OpenFDE应遵循的基本规范。在接受本协议之前，请您仔细阅读全部内容。
+This User Service Agreement (hereinafter referred to as "this Agreement") outlines the basic guidelines that you, as an end user, must adhere to when using OpenFDE. Before accepting this Agreement, please read it carefully in its entirety.
 
-&emsp;&emsp;您勾选"我已阅读并同意《用户服务协议》"，表示您已阅读并充分理解、接受本协议之内容，并且被视为您保证能够完全遵守本协议以及相关制度、规则、使用流程。如果您不同意这些条款和条件，您应停止任何后续操作或停止服务申请程序。
+By checking "I have read and agree to the User Service Agreement," you indicate that you have read, fully understood, and accepted the contents of this Agreement. It is understood that you commit to fully comply with this Agreement, as well as any related policies, rules, and procedures. If you do not agree with these terms and conditions, you should cease any further actions or service application procedures.
 
-## 一、服务内容
+## Service Contents
 
-1. OpenFDE的经营者，完全按照其发布的服务条款和操作规则提供基于互联网以及移动互联网的相关服务（以下简称“网络服务”），网络服务的相关内容由我们根据实际情况提供。
+1. The operator of OpenFDE provides internet-based and mobile internet-related services (hereinafter referred to as "online services") in accordance with the service terms and operational rules published by OpenFDE. The specific content of the online services is provided by us based on actual circumstances.
    
-2. 为了改善用户体验、完善服务内容及形式，我们将不断努力开发新的服务，并为您不时提供软件更新，包括可能采取修改、功能强化、版本升级等形式。您理解并同意，我们有权自行决定对服务或服务任何部分及其相关功能进行取消、变更、升级、修改。
+2. In order to improve user experience, enhance service content and form, we will continuously strive to develop new services and provide software updates to you from time to time. These updates may include modifications, feature enhancements, version upgrades, and other forms of changes. You understand and agree that we have the right to independently decide to cancel, modify, upgrade, or modify any part of the service or its related functions.
 
-## 二、用户注册
+## User Registration
 
-&emsp;&emsp;在您注册及使用OpenFDE时，需要搜集能识别您身份的个人信息以便OpenFDE可以在必要时联系到您，或为您提供更好的使用体验。搜集的信息包括但不限于您的手机号、姓名、身份证号、昵称、个人邮箱、所属公司、担任职务、企业邮箱等。OpenFDE对这些信息的使用将受限于用户个人数据保护的相关法律法规。
+When you register and use OpenFDE, we may collect personal information that can identify your identity in order to contact you when necessary or provide you with a better user experience. The collected information may include, but is not limited to, your mobile number, name, ID card number, nickname, personal email address, company affiliation, position held, and corporate email address. The use of this information by OpenFDE will be subject to relevant laws and regulations on the protection of personal data.
 
-## 三、使用规则
+## Rules of Use
 
-&emsp;&emsp;1. 您在使用OpenFDE时，必须遵守中华人民共和国相关法律法规的规定，同意将不会利用OpenFDE进行任何违法或不正当的活动，包括但不限于下列行为：
-
-&emsp;&emsp;(a)超越使用权限侵入，或干扰、破坏有关服务，或与有关服务连接的任何服务器或网络，或与有关服务相关的任何政策、要求或规定；
-
-&emsp;&emsp;(b)采集并存储涉及任何其他用户的个人信息；
-
-&emsp;&emsp;(c)故意或非故意违反任何相关的中国法律、法规、规章、条例等其他具有法律效力的规范。
-
-&emsp;&emsp;2. 您完全拥有您在使用OpenFDE录入的数据和资料的所有权，并对数据和资料的准确性与合法性负责，不得违反个人数据保护的相关法律法规的规定。
-
-## 四、免责声明
-
-您知悉并同意，下列情况下，OpenFDE无需向您承担任何责任：
-
-&emsp;&emsp;(a) 由于您维护不当或保密不当，导致数据、资料、密码等丢失或泄露，或其他非OpenFDE原因导致的个人信息的泄露；
-
-&emsp;&emsp;(b) 任何由于不可抗力、黑客攻击、电脑病毒侵入、网络运营商原因、第三方服务商原因或政府管制等OpenFDE无法合理控制的原因而造成OpenFDE使用中止、中断、延误、使用异常、暂时性关闭等；
-
-&emsp;&emsp;(c) 您理解并确认，受技术及其他原因所限，OpenFDE无法保证所提供的服务之连续性或毫无瑕疵，但我们承诺将不断提升服务质量及服务水平，为您提供更加优质的服务。
-
-&emsp;&emsp;(d) OpenFDE无法确保您通过OpenFDE访问或下载的任何内容(包括文件、信息、软件或其他数据)没有病毒、污染或破坏性特征，或保证您在上传或存储在OpenFDE的任何软件、数据、文件等信息的安全、持续，您需要自行配置所有必须的安全软件、硬件等防护系统并做好相应信息备份。您对使用OpenFDE服务承担全部责任和所有风险，对于因本协议或您使用或无法使用OpenFDE服务而引起，或是与之相关的任何直接或间接损害、损失(包括但不限于因延迟或交付而导致的损失)，预期利润、数据、业务或商誉损失、业务中断等，社区均不承担相应责任。
-
-## 五、知识产权声明
-
-&emsp;&emsp;1. OpenFDE拥有所有权及所有相关的知识产权 (包括但不限于文字、文档资料、界面或版面设计、logo、色彩等，不包括源代码及相关代码说明)，但注明属于其他方的除外。源代码及相关代码说明的知识产权由代码贡献者所有，OpenFDE根据与贡献者签署的开发者贡献协议行使相关权利。
+1. When using OpenFDE, you must comply with the relevant laws and regulations of the People's Republic of China. You agree not to engage in any illegal or improper activities through OpenFDE, including but not limited to the following:
    
-&emsp;&emsp;2. 您认同OpenFDE拥有的所有权和知识产权，并承诺尊重及不以任何方式侵害OpenFDE的所有权和知识产权。未经OpenFDE书面同意，您不得从事以下行为，否则应承担相应的法律责任：
+- Engaging in activities that exceed your authorized access, or interfere with, disrupt, or damage any servers, networks, policies, requirements, or regulations related to the service is strictly prohibited.
+- Collecting and storing personal information of any other users is strictly prohibited.
+- Intentionally or unintentionally violating any relevant Chinese laws, regulations, rules, ordinances, or other legally binding norms is strictly prohibited.
 
-&emsp;&emsp;(a)抄袭OpenFDE，包括但不限于任何设计、界面、功能、域名、服务名称等；
+2. You fully own the data and information you enter while using OpenFDE, and you are responsible for the accuracy and legality of such data and information. You must not violate the relevant laws and regulations on personal data protection.
 
-&emsp;&emsp;(b)复制、修改、创作衍生品用于任何商业用途；
+## Disclaimer
 
-&emsp;&emsp;3.OpenFDE的源代码及相关代码说明的知识产权声明以相关开源许可证的内容为准。
+You must acknowledge and agree that OpenFDE shall not be liable for the following:
 
-## 六、法律适用
+- Due to your improper maintenance or inadequate confidentiality measures, if there is any loss or disclosure of data, information, passwords, or any other personal information, or if such incidents occur due to reasons unrelated to OpenFDE, OpenFDE shall not be held responsible. It is your responsibility to ensure the proper maintenance and confidentiality of your data and information while using OpenFDE.
+- OpenFDE shall not be held liable for any suspension, interruption, delay, abnormal usage, or temporary closure of OpenFDE caused by events beyond its reasonable control, including but not limited to force majeure events, hacker attacks, computer virus intrusions, actions of network service providers, actions of third-party service providers, or government regulations. These circumstances are beyond the control of OpenFDE, and it cannot be held responsible for any resulting inconveniences or damages.
+- You understand and acknowledge that due to technical and other reasons, OpenFDE cannot guarantee the continuity or flawlessness of the services provided, but we promise to continuously improve the quality and level of services to provide you with better services.
+- OpenFDE cannot guarantee that any content accessed or downloaded through OpenFDE, including files, information, software, or other data, is free from viruses, contamination, or destructive features. It also cannot guarantee the security and continuity of any software, data, files, or other information uploaded or stored on OpenFDE. It is your responsibility to configure all necessary security software, hardware, and backup systems. 
+- You assume all responsibility and risk for using the OpenFDE service. OpenFDE shall not be held liable for any direct or indirect damages or losses (including but not limited to loss of anticipated profits, data, business, or reputation, business interruption, or losses arising from delays or delivery) caused by this agreement or your use or inability to use the OpenFDE service.
 
-1. 本协议的订立、执行和解释及争议的解决均适用中国法律并受中国法院管辖。如本协议任何条款与中华人民共和国法律相抵触，则该部分条款应按法律规定重新解释，部分条款无效或重新解释不影响其余条款法律效力。
+## Intellectual Property Rights Notice
 
-2. 因本协议引起的或与本协议有关的任何争议，双方同意友好协商，协商不成时，任何一方有权向社区所在地有管辖权的人民法院诉讼解决。
+1. OpenFDE owns the ownership and all related intellectual property rights (including but not limited to text, documentation, interface or layout design, logo, color, etc., excluding source code and related code descriptions), unless it is indicated that it belongs to other parties. The intellectual property rights of the source code and related code descriptions are owned by the code contributors, and OpenFDE exercises the relevant rights in accordance with the developer contribution agreement signed with the contributors.
 
-## 七、协议的完善和修改
+2. You acknowledge the ownership and intellectual property rights owned by OpenFDE, and promise to respect and not infringe on the ownership and intellectual property rights of OpenFDE in any way. Without the written consent of OpenFDE, you shall not engage in the following acts, otherwise you shall bear the corresponding legal liabilities:
 
-&emsp;&emsp;OpenFDE有权根据互联网的发展和中华人民共和国有关法律、法规的变化，不时地完善和修改本协议。OpenFDE保留随时修改本协议的权利，以最新的协议约定为准。
+- Plagiarize OpenFDE, including but not limited to any design, interface, functionality, domain name, service name, etc.
+- Copy, modify, create derivative works for any commercial purpose.
+
+3. The intellectual property rights statement of OpenFDE's source code and related code descriptions are subject to the content of the relevant open source license
+
+## Applicable Laws
+
+1. The conclusion, execution and interpretation of this Agreement and the resolution of disputes shall be governed by the laws of the People's Republic of China and shall be subject to the jurisdiction of the courts of the People's Republic of China. If any provision of this Agreement conflicts with the laws of the People's Republic of China, such part of the clause shall be re-interpreted in accordance with the provisions of the law, and the invalidity or re-interpretation of the part of the clause shall not affect the legal effect of the remaining clauses.
+
+2. Any dispute arising out of or in connection with this Agreement shall be negotiated amicably by both parties, and if the negotiation fails, either party shall have the right to settle the dispute with the people's court with jurisdiction in the place where the community is located。
+
+## Improvement And Modification Of The Agreement
+
+OpenFDE has the right to improve and modify this Agreement from time to time in accordance with the development of the Internet and changes in the relevant laws and regulations of the People's Republic of China. OpenFDE reserves the right to modify this Agreement at any time, subject to the latest agreement.

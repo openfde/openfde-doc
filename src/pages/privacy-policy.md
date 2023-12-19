@@ -1,126 +1,124 @@
 ---
-title: 隐私政策
-description: 隐私政策
+title: Privacy Policy
+description: Privacy Policy
 hide_table_of_contents: true
 ---
 
-# <center>隐私政策</center>
+# <center>Privacy Policy</center>
 
-## 1. 重要提示
+## Importance
 
-&emsp;&emsp;我们深知个人信息对您的重要性。我们会严格按照相关法律法规及本OpenFDE隐私政策（以下称"本隐私政策"）的规定收集、存储、使用、提供（以下通称"处理"）您的个人信息。本隐私政策适用于我们向您提供的各项服务。本隐私政策旨在说明，在您使用我们的服务时，我们如何处理您的个人信息以及您如何可以访问、更新或删除这些信息等。
+We understand how important personal information is to you. We will collect, store, use and provide (hereinafter collectively referred to as "processing") your personal information in strict accordance with relevant laws and regulations and this OpenFDE Privacy Policy (hereinafter referred to as "this Privacy Policy"). This Privacy Policy applies to the services we provide to you. The purpose of this Privacy Policy is to explain how we handle your personal information when you use our services and how you can access, update or delete it.
 
-&emsp;&emsp;在使用我们的服务前，请务必仔细阅读并充分理解本隐私政策。一旦您开始使用我们的服务，或者向我们提交个人信息，则表示您知晓本隐私政策的全部条款并且完全同意我们依据本隐私政策对这些信息的处理。
+Please be sure to read and fully understand this Privacy Policy before using our services. Once you start using our services or submit personal information to us, you are aware of all the terms of this Privacy Policy and fully consent to our processing of this information in accordance with this Privacy Policy.
 
-&emsp;&emsp;如对本隐私政策内容有任何疑问、意见或建议，您可按照本隐私政策**第9条**显示的任一联系方式与我们联系。
+If you have any questions, comments or suggestions about the content of this Privacy Policy, you can contact us in accordance with any of the contact information shown **in Article 9 of this Privacy Policy**.
 
-## 2. 定义
+## Definition
 
-**2.1 企业用户**：指注册、登录、使用OpenFDE服务并获得管理权限的组织，包括但不限于法人、政府机构、其他组织、合伙企业等（以下简称"企业用户"）。
+**Enterprise User**: refers to an organization that registers, logs in, and uses OpenFDE services and obtains management authority, including but not limited to legal persons, government agencies, other organizations, partnerships, etc. (hereinafter referred to as "Enterprise Users").
 
-**2.2 您**：指使用我们服务的个人以及经企业用户指定，拥有企业用户账号操作权限的个人。
+**You**: refers to the individual who uses our services and the individual designated by the enterprise user and has the operation authority of the enterprise user account.
 
-**2.3 我们**：指服务的提供者OpenFDE社区（或称"OpenFDE"）。
+**We**: refers to the OpenFDE Community (or "OpenFDE"), the provider of the Services.
 
-**2.4 服务**：指我们通过电脑等渠道提供的账号管理、邮件订阅、贡献者协议（CLA协议）签署、产品下载、内容发布、信息互动、其他站点链接等服务。
+**Service**: refers to the services we provide through computer and other channels, such as account management, email subscription, signing of the Contributor Agreement (CLA Agreement), product download, content release, information interaction, and links to other sites
 
-**2.5 个人信息**：是以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，包括姓名、身份证件号码、通信通讯联系方式、公司名称（如需）等。
+**Personal Information**: refers to all kinds of information related to an identified or identifiable natural person recorded electronically or by other means, including name, ID number, communication contact information, company name (if necessary), etc.
 
-## 3. 我们如何收集您的信息
+## How We Collect Your Information
 
-在您使用我们服务的过程中，我们会在必要的情况下收集您的个人信息，并且这些信息仅用于向您提供服务、优化我们的服务以及保障您的账号安全。具体而言，我们将按照如下方式收集您主动提供或因为使用服务而产生的信息：
+In the process of using our services, we will collect your personal information when necessary, and this information will only be used to provide you with services, optimize our services, and protect the security of your account. Specifically, we will collect information that you voluntarily provide or generate as a result of your use of the Services in the following ways:
 
-**3.1** 为完成您在我们网站的注册、管理、认证等必要活动，您需要向我们提供公司名称（如需）、联系人姓名、手机号码等信息（以下统称"基础信息"）。
+1) In order to complete your registration, management, authentication and other necessary activities on our website, you need to provide us with company name (if necessary), contact name, mobile phone number and other information (hereinafter collectively referred to as "Basic Information")
 
-**3.2** 在您使用我们的服务过程中，我们可能还会收集您所属单位部门、职务、电子邮箱等信息。这些信息有助于我们更好地进行研究分析，以便向您提供更好的服务。您可以决定是否提供这些信息。
+2) When you use our services, we may also collect information such as your organizational department, job title, and email address. This information helps us to conduct better research and analysis in order to provide you with better services. It is up to you to decide whether or not to provide this information.
 
-**3.3** 当您与我们联系或我们主动通过问卷调查、电话征求您的使用建议或意见时，我们可能会保存您的通信/通话记录和内容等信息，该等信息用于帮助我们改进服务/回应用户的问题。除非相关法律另有规定外，这些信息不应被视为具有保密性。
+3) When you contact us or we take the initiative to solicit your suggestions or opinions through questionnaires or phone calls, we may save information such as your communication/call records and content, which will be used to help us improve our services or respond to users' questions. Unless otherwise required by applicable law, this information shall not be deemed to be confidential.
 
-**3.4** 当您使用我们的服务时，您的某些信息，包括但不限于您使用设备的型号、唯一标识号、操作系统、浏览器类型、显示器分辨率、互联网协议地址、域名、网页、访问网站时间和时长、使用服务时所访问的页面，可能会通过互联网协议地址、cookies、网址标签以及导航数据采集等各种技术和方法被采集（即在您非主动提供信息的情况下进行收集）并记入服务器日志文件。我们可能会使用这些信息作数据统计分析，以便改进我们的服务。
+4) When you use our services, certain information about you, including, but not limited to, the model of the device you are using, unique identification number, operating system, browser type, display resolution, Internet Protocol address, domain name, web page, time and duration of visits to the Site, and the pages you visit when using the Services, may be available through Internet Protocol addresses, cookies, Various techniques and methods, such as URL tags and navigational data collection, are collected (i.e., collected without the information you provide) and recorded in server log files. We may use this information for statistical analysis in order to improve our services.
 
-**3.5** 我们的网站采用互联网协议（IP）地址技术。IP地址是互联网服务提供商分配给您电脑的一个编号，以便您能访问互联网。多数情况下IP地址是动态的（每次接入互联网时都发生变化），而不是静态的（与用户电脑一一对应），因此IP地址通常不被视为个人身份验证信息。我们使用您的IP地址用于诊断服务器故障、报告信息、确定您的电脑和本站连接能使用的最快路径以及对网站进行管理和改进。
+5) Our website uses Internet Protocol (IP) address technology. An IP address is a number assigned to your computer by your Internet Service Provider so that you can access the Internet. In most cases, IP addresses are dynamic (they change each time when they connect to the Internet) rather than static (they correspond one-to-one to the user's computer), so they are generally not considered personal authentication information. We use your IP address to diagnose server failures, report information, determine the fastest path available to connect your computer to the Site, and to administer and improve the Site.
 
-**3.6** "cookie"是网站向您的浏览器发送的少量信息，以帮助网站记住有关您及您偏好的信息。
+6) A "cookie" is a small amount of information that a website sends to your browser to help the website remember information about you and your preferences.
 
-**3.7** "会话cookies"是一些暂时的信息，当您退出浏览器窗口或关闭计算机时将自动删除。 会话cookies用于改进网站的导航并收集统计信息。
+7) Session cookies are temporary pieces of information that are automatically deleted when you exit your browser window or turn off your computer. Session cookies are used to improve the navigation of the website and to collect statistical information.
 
-**3.8** "持久cookies"是一些更持久的信息，如果不删除则会始终存放在您的电脑硬盘中。持久cookies在您的电脑上储存信息有若干目的，如：找回您曾经提交的某些信息（如密码）、帮助确定网站访问者认为最有价值的区域、基于您的偏好对网站进行定制等。我们的网站使用cookies的主要目的是储存您的默认偏好。
+8) Persistent cookies are pieces of information that are more persistent and will always be stored on your computer's hard drive if not deleted. Persistent cookies store information on your computer for a number of purposes, such as retrieving certain information you have submitted (such as passwords), helping to identify areas of the website that visitors find most valuable, customizing the website based on your preferences, etc. The main purpose of using cookies on our website is to store your default preferences.
 
-**3.9** 您可以将浏览器设置为收到cookie时立即通知您，以便您决定是否接受它。
+9) You can set your browser to notify you as soon as you receive a cookie so that you can decide whether or not to accept it.
 
-**3.10** 您也可以将浏览器设置为完全禁止储存cookies，但必须提醒您的是这将可能会妨碍您对我们网站或服务的使用。
+10) You can also set your browser to prohibit the storage of cookies altogether, but you must be cautioned that this may interfere with your use of our website or services.
 
-**3.11** 目前我们不会主动收集本隐私政策明示以外的信息包括从第三方获取您的个人信息。如未来为业务发展需要收集该类个人信息，我们会在获取前征得您的明示同意，从第三方获取您的个人信息，我们会要求第三方保障其提供的信息的合法性。
+11) At this time, we do not actively collect information other than as specified in this Privacy Policy, including obtaining your personal information from third parties. If we need to collect such personal information for business development in the future, we will obtain your express consent to obtain your personal information from a third party before obtaining it, and we will require the third party to ensure the legitimacy of the information provided by it.
 
-## 4. 我们如何使用您的信息
+## How We Use Your Information
 
-**4.1** 创建账户。
+1) To create an account.
+   
+2) To provide you with services, including account management, email subscription, signing of the Contributor Agreement (CLA Agreement), product download, content publishing, information interaction, links to other sites, etc.
 
-**4.2** 向您提供服务，包括账号管理、邮件订阅、贡献者协议（CLA协议）签署、产品下载、内容发布、信息互动、其他站点链接等服务。
+3) To meet your individual needs, e.g, individual technical support and guidance.
 
-**4.3** 满足您的个性化需求，例如，个性化的技术支持和指引。
+4) To Send you important notice.
 
-**4.4** 向您发送重要通知。
+5) To troubleshoot errors if you choose to send us a bug report.
 
-**4.5** 在您选择向我们发送错误报告的情况下排查错误。
+6) We may improve our services or design, develop, and market new services based on user information and statistics.
 
-**4.6** 我们可能以用户信息统计数据为基础，改进我们的服务，或设计、开发、推广全新的服务。
+7) To comply with and enforce applicable legal requirements or relevant industry standards.
 
-**4.7** 遵从和执行适用的法律要求或相关的行业标准。
+8) We will only use your information for the purposes required by law and as set out in this Privacy Policy. If it is necessary to use your personal information beyond the aforementioned purposes, we will ask for your consent again.
 
-**4.8** 我们仅依照法律要求及本隐私政策列明的目的使用您的信息。如需要超出前述目的使用您的个人信息，我们会再次征求您的同意。
+## How We Protect and Save Your Information
 
-## 5. 我们如何保护和保存您的信息
+**Measures to protect your personal information** 
 
-**5.1 保护您个人信息的措施** 
+1) We attach great importance to the security of personal information and take security technical measures that comply with industry standards to protect the security of the personal information you provide.
 
-5.1.1 我们非常重视个人信息安全，并采取符合业界标准的安全技术措施保护您提供的个人信息安全。
+2) We ensure the security of information by establishing special management systems, processes, organizations and other management measures. We only allow access to user information to those who have access to user information, and require all personnel who may have access to your personal information to perform appropriate confidentiality obligations. We train our staff on relevant laws and regulations and privacy and security guidelines, and strengthen their awareness of security.
 
-5.1.2 我们通过建立专门的管理制度、流程、组织等管理措施以保障信息的安全。我们只允许有必要接触用户信息的
-工作人员查询和管理用户信息，同时要求可能接触到您个人信息的所有人员履行相应的保密义务。我们对工作人员培训相关法律法规及隐私安全准则，强化宣导安全意识。
+3) The Internet environment is not 100% secure and we will do our best to ensure the security of any information you send to us. If our physical, technical or management protection facilities are damaged and a security incident such as personal information leakage occurs, we will activate an emergency plan to prevent the expansion of the security incident, and inform you of the basic situation, possible impact, measures taken or to be taken in the form of push notifications, announcements, etc.
 
-5.1.3互联网环境并非百分之百安全，我们将尽力确保您发送给我们的任何信息的安全性。如果我们的物理、技术或管理防护设施遭到破坏，发生个人信息泄露等安全事件，我们会启动应急预案，阻止安全事件扩大，并以推送通知、公告等形式告知您安全事件的基本情况、可能的影响、已经采取的措施或将要采取的措施等。
+4) To ensure the security of your personal information, you need to cooperate with us, please do not disclose your login account and password to others, if you find that your personal information, especially your account or password has been leaked, please contact us immediately, so that we can take corresponding reasonable measures according to your application.
 
-5.1.4 保障您的个人信息安全，需要您和我们的共同配合，请您不向他人泄露登录账号和密码，如您发现自己的个人信息尤其是您的账号或密码发生泄露时，请您立即联络我们，以便我们根据您的申请采取相应合理措施。
+**Measures to save your information** 
 
-**5.2 保存您的信息** 
+1) Geographical scope of storage: The personal information we collect and generate within the territory of the People's Republic of China will be stored within the territory of the People's Republic of China.
 
-5.2.1 存储地域范围：我们在中华人民共和国境内收集和产生的个人信息将存储在中华人民共和国境内。
+2) Retention period: In general, we will retain your personal information only for as long as is necessary to fulfill the purposes described in this Privacy Policy, unless it is required or permitted by law to retain this information for a longer period.
 
-5.2.2 存储期限：一般而言，我们仅为实现本隐私政策所述目的所必需的时间保留您的个人信息，除非法律要求或允许可以在更长时间内保留这些信息。
+## How We Provide Information Externally
 
-## 6. 我们如何对外提供信息
+1) We may share your information with our affiliates or partners. However, we only share necessary personal information, and the processing of your information by affiliates is governed by this Privacy Policy. If the related party wants to change the purpose of processing your personal information, it will seek your authorization and consent again. In addition, our service platform may be managed and maintained by third-party service providers (hereinafter referred to as "suppliers"), and your information may be accessed by suppliers, with whom we will sign data protection agreements requiring them to process your personal information in accordance with the law, this Privacy Policy and any other relevant confidentiality requirements, and with no less standard of security measures than our security measures.
 
-**6.1** 我们可能会将您的信息与我们的关联方或合作方共享。但我们仅共享必要的个人信息，关联方对您信息的处理受本隐私政策的约束。关联方如要改变您个人信息的处理目的，将再次征求您的授权和同意。另外，我们的服务平台可能由第三方服务供应商（以下称"供应商"）管理和维护，您的信息可能会被供应商接触，我们会与供应商签署数据保护协定，要求他们按照法律规定、本隐私政策以及其他任何相关的保密要求，以不低于我们的安全措施标准来处理您的个人信息。
+2) Except that we may disclose your personal information as required by applicable law, court order, or government regulation, we will not publicly disclose your personal information obtained without your consent.
 
-**6.2** 除了我们可能在适用法律、法院命令或政府法规的要求下披露您的个人信息以外，未经您的同意，我们不会对外公开披露所获得的您的个人信息。
+3) According to the law, personal information that has been de-identified and ensured that the data recipient cannot recover and re-identify the personal information subject is not personal information, and the storage and processing of such data will not require separate notice to you and your consent.
 
-**6.3** 根据法律规定，经去标识化处理的个人信息，且确保数据接收方无法复原并重新识别个人信息主体的，不属于个人信息，对此类数据的保存及处理将无需另行向您通知并征得您的同意。
+## How to Manage Your Information
 
-## 7. 如何管理您的个人信息
+1) You can log in to your account on our website to view the personal information you submit to us, browse and search for downloaded content information, etc.
 
-**7.1** 您可以通过登录您在我们网站开立的账号来查看您提交给我们的个人信息、浏览搜索下载内容信息等。
+2) To ensure that you have properly authenticated your identity, please keep the relevant information up to date to ensure that it is accurate, up-to-date and complete, and please do not hesitate to contact us if you have any questions during this process.
 
-**7.2** 为保证您正确身份验证，请及时更新相关信息，以确保它们是准确、最新且完整的，在此过程中如有任何问题，请随时与我们联系。
+3) If you find that we have collected or used your information in violation of laws and regulations or this Privacy Policy, you can contact us to request deletion. If you find that your information collected and stored by us is incorrect and cannot be corrected by yourself, you can also request us to correct it.
 
-**7.3** 如您发现我们违反法律法规的规定或者本隐私政策收集、使用您的信息，您可以联系我们要求删除；您发现我们收集、存储的您的信息有错误的，且无法自行更正的，您也可以要求我们更正。
+4) After you cancel your account, if you make a written request, we will delete or anonymize your personal information in accordance with your wishes and legal provisions. However, please understand that due to the requirements of laws and regulations, information security, technical restrictions and other reasons, some of your information may not be accessible, modified or deleted.
 
-**7.4** 在您注销账号后，如果您提出书面申请，我们将根据您的意愿和法律规定将您的个人信息删除或进行匿名化处理。但请您理解，基于法律法规要求、保障信息安全、技术限制等原因，您的部分信息可能无法访问、修改和删除。
+## Privacy Protection for Minors
 
-## 8. 未成年人隐私保护
+1) If you are a minor, we recommend that you ask your parents or guardians to read this Privacy Policy carefully and use our services or provide information to us with the consent of your parents or guardians.
 
-**8.1** 如您为未成年人的，建议您请您的父母或监护人仔细阅读本隐私政策，并在征得您的父母或监护人同意的前提下使用我们的服务或向我们提供信息。
+2) For the collection of minors' personal information with the consent of their parents or guardians to use our services, we will only use, share or disclose the information as permitted by laws and regulations, with the explicit consent of parents or guardians, or as necessary to protect minors.
 
-**8.2** 对于经父母或监护人同意使用我们的服务而收集未成年人个人信息的情况，我们只会在法律法规允许、父母或监护人明确同意或者保护未成年人所必要的情况下使用、共享或披露信息。
+## Revisions and Notices to the Privacy Policy
 
-## 9. 隐私政策的修订和通知
+Due to changes in service content, contact information, legal and regulatory requirements, etc., we may revise this Privacy Policy from time to time. When the Privacy Policy changes, we will post the updated version on our official website.
 
-由于服务内容、联络方式、法律和监管政策要求等变化，我们可能会适时对本隐私政策进行修订。当隐私政策发生变更时，我们会在我们的官方网站发布更新后的版本。
+## Contact Us
 
-## 10. 联系我们
-
-在本隐私政策提及的所有可能需要与我们取得联系的情况下，您可以通过以下方式联系我们：
-
-- 联系电话：
-- 电子邮件: community@mail.openfde.com
+In all the situations mentioned in this Privacy Policy where you may need to contact us, you may contact us in the following ways:
+  
+- Email Address: community@mail.openfde.com
 
