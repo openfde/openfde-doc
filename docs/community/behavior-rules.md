@@ -1,9 +1,8 @@
 ---
 sidebar_position: 1
-title: Codes Of Conduct
 ---
 
-# Codes Of Conduct{#behavior-rules}
+# Codes of Conduct{#behavior-rules}
 
 ### Values and Principles{#values-and-principles}
 
