@@ -44,3 +44,28 @@ npm run build
 This command generates static content into the `build` directory and can be served using any static contents hosting service. 
 
 The `build` directory includes static files in multiple languages. You can find the subdirectory `zh-CN` which has static contents hosting service of the website in Chinese.
+
+## Add a new documentation or a new blog
+
+### Add a new documentation
+
+you should confirm the category to which your document belongs at first. The structure of document classification is as follows.
+  
+```bash
+docs/
+ - documentation
+ - developer
+ - community
+ - faq
+ - version
+```
+
+- documentation: the documentations related to the users and the use guides of OpenFDE.
+- developer: some ocumentations that developers may need.
+- community: some community guides and rules you need to follow.
+- faq: frequently asked questions.
+- version: different version update notes of OpenFDE.
+
+### Add a new blog
+
+You can refer to [blog-guide](./blog-guide.md) to get some guides.
