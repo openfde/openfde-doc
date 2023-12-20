@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "node script/patch-docusaurus.js",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build:internal": "cross-env DEPLOY_ENV=internal docusaurus build",
