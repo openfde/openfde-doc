@@ -18,32 +18,8 @@ npm config set registry https://registry.npm.taobao.org
 You need to git clone the openfde-doc to get all the documentatation resources.
 
 ```bash
-npm run https://gitee.com/openfde/openfde-doc.git
+git clone  https://gitee.com/openfde/openfde-doc.git
 ```
-
-## Start the openfde-doc
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. The default is the English version of the website.
-
-```bash
-npm run start
-```
-
-If you want to start the zh-CN version of website, you need execute the following command.
-
-```bash
-npm run start -- --locale zh-CN
-```
-
-## Build
-
-```bash
-npm run build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service. 
-
-The `build` directory includes static files in multiple languages. You can find the subdirectory `zh-CN` which has static contents hosting service of the website in Chinese.
 
 ## Add a new documentation or a new blog
 
@@ -69,3 +45,28 @@ docs/
 ### Add a new blog
 
 You can refer to [blog-guide](./blog-guide.md) to get some guides.
+
+
+## Start the openfde-doc
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. The default is the English version of the website.
+
+```bash
+npm run start
+```
+
+If you want to start the zh-CN version of website, you need execute the following command.
+
+```bash
+npm run start -- --locale zh-CN
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service. 
+
+The `build` directory includes static files in multiple languages. You can find the subdirectory `zh-CN` which has static contents hosting service of the website in Chinese.
