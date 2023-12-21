@@ -5,7 +5,7 @@ title: Contribution and Strategy
 
 # Contributions and Strategies{#contribution-and-strategy}
 
-Welcome tot OpenFDE Community！
+Welcome to OpenFDE Community！
 
 ## 1. Explore OpenFDE{#try-openfde}
 
