@@ -25,7 +25,9 @@ git clone  https://gitee.com/openfde/openfde-doc.git
 
 ### Add a new documentation
 
-you should confirm the category to which your document belongs at first. The structure of document classification is as follows.
+Our website is currently available in English and Chinese. The default language is English. Theses documentations. The source files for the English version are located in the `docs` directory. And the source files for the Chinese version art located in the `i18n/zh-CN` directory.
+
+Firstly, you should confirm the category to which your document belongs. The structure of document classification is as follows.
   
 ```bash
 docs/
@@ -34,6 +36,17 @@ docs/
  - community
  - faq
  - version
+
+i18n/zh-CN
+ - docusaurus-plugin-content-blog
+ - docusaurus-plugin-content-docs/current
+   - documentation
+   - developer
+   - community
+   - faq
+   - version
+ - docusaurus-plugin-content-pages
+ - docusaurus-theme-classic
 ```
 
 - documentation: the documentations related to the users and the use guides of OpenFDE.
@@ -42,10 +55,17 @@ docs/
 - faq: frequently asked questions.
 - version: different version update notes of OpenFDE.
 
+Steps to add a new documentation:
+- Find the identified document category in the `docs/` directory.
+- Add a new markdown file in the category subdirectory.
+- Execute this command ```npm run write-translations -- --locale zh-CN``` in terminal.
+- Copy your new file to the corresponding category subdirectory of the `i18n/zh-CN` directory.
+  
+Then You can edit the two new files above. Note that the two document versions should be kept in English and Chinese.
+
 ### Add a new blog
 
 You can refer to [blog-guide](./blog-guide.md) to get some guides.
-
 
 ## Start the openfde-doc
 
