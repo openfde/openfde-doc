@@ -9,7 +9,7 @@ Welcome tot OpenFDE Community！
 
 ## 1. Explore OpenFDE{#try-openfde}
 
-To quickly learn about [OpenFDE](https://openfde.com), please click [here](./../documentation/quick-start).
+To quickly learn about [OpenFDE](https://openfde.com/en), please click [here](./../documentation/quick-start).
 
 ## 2. Sign in CLA{#sign-cla}
 
