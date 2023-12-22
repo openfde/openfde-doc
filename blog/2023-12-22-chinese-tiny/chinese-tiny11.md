@@ -38,7 +38,7 @@ author: zhaolixia
 
 5、将Startup type修改为"Automatic"，点击Service status下的“Start”，将其状态修改为running后再点击窗口右下角的“Apply”和“OK”退出选项属性设置（如果其中的start不能点击就将Startup type设置为Automatic，修改退出后再右击鼠标点击“start”）
 
-#### 打开防火墙
+### 打开防火墙
 1、按“win”在搜索框输入control找到控制面板打开
 
 ![img10](image-10.png)
