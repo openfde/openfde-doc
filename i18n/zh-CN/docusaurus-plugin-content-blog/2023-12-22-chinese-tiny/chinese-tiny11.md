@@ -52,7 +52,7 @@ author: zhaolixia
 ![img12](image-12.png)
 
 ### 下载语言包并设置为windows显示语言
-1、按“win”选择settings->Time &language->Language&region
+1、按“win”选择settings->Time & language->Language & region
 
 ![img15](image-15.png)
 
