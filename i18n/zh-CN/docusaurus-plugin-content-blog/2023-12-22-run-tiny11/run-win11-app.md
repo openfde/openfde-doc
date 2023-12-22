@@ -3,7 +3,7 @@ slug: run-tiny11
 title: OpenFDE玩转Tiny11应用
 description: 介绍如何在OpenFDE中使用Tiny11
 date: 2023-12-22T14:00
-author: zhaolixia, kuangyangyang
+author: zhaolixia
 ---
 
 # Openfde玩转win11应用
@@ -115,7 +115,7 @@ waydroid app install /opt/apps/cn.com.vapp/files/aFreeRDP-release.apk
 
 15. 将窗口全屏就可以正常使用了
     
-![Alt text](./img/image-26.png)
+![img26](./img/image-26.png)
 
 16. 现在就可以通过共享目录传入安装包安装对应应用，或者使用浏览器下载软件包安装使用了
 
@@ -123,4 +123,4 @@ waydroid app install /opt/apps/cn.com.vapp/files/aFreeRDP-release.apk
 ![screenshot2](./img/Screenshot_20231214-135819_aFreeRDP.png)
 ![screenshot3](./img/Screenshot_20231214-140355_aFreeRDP.png)
 
-想要了解如何将tiny11汉化成中文使用，请参考[tiny11操作系统汉化](https://docs.openfde.com/blog/tiny-chinese)
+想要了解如何将tiny11汉化成中文使用，请参考[tiny11操作系统汉化](./../2023-12-22-chinese-tiny/chinese-tiny11.md) 

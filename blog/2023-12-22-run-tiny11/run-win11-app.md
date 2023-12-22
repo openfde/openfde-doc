@@ -1,5 +1,9 @@
 ---
-sidebar_postion: 1
+slug: run-tiny11
+title: Run Tiny11
+description: introduction to running tiny11 in OpenFDE
+date: 2023-12-22T14:00
+author: zhaolixia, kuangyangyang
 ---
 
 # Run Win11 APP
@@ -111,12 +115,12 @@ waydroid app install /opt/apps/cn.com.vapp/files/aFreeRDP-release.apk
 
 15. To use it normally, you can go fullscreen by maximizing the window.
     
-![Alt text](./img/image-26.png)
+![img26](./img/image-26.png)
 
-16. Now you can install the corresponding applications by transferring the installation packages through the shared directory or downloading software packages using a browser for installation and use.
+1.  Now you can install the corresponding applications by transferring the installation packages through the shared directory or downloading software packages using a browser for installation and use.
 
 ![screenshot1](./img/Screenshot_20231214-135649_aFreeRDP.png)
 ![screenshot2](./img/Screenshot_20231214-135819_aFreeRDP.png)
 ![screenshot3](./img/Screenshot_20231214-140355_aFreeRDP.png)
 
-If you want to learn how to sinicize tiny11, head over to the [chinese-tiny11](https://doc.openfde.com/blog/tiny-chinese)
+If you want to learn how to sinicize tiny11, head over to the [chinese-tiny11](./../2023-12-22-chinese-tiny/chinese-tiny11.md)
