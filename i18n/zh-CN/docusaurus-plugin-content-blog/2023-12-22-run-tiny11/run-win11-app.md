@@ -6,13 +6,9 @@ date: 2023-12-22T14:00
 author: zhaolixia
 ---
 
-本文档主要介绍如何在OpenFDE下使用Win11.
+本博客主要介绍如何在OpenFDE下使用Win11，主要过程包括tiny11镜像、使用phyvirt将镜像安装为虚拟机并将操作系统显示语言设置为中文、copy qcow2包并最终尝试在OpenFDE环境中使用虚拟机去实现。
 
 <!--truncate-->
-
-# Openfde玩转win11应用
-
-&emsp;&emsp;本文档主要介绍如何在OpenFDE下使用Win11，主要过程包括tiny11镜像、使用phyvirt将镜像安装为虚拟机并将操作系统显示语言设置为中文、copy qcow2包并最终尝试在OpenFDE环境中使用虚拟机去实现。下面将介绍详细的环境搭建方式。
 
 ### 软硬件资源
 
