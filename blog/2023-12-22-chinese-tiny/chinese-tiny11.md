@@ -1,6 +1,6 @@
 ---
 slug: tiny-chinese
-title: tiny11操作系统汉化
+title: Tiny11操作系统汉化
 description: 介绍如何汉化tiny11操作系统
 date: 2023-12-22T14:00
 author: zhaolixia
