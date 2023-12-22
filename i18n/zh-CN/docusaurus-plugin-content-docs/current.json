@@ -58,5 +58,13 @@
   "sidebar.tutorialSidebar.category.Version Update.link.generated-index.description": {
     "message": " ",
     "description": "The generated-index page description for category Version Update in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.3rd APP Use Guides": {
+    "message": "第三方APP使用指南",
+    "description": "The label for category 3rd APP Use Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.3rd APP Use Guides.link.generated-index.description": {
+    "message": " ",
+    "description": "The generated-index page description for category 3rd APP Use Guides in sidebar tutorialSidebar"
   }
 }

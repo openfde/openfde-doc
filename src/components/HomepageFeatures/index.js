@@ -33,7 +33,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Developer Guide',
+    title: 'Developer Guides',
     href: 'docs/category/developer-guides',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
