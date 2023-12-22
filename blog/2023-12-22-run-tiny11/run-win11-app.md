@@ -6,6 +6,10 @@ date: 2023-12-22T14:00
 author: zhaolixia, kuangyangyang
 ---
 
+This blog provides instructions on how to use Win11 in an OpenFDE environment. 
+
+<!--truncate-->
+
 # Run Win11 APP
 
 This document provides instructions on how to use Win11 in an OpenFDE environment. The main steps include obtaining the tiny11 image, using phyvirt to install the image as a virtual machine with the operating system language set to Chinese, copying the qcow2 file, and finally attempting to use the virtual machine in the OpenFDE environment. The following section details the process for setting up the environment.
