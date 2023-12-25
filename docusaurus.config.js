@@ -52,8 +52,9 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-           editUrl:
-          'https://gitee.com/openfde/openfde-doc/tree/master',
+          editLocalizedFiles: true,
+          editUrl:
+            'https://gitee.com/openfde/openfde-doc/tree/master',
         },
         blog: {
           showReadingTime: true,
