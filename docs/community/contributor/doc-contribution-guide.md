@@ -24,7 +24,7 @@ Firstly, it is important to determine the category to which your uploaded docume
 
 ### Upload the source file for the blog posts
 
-If you are uploading source files for blog-type technical articles, please upload your files to the `blog/`. For folder and file naming conventions, as well as the format of the blog content, please refer to the [Blog Writing Guidelines](https://docs.openfde.com/zh-CN/blog/writing-standards).
+If you are uploading source files for blog-type technical articles, please upload your files to the `blog/`. For folder and file naming conventions, as well as the format of the blog content, please refer to the [Blog Writing Guidelines](https://docs.openfde.com/blog/writing-standards).
 
 ### Internationalization
 
