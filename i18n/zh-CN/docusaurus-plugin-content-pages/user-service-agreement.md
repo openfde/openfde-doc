@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 # <center>用户服务协议</center>
 
-&emsp;&emsp;欢迎您注册并使用[OpenFDE社区](https://openfde.com)（以下简称"OpenFDE"或者"我们"）！
+&emsp;&emsp;欢迎您注册并使用[OpenFDE社区](https://openfde.com/en)（以下简称"OpenFDE"或者"我们"）！
 
 &emsp;&emsp;本用户服务协议（以下称"本协议"）约定您作为最终用户使用OpenFDE应遵循的基本规范。在接受本协议之前，请您仔细阅读全部内容。
 
