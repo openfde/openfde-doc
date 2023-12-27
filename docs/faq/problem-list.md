@@ -20,8 +20,7 @@ OpenFDE may currently have some usage issues. If you encounter the following rel
 |When opening an image in the gallery and maximizing the window, the image does not adjust its size according to the window size change and remains unchanged.|
 |There is a probability of windows becoming transparent when performing zooming, scaling, or dragging operations in certain applications.|
 |When opening an application from the background, there is a screen orientation switch occurring in the application window.|
-|In the bottom-left menu bar, when right-clicking on an application icon, the pop-up window does not disappear but instead overlaps with other windows.|
-|The application windows cannot be moved to the left side of the screen, which is inconsistent with the Windows desktop experience.|	
+|In the bottom-left menu bar, when right-clicking on an application icon, the pop-up window does not disappear but instead overlaps with other windows.|	
 |When clicking on "Privacy - Security Center," it returns to the main settings interface.|		
 |After adjusting the display size, some applications cannot be maximized or minimized, and the content of some applications becomes overlapped and distorted.|
 |When adjusting the font size, there is a probability of a brief flickering and unsmooth animation, which affects the user experience.|
