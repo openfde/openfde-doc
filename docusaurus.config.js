@@ -98,11 +98,11 @@ const config = {
           //    label: 'GitHub',
           //    position: 'right',
           // },
-          //  {
-          //    type: 'localeDropdown',
-          //    position: 'left',
-          //    persistLocale: true,
-          //  }
+            {
+              type: 'localeDropdown',
+              position: 'left',
+              persistLocale: true,
+            }
         ],
       },
       footer: {
@@ -134,7 +134,7 @@ const config = {
               },
               {
                 label: 'Official Account',
-                href: siteUrl + '/img/WeChat-Official.jpg', // OpenFDE社区群
+                href: siteUrl + '/img/WeChat-Official.jpg', 
               },
               {
                 label: 'Discord Community',
@@ -147,7 +147,7 @@ const config = {
             items: [
               {
                 label: 'Official Website',
-                href: 'https://openfde.com',
+                href: 'https://openfde.com/en',
                 // to: '/blog',
               },
               {

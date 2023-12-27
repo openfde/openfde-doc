@@ -44,7 +44,6 @@ The taskbar displays the currently open applications. Additionally, application 
 The status bar displays the current system status and is located at the bottom-right of the screen. It primarily shows the following system statuses:
 
 - network status
-- bluetooth status
 - voice status
 - current time
 

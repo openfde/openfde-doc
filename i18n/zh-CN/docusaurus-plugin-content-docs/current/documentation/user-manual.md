@@ -18,7 +18,7 @@ title: 用户手册
 - 以文件融合的方式兼顾Android文件访问的高效性和Linux文件访问的安全性
 - 提供Android开发环境和平台，开发者可直接在OpenFDE上进行移动应用开发
 
-&emsp;&emsp;OpenFDE下载和安装指南可参见 [安装指南](./installation-guide) <!-- 注意这里文档链接不要加md后缀 -->
+&emsp;&emsp;OpenFDE下载和安装指南可参见 [安装指引](./installation-guide) <!-- 注意这里文档链接不要加md后缀 -->
 
 ## 2. 自定义功能{#definition-function}
 
@@ -44,7 +44,6 @@ title: 用户手册
 &emsp;&emsp;状态栏显示系统当前状态，位于屏幕底部的右下方，主要显示的系统状态有：
 
 - 网络状态
-- 蓝牙状态
 - 声音状态
 - 当前时间
 
