@@ -53,16 +53,6 @@ sudo apt-get install curl && curl -fsSL https://openfde.com/getopenfde/get-openf
 ```
 在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。想要了解详细的安装过程可以参见[安装指引](./installation-guide#preparation-before-install)
 
-<!-- 
-- 对于ubuntu系统
-```
-sudo echo \
-  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/packages.openfde.gpg] http://openfde.com/repos/ubuntu/ \
-  "$(. /etc/os-release && echo "$VERSION_CODENAME")" main" | \
-  sudo tee /etc/apt/sources.list.d/openfde.list > /dev/null
-```
--->
-
 ## 三、畅快使用{#happy-use}
 
 ### 1. 关闭安全控制{#close-security-control}
