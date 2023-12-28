@@ -49,4 +49,6 @@ lunch 46
 make -j24
 ```
     
+If you encounter the compilation error shown in the image below during the build process, please ignore it as it does not affect the compilation process.
 
+![build-warn](./img/build-warn.png)

@@ -48,4 +48,7 @@ source build/envsetup.sh
 lunch 46 
 make -j24
 ```
-    
+
+如果在编译过程中出现下图中的编译错误，请忽略，不影响编译过程。
+
+![build-warn](./img/build-warn.png)
