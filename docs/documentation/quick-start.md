@@ -48,6 +48,16 @@ you must reboot your computer and wait for the new kernel to take effect before 
 
 You can also try manually compiling and installing OpenFDE and see if it can be installed on other operating systems. If you have any better ideas, you can join the discussion [here](https://groups.io/g/openfde/topics) and share your feedback! We look forward to hearing from you!
 
+#### <mark>System Setup Requirements(Importantly！！！)</mark>{#system-settings}
+
+In order to install and start OpenFDE smoothly, before you start installing OpenFDE, you need to turn off all security controls on your current system, select 'Settings - Security' in your current system, and go to Security Center.
+
+![control](./img/control.png)
+
+Using network control as an example, you should disable application internet access control. Additionally, it is recommended to disable controls related to application protection and device security.
+
+![protect](./img/protect.png)
+
 ## 2. Installation Steps{#installtion-steps}
 
 Let's take the example of Kylin operating system. First, make sure you have opened the terminal of your current system. Execute the following command for a one-click installation:
@@ -60,22 +70,9 @@ During the installation process, you may be prompted to enter "y" to confirm cer
 
 ## 3. Get Started{#happy-use}
 
-### 3.1 Disable Security Controls{#close-security-control}
+### 3.1 Login and Logout{#login-and-logout}
 
-To ensure a smoother experience while using OpenFDE, it is recommended to disable the security controls on your current system before entering OpenFDE. In the case of Kylin system, you can follow these steps:
-
-- Select "Settings" from the menu.
-- Go to "Security" to access the Security Center.
-  
-![control](./img/control.png)
-
-Using network control as an example, you should disable application internet access control. Additionally, it is recommended to disable controls related to application protection and device security.
-
-![protect](./img/protect.png)
-
-### 3.2 Login and Logout{#login-and-logout}
-
-#### 3.2.1 Login{#login}
+#### 3.1.1 Login{#login}
 
 - Accessing the Login Page: After completing the initial installation of OpenFDE, follow these steps to reach the login page:
   - Log out of your current system.
@@ -89,23 +86,27 @@ Using network control as an example, you should disable application internet acc
 
 ![start](./img/start.jpg)
 
-#### 3.2.2 Logout{#logout}
+#### 3.1.2 Logout{#logout}
 
 Clicking on the Start menu, then clicking on the power button icon in the top right corner will bring up three buttons in sequence: Shutdown, Restart, and Logout. Clicking on the Logout button will allow you to exit to the login screen.
 
 ![logout](./img/logout.png)
 
-### 3.3 Configure Input Method{#config-ime}
+### 3.2 Configure Input Method{#config-ime}
 
 OpenFDE comes with the default input method of 'iFlytek Voice Input Method'. To quickly open the iFlytek Voice Input Method, locate it in the Start menu. Selecting the iFlytek Voice Input Method option allows you to enable it and agree to the summary of privacy terms. You can configure input methods, keyboard layouts, and skin fonts according to your preferences.
 
-### 3.4 Configure Network{#config-network}
+<mark>A tip: If you encounter a problem similar to the input box in the figure below that covers the text content in the process of using the iFlytek Voice Input Method, you can hover the mouse over the input method prompt word box, and then press and hold the left and right mouse buttons at the same time, so that you can drag the input method prompt word box to other positions.</mark>
+
+![ime-tips](./img/ime-tips.jpg)
+
+### 3.3 Configure Network{#config-network}
 
 OpenFDE can directly utilize external systems such as Kylin, UOS, Ubuntu for networking. Users can click on the OpenFDE icon in the bottom left corner and open Start Menu, Fusion Linux Application to find the Linux Settings. In the Linux Settings, you can configure the network settings for the system.
 
 ![net-start](./img/net-start.png) 
 
-#### 3.4.1 Wired Network Configuration{#config-wired-network}
+#### 3.3.1 Wired Network Configuration{#config-wired-network}
 
 In the wired network settings, click on Advanced Settings. A pop-up window titled "Ethernet Settings" will appear on the right side.
 
@@ -114,7 +115,7 @@ In the wired network settings, click on Advanced Settings. A pop-up window title
 
 ![ipv4](./img/net-set1.jpg)
 
-#### 3.4.2 Wireless Network Configuration{#config-wlan}
+#### 3.3.2 Wireless Network Configuration{#config-wlan}
 
 In the wireless network settings, click on Advanced Settings. A pop-up window titled "Wireless LAN Settings" will appear on the right side.
 
@@ -123,15 +124,15 @@ In the wireless network settings, click on Advanced Settings. A pop-up window ti
 
 ![wlan](./img/wlan.jpg)
 
-#### 4.3 VPN Configuration{#config-vpn}
+#### 3.3.3 VPN Configuration{#config-vpn}
 
 OpenFDE supports interoperability between Android and Linux systems for VPN connectivity, which is a major benefit for remote workers. Taking the popular VPN software EasyConnect as an example, you can directly download the Android version of EasyConnect from the app store or a browser on your Android device.
 
 Once installed, configure the connection to your work VPN. The key point is that there is no need to configure the VPN on the Linux side. You can immediately start your remote work.
 
-### 3.5 Install Application{#install-app}
+### 3.4 Install Application{#install-app}
 
-#### 3.5.1 Install Android Application{#install-android-app}
+#### 3.4.1 Install Android Application{#install-android-app}
 
 There are two ways to install Android applications:
 
@@ -139,11 +140,11 @@ There are two ways to install Android applications:
 
 - Using the built-in Via browser, you can install Android app marketplaces like "AppGallery" and then proceed to install various Android applications from within the app marketplace.
 
-#### 3.5.2 Install Linux Application{#install-linux-app}
+#### 3.4.2 Install Linux Application{#install-linux-app}
 
 OpenFDE integrates Linux applications into the Android system and provides a built-in standalone Linux Fusion Application window. To open the Linux Fusion Application window, click on the penguin icon labeled "Fusion Linux Application" in the Start Menu. The Linux Fusion Application window operates similarly to a regular Linux graphical system, allowing you to run Linux GUI, command-line interfaces, and more. The usage is identical to a typical Linux environment, and further elaboration is unnecessary.
 
-### 3.6 Operational Tips{#use-skills}
+### 3.5 Operational Tips{#use-skills}
 
 Different from the typical PC desktop's keyboard and mouse operation, OpenFDE has its own unique features. Here are some basic operation tips.
 
