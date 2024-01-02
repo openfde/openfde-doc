@@ -44,7 +44,8 @@ sudo apt-get autoclean -y & reboot # 这里必须要重启系统，待新内核�
 
 不过，如果你愿意的话，你可以尝试手动编译安装，试试将OpenFDE安装在其他的操作系统上，有更好的想法可以去[这里](https://groups.io/g/openfde/topics)跟大家交流讨论，期待听到你的反馈！
 
-#### <mark>系统设置要求(重要！！！)</mark>{#system-settings}
+#### <mark>系统设置要求</mark>{#system-settings}
+
 
 &emsp;&emsp;为顺利安装和启动OpenFDE，在开始安装OpenFDE之前，你需要关闭当前系统所有的安全控制，在当前系统中选择设置-安全，进入安全中心。
 
