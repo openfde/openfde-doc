@@ -73,6 +73,10 @@ OpenFDE supports network interoperability between Linux and Android systems, all
 
 OpenFDE supports the built-in iFlytek Voice Input Method. Users can add new languages, input methods, and keyboards in the Settings -> System -> Language and Input section.
 
+<mark>A tip: If you encounter a problem similar to the input box in the figure below that covers the text content in the process of using the iFlytek Voice Input Method, you can hover the mouse over the input method prompt word box, and then press and hold the left and right mouse buttons at the same time, so that you can drag the input method prompt word box to other positions.</mark>
+
+![ime-tips](./img/ime-tips.jpg)
+
 ## 2. Applications{#applications}
 
 ### 2.1 Install applications{#install-software}
