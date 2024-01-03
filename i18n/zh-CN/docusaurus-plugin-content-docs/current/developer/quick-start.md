@@ -78,7 +78,7 @@ sudo make install-dev
 
 ### 2.2 编译安装libgbinder{#build-libgbinder}
 
-同样需要先下载源码```git clone https://gitee.com/openfde/libgbinder.git```, 接着依次执行下列命令来编译和安装libgbinder。
+首先获取源码```git clone https://gitee.com/openfde/libgbinder.git```, 接着依次执行下列命令来编译和安装libgbinder。
 
 ```
 cd libgbinder
@@ -105,9 +105,7 @@ pip3 install pyclip
 
 ```
 cd fde_ctrl
-make
-sudo make install
-sudo make install-dev
+sudo make build && sudo make install
 ```
 
 ### 2.5 编译安装fde_fs{#build-fde-fs}
@@ -116,20 +114,16 @@ sudo make install-dev
 
 ```
 cd fde_fs
-make
-sudo make install
-sudo make install-dev
+sudo make build && sudo make install
 ```
 
-### 2.6 编译安装Waydroid_waydroid{#build-waydroid}
+### 2.6 安装Waydroid_waydroid{#build-waydroid}
 
 首先获取Waydroid_waydroid源码```https://gitee.com/openfde/waydroid_waydroid.git```，接着依次执行下列命令编译安装waydroid。
 
 ```
 cd waydroid_waydroid
-make
 sudo make install
-sudo make install-dev
 ```
 
 ### 2.7 编译安装fdeion{#build-fdeion}

@@ -78,7 +78,7 @@ sudo make install-dev
 
 ### 2.2 Build and Make Install libgbinder{#build-libgbinder}
 
-You need to download the source code of libgbinder ```git clone https://gitee.com/openfde/libgbinder.git``` and execute the following commands sequentially to compile and install libgbinder.
+Download the source code of libgbinder ```git clone https://gitee.com/openfde/libgbinder.git``` and execute the following commands sequentially to compile and install libgbinder.
 
 ```
 cd libgbinder
@@ -111,9 +111,7 @@ Download the source code of fde_ctrl ```git clone https://gitee.com/openfde/fde_
 
 ```
 cd fde_ctrl
-make
-sudo make install
-sudo make install-dev
+sudo make build && sudo make install
 ```
 
 ### 2.5 Build and Make Install fde_fs{#build-fde-fs}
@@ -122,20 +120,16 @@ Download the source code of fde_fs ```git clone https://gitee.com/openfde/fde_fs
 
 ```
 cd fde_fs
-make
-sudo make install
-sudo make install-dev
+sudo make build && sudo make install
 ```
 
-### 2.6 Build and Make Install Waydroid_waydroid{#build-waydroid}
+### 2.6 Make Install Waydroid_waydroid{#build-waydroid}
 
 Download the source code of Waydroid_waydroid```https://gitee.com/openfde/waydroid_waydroid.git```，and execute the following commands sequentially to compile and install waydroid.
 
 ```
 cd waydroid_waydroid
-make
 sudo make install
-sudo make install-dev
 ```
 
 ### 2.7 Build and Make Install fdeion{#build-fdeion}
@@ -152,6 +146,8 @@ git clone https://gitee.com/openfde/fdeion.git
 
 ```
 sudo apt-get install dh-make
+```
+```
 sudo apt-get install dkms
 sudo cp -a fdeion /usr/src/fdeion-1.0
 sudo dkms add -m fdeion -v 1.0
