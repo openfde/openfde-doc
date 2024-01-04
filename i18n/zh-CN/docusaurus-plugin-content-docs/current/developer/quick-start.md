@@ -15,12 +15,7 @@ title: 快速开始
 
 ### 1.2 安装Ubuntu22.04{#install-ubuntu22.04}
 
-&emsp;&emsp;准备好主机后，需要在你的环境上安装Ubuntu22.04, 友情提供下载链接：https://ubuntu.com/download/server, 下载完成后运行容器。
-
-```
-docker pull ubuntu:22.04
-docker run -it --name ubuntu_build_apk ubuntu:22.04
-```
+&emsp;&emsp;准备好主机后，需要在你的环境上安装Ubuntu22.04, 友情提供下载链接：https://ubuntu.com/download/server。
 
 ### 1.3 下载repo脚本文件{#download-repo}
 
@@ -44,6 +39,7 @@ sudo apt install git-core gnupg flex bison gperf build-essential zip curl zlib1g
 
 ```
 mkdir fde && cd fde
+sudo apt install git git-lfs -y
 repo init -u https://gitee.com/openfde/manifests -b 1.0.5 --git-lfs
 repo sync -j24
 ```
@@ -57,7 +53,7 @@ lunch 46
 make -j24
 ```
 
-其中```syncFdeApk```命令会从公网对象存储中下载当前版本匹配的apk到aosp源码树对应位置。如果你修改了apk源码，需要重新编译apk源码，请参考[第三部分 Android APK编译](./quick-start#build-android-apk)。
+其中```syncFdeApk```命令会从公网对象存储中下载当前版本匹配的apk到aosp源码树对应位置。如果修改了对应的apk源码，需要重新编译apk源码，请参考[Android APK编译](./build-android-apk)。
 
 <mark>如果在编译过程中出现下图中的编译错误，请忽略，不影响编译过程。</mark>
 
@@ -76,65 +72,7 @@ Linux程序编译需要在**ARMv8架构**的主机上进行，你需要选定一
 你可以执行下列命令进行一键编译Linux程序。
 
 ```
-sudo apt-get install curl && curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh && sudo sh ./get-openfde.sh
+git clone https://gitee.com/openfde/quick_start_to_compile_linux_programs && cp -a quick_start_to_compile_linux_programs/build_linux_for_fde.sh . && ./build_linux_for_fde.sh
 ```
 
 如果想要了解更详细的编译过程和细节，请前往[Kylin2303上编译Linux程序](./build-linux/build-linux-on-kylin2303)。
-
-## 3. Android APK编译{#build-android-apk}
-
-<mark>环境准备：请确保Android APK在X86机器上运行Ubuntu容器里进行编译。要求多核的X86主机，内存要求16G，硬盘大小最低配备512G。</mark>
-
-### 3.1 下载Android cmdline tools和ndk
-
-```
-apt update
-cd ~
-apt install wget zip openjdk-11-jre git openjdk-17-jre -y
-wget https://dl.google.com/android/repository/commandlinetools-linux-10406996_latest.zip
-unzip commandlinetools-linux-10406996_latest.zip
-export PATH=$PATH:/root/cmdline-tools/bin/
-mkdir /root/sdk_root
-export ANDROID_SDK_ROOT=/root/sdk_root/
-sdkmanager --sdk_root=/root/sdk_root/ 'ndk;21.1.6352462'
-```
-
-如果命令执行过程中遇到"Accept?(y/N):"，请按y。
-
-### 3.2 编译systemui apk{#build-systemui}
-
-```
-git clone https://gitee.com/openfde/boringdroidsystemui
-cd boringdroidsystemui
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
-./gradlew build
-```
-
-**说明：** 由于sdkmanager要求java 17才能运行，而编译apk只能在java11上编译，所以这里需要重新设置JAVA_HOME为java11。如果使用java17编译的话会报如下错误：
-
-> Unable to make field private final java.lang.String java.io.File.path accessible: module java.base does not "opens java.io" to unnamed module @71cff6a8.
-
-编译完成后可以在`app/build/outputs/apk`目录下找到app/build/outputs/apk/release/BoringdroidSystemUI.apk文件。
-
-### 3.3 编译fdevnc apk{#build-fde-vnc}
-
-```
-cd ~
-git clone https://gitee.com/openfde/remote-desktop-clients 
-cd remote-desktop-clients
-./gradlew :bVNC-app:assembleRelease  -PVersionName="1.0.5"
-```
-
-###  3.4 拷贝apk到aosp源码目录{#copy-apk-to-aosp}
-
-打开新的linux shell终端，将3.2节和3.3节编译好的apk文件从容器中拷贝出来。
-
-```
-docker cp ubuntu_build_apk:/root/boringdroidsystemui/app/build/outputs/apk/release/BoringdroidSystemUI.apk  $AOSP_TOP_DIR/vendor/prebuilts/bdapps/bin/BoringdroidSystemUI.apk
-```
-
-```
-docker cp ubuntu_build_apk:/root/remote-desktop-clients/bVNC-app/build/outputs/apk/release/FdeVncClient.apk $AOSP_TOP_DIR/device/openfde/fde/fde_vnc/
-```
-
-其中$AOSP_TOP_DIR 表示aosp的源码树顶层目录。
