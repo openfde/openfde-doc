@@ -1,126 +1,127 @@
 ---
-slug: run-tiny11
-title: OpenFDE玩转Tiny11应用
-description: 介绍如何在OpenFDE中使用Tiny11
+slug: run-win11
+title: OpenFDE玩转win11应用
+description: 介绍如何在OpenFDE用上win11应用
 date: 2023-12-22T14:00
 author: zhaolixia
 ---
 
-本博客主要介绍如何在OpenFDE下使用Win11，主要过程包括tiny11镜像、使用phyvirt将镜像安装为虚拟机并将操作系统显示语言设置为中文、copy qcow2包并最终尝试在OpenFDE环境中使用虚拟机去实现。
-
+本博客介绍如何在OpenFDE使用win11应用，主要在OpenFDE安装phyvirt-fde，导入已有win11镜像qcow2创建虚拟机，下载win11应用包并安装使用
 <!--truncate-->
 
 ### 软硬件资源
 
 #### 硬件
 
-* 16CPU 
+* 4CPU
 * 16GB MEM
-* 硬盘40GB
+* 硬盘10GB
 * 内核版本: 5.4.18-85-generic
-* aarch64
+* aarch64 
   
 #### 软件
 
 * Kylin V10 SP1
-* phyvirt app包：cn.com.vapp_1.5.6.0_arm64_kylin.deb
-* tiny11虚拟机qcow2文件：tiny11_20231221_114340.qcow2
-* vapp镜像文件:vapp-v1.5.6.0-20231107-1540.iso
-    * 安装好vapp后已存在于路径/opt/apps/cn.com.vapp/files/iso/vapp-v1.5.6.0-20231107-1540.iso
-* 虚拟机安卓版:android-build-release-signed.apk
-    * 安装好vapp后已存在于路径/opt/apps/cn.com.vapp/files/android-build-release-signed.apk
-* 远程桌面安卓版:aFreeRDP-release.apk
-    * 安装好vapp后已存在于路径/opt/apps/cn.com.vapp/files/aFreeRDP-release.apk
+* phyvirt-fde：
+  * 通过命令“sudo apt install phyvirt-fde -y”安装
+  * 目前版本仅支持Phytium CPU part为0x662和0x663的机器，可使用命令“cat /proc/cpuinfo”查看是否匹配
+* win11虚拟机qcow2：tiny11-vm-vapp.qcow2（7.2GB）
+  * 使用tiny11制作，它是一款对win11进行极致精简的定制系统,它的特点是在资源受限的情况下，用户依然能够获得流畅的使用体验
+  * 该镜像用户名与密码都是pvuser,成功创建虚拟机后可自行修改
+  * 文件存放于夸克网盘，下载地址为 https://pan.quark.cn/s/d1845706339e
 
 ### 安装前提
 
-Openfde已安装完毕并可以正常使用
+OpenFDE已安装完毕并登录openfde桌面
 
 ### 搭建步骤
 
-1. Kylin下双击“cn.com.vapp_1.5.6.0_arm64_kylin.deb”,点击“一键安装”，在弹出的麒麟授权窗口输入pc密码后开始安装
-   
-![image](./img/image.png)
-![image1](./img/image-1.png)
-
-2. 安装完可在应用列表找到“vapp-demo”，点击打开，可在系统设置中看到虚拟机的共享目录默认为“/home/test/桌面/share”
-   
-![image2](./img/image-2.png)
-
-3. 将vapp镜像文件复制到共享目录，用以在虚拟机内部执行
-   
+1. 在OpenFDE中点击"开始菜单->Fusion Linux Application",找到linux的终端应用Konsole，输入以下命令安装phyvirt-fde
 ```
-mkdir -p  ~/桌面/share/vm4 
-cp /opt/apps/cn.com.vapp/files/iso/vapp-v1.5.6.0-20231107-1540.iso ~/桌面/share/vm4
+sudo apt update
+sudo apt install phyvirt-fde -y
 ```
-4. 点击“基于已有镜像创建”，找到已有的tiny11虚拟机qcow2文件，这里我放在了“/mnt/tiny11/”,选中路径下的任意qcow2文件打开
+![image](img/image-7-1.png)
+
+![image](img/image-14-1.png)
+
+2. 在"开始菜单->Fusion Linux Application"中打开vapp-demo
    
-![img4](./img/image-4.png)
-![img9](./img/image-9.png)
+![image](./img/image-7-1.png)
 
-5. 输入虚拟机名，操作系统类型、CPU数量、内存大小等信息，点击右下角确认开始创建虚拟机
+![](./img/IMG_20240102_100654.jpg)
    
-![img6](./img/image-6.png)
-
-6. 等待虚拟平台右下角状态从“未就绪”变为“就绪”,点击“调试桌面”可打开虚拟机桌面，注意此时所在的用户为虚拟机默认的用户为pvuser（用户和密码都为pvuser）
+3. 点击“基于已有镜像创建”，找到已有的win11虚拟机qcow2文件(tiny11-vm-vapp.qcow2)打开
    
-![img8](./img/image-8.png)
-![img7](./img/image-7.png)
+![image](./img/image-4.png)
 
-7. 打开共享目录，找到第3步copy进入的vapp镜像文件vapp-v1.5.6.0-20231107-1540.iso，双击打开
+![](img/IMG_20240102_101913.jpg)
+
+4. 输入虚拟机名，操作系统类型、CPU数量、内存大小等信息，点击右下角确认创建虚拟机后直接关闭vapp-demo
    
-![img10](./img/image-10.png)
+![image](./img/image-6.png)
 
-8. 以管理者身份运行其中的"phyvirt-app-v1.5.5.0-2023117-1536.exe"
 
-![img12](./img/image-12.png)
-![img11](./img/image-11.png)
-![img13](./img/image-13.png)
-![img14](./img/image-14.png)
-![img15](./img/image-15.png)
-![img16](./img/image-16.png)
-![img17](./img/image-17.png)
-![img18](./img/image-18.png)
+5. 重启OpenFDE桌面，点击"开始菜单->phyvirt"打开,可见有新建的虚拟机tiny11
 
-9. 安装完成后需要等待对应的驱动安装结束，会出现是否重启系统的窗口，点击“是”重启系统
+![image](img/image-9-1.png)
 
-![img19](./img/image-19.png)
-![img20](./img/image-20.png)
+![image](./img/image-9-1-1.png)
 
-10. 注销kylin桌面，进入openfde桌面，点击开始菜单->Fusion Linux Application,找到linux终端应用Konsole
+<font color="red">ps:当前版本如果不重启OpenFDE桌面会导致之后的步骤按钮无法操作</font>
+
+6. phyvirt上启动虚拟机
+
+![image](img/image-13-1.png)
+
+7. 待右下角状态为“就绪”，可点击“RDP”进入虚拟机
+  
+![image](img/image-12-1.png)
+
+<font color="red">ps:请点击"RDP”正中心，目前版本点击边缘或者“我的桌面”不会响应</font>
+
+8. 将窗口全屏就可以正常使用了
     
-![img21](./img/image-21.png)
-![img22](./img/image-22.png)
+![image](./img/image-26.png)
 
-11. 在Konsole中输入以下命令，安装虚拟机安卓版和远程桌面安卓版
+### 安装应用
+* 方法一
+  镜像自带有浏览器Edge,可用此下载软件包安装使用
 
-```
-waydroid app install /opt/apps/cn.com.vapp/files/android-build-release-signed.apk
-waydroid app install /opt/apps/cn.com.vapp/files/aFreeRDP-release.apk 
-```
+![image](./img/Screenshot_20231214-135649_aFreeRDP.png)
 
-![img27](./img/image-27.png)
+![image](./img/Screenshot_20231214-135819_aFreeRDP.png)
 
-12. 点击开始菜单->phyvirt应用,可见有在kylin上新建的虚拟机tiny11
+![image](./img/Screenshot_20231214-140355_aFreeRDP.png)
 
-![img23](./img/image-23.png)
+* 方法二
+  phyvirt中默认的共享目录路径为“~/桌面/share",可将安装包放入其中，在虚拟机中点击安装
+  ```
+  cp ~/下载/exe/ ~/桌面/share/ -r
+  ```
+  
+  ![Alt text](img/Screenshot_20240102-113151_PhyVirt.png)
 
-13. 在openfde的phyvirt上启动虚拟机
+  ![Alt text](img/Screenshot_20240102-133944_PhyVirt.png)
 
-![img24](./img/image-24.png)
+  ![Alt text](img/Screenshot_20240102-134228_PhyVirt.png)
 
-14. 待右下角状态为“就绪”，可点击“我的桌面”进入虚拟机
+  ![Alt text](img/Screenshot_20240102-154048_PhyVirt.png)
 
-![img25](./img/image-25.png)
+### 应用展示
+* Xmind
+  
+![Alt text](img/Screenshot_20240102-174640_PhyVirt.png)
 
-15. 将窗口全屏就可以正常使用了
-    
-![img26](./img/image-26.png)
+* Xshell
 
-16. 现在就可以通过共享目录传入安装包安装对应应用，或者使用浏览器下载软件包安装使用了
+![Alt text](img/Screenshot_20240102-180025_PhyVirt.png)
 
-![screenshot1](./img/Screenshot_20231214-135649_aFreeRDP.png)
-![screenshot2](./img/Screenshot_20231214-135819_aFreeRDP.png)
-![screenshot3](./img/Screenshot_20231214-140355_aFreeRDP.png)
+* QQ游戏
+  
+![Alt text](img/Screenshot_20240104-134529_PhyVirt.png)
 
-想要了解如何将tiny11汉化成中文使用，请参考[tiny11操作系统汉化](./../2023-12-22-chinese-tiny/chinese-tiny11.md) 
+![Alt text](img/Screenshot_20240104-134435_PhyVirt.png)
+
+### 致谢
+感谢飞腾公司基于phyvirt基础上，为OpenFDE提供了phyvirt-fde
