@@ -42,127 +42,113 @@ mkdir fde && cd fde
 repo init -u https://gitee.com/openfde/manifests -b 1.0.5 --git-lfs
 repo sync -j24
 ```
-  
+
 ### 1.6 Build Source Code{#build-source-code}
 
 ```
 source build/envsetup.sh
+syncFdeApk
 lunch 46 
 make -j24
 ```
-    
-If you encounter the compilation error shown in the image below during the build process, please ignore it as it does not affect the compilation process.
+
+ The `syncFdeApk` command will download the APK matching the current version from the public object storage and place it in the corresponding location within the AOSP source tree. If you have made modifications to the APK source code and need to recompile it, please refer to [Part 3: Android APK Compilation](./quick-start#build-android-apk).
+
+<mark>If you encounter the compilation error shown in the image below during the build process, please ignore it as it does not affect the compilation process.</mark>
 
 ![build-warn](./img/build-warn.png)
 
 ## 2. Build Linux Dependencies{#build-linux}
 
-<mark>Notes: building linux dependencies requires an ARMv8 architecture-based host.</mark> You need to choose a project directory to compile and install Linux-related programs. The operations in the following sections should be performed under the project directory, such as openfde-linux/.
+### 2.1 Requirements{#requirements}
 
-### 2.1 Build and Make Install libglibutil{#build-libglibutil}
+Building linux dependencies requires an ARMv8 architecture-based host. You need to choose a project directory to compile and install Linux-related programs. The operations in the following sections should be performed under the project directory, such as openfde-linux/. <mark> If this is not your first time compiling, please make sure to synchronize and update the code of all dependent libraries to the latest version.</mark>
 
-First, you need to download the source code of libglibtuil from the OpenFDE repository on Gitee.
+We will provide a detailed guide on compiling Linux programs on different operating systems.
 
-```
-git clone https://gitee.com/openfde/libglibutil.git
-```
+### 2.2 Build Linux Dependencies on Kylin2023
 
-Next, execute the following commands sequentially to compile and install libglibutil.
+You can execute the following command to compile Linux programs with a single command.
 
 ```
-cd libglibutil && sudo apt install libglib2.0-dev
-make
-sudo make install 
-sudo make install-dev
-```
-
-### 2.2 Build and Make Install libgbinder{#build-libgbinder}
-
-Download the source code of libgbinder ```git clone https://gitee.com/openfde/libgbinder.git``` and execute the following commands sequentially to compile and install libgbinder.
 
 ```
-cd libgbinder
-make
-sudo make install
-sudo make install-dev
-```
 
-### 2.3 Build and Make Install python-gbinder{#build-python-gbinder}
+If you want to learn more about the detailed compilation process and specifics, please visit [Building Linux Programs on Kylin2303](./build-linux/build-linux-on-kylin2303).
 
-Download the source code of python-gbinder in the current project directory openfde-linux/ 
-
-```
-git clone https://gitee.com/openfde/gbinder-python.git
-```
-
-And execute the following commands sequentially to compile and install  python-gbinder.
-
-```
-sudo apt install python3-pip cython3 lxc curl ca-certificates
-cd gbinder-python
-python3 setup.py build_ext --inplace --cython
-sudo cp -a gbinder.cpython-38-aarch64-linux-gnu.so /usr/lib/python3/dist-packages/
-pip3 install pyclip
-```
-
-### 2.4 Build and Make Install fde_ctrl{#build-fde-ctrl}
-
-Download the source code of fde_ctrl ```git clone https://gitee.com/openfde/fde_ctrl.git```, and execute the following commands sequentially to compile and install fde_ctrl.
-
-```
-cd fde_ctrl
-sudo make build && sudo make install
-```
-
-### 2.5 Build and Make Install fde_fs{#build-fde-fs}
-
-Download the source code of fde_fs ```git clone https://gitee.com/openfde/fde_fs.git```, and execute the following commands sequentially to compile and install fde_fs.
-
-```
-cd fde_fs
-sudo make build && sudo make install
-```
-
-### 2.6 Make Install Waydroid_waydroid{#build-waydroid}
-
-Download the source code of Waydroid_waydroid```https://gitee.com/openfde/waydroid_waydroid.git```，and execute the following commands sequentially to compile and install waydroid.
-
-```
-cd waydroid_waydroid
-sudo make install
-```
-
-### 2.7 Build and Make Install fdeion{#build-fdeion}
-
-<mark>If your compilation environment does not have a Phytium X100 GPU, you can skip this step.</mark> And if you are compiling Linux programs on a Phytium X100 GPU environment, please proceed with the following steps.
-
-- get fdeion source code
-
-```
-git clone https://gitee.com/openfde/fdeion.git
-```
-
--  execute the following commands sequentially to compile and install fdeion
-
-```
-sudo apt-get install dh-make
-```
-```
-sudo apt-get install dkms
-sudo cp -a fdeion /usr/src/fdeion-1.0
-sudo dkms add -m fdeion -v 1.0
-sudo dkms build -m fdeion -v 1.0
-sudo dkms mkdeb -m fdeion -v 1.0
-```
-
-The "-v 1.0" represents the version of the compiled fdeion. If you are compiling fdeion for a personal project, you can decide the version number yourself.
-
-## 3. Build Android APK{#build-android-apk}
+## 3 Build Android APK{#build-android-apk}
 
 ### 3.1 Build fde_vnc{#build-fde-vnc}
 
-Get the source code ```git clone https://gitee.com/openfde/remote-desktop-clients.git``` at first. The current compilation method supports opening the source code directory in Android Studio and compiling it directly.
+```
+git clone https://gitee.com/openfde/remote-desktop-clients.git
+``` 
+
+The current compilation method supports opening the source code directory in Android Studio and compiling it directly.
 
 ### 3.2 Build system_ui{#build-systemui}
 
-Get the source code ```git clone https://gitee.com/openfde/boringdroidsystemui.git```, Similarly, you can directly open the source code directory in Android Studio and compile it.
+```
+git clone https://gitee.com/openfde/boringdroidsystemui.git
+```
+
+You can directly open the source code directory in Android Studio and compile it.
+
+
+## 3. Android APK编译{#build-android-apk}
+
+<mark>环境准备：请确保Android APK在X86机器上运行Ubuntu容器里进行编译。要求多核的X86主机，内存要求16G，硬盘大小最低配备512G。</mark>
+
+### 3.1 下载Android cmdline tools和ndk
+
+```
+apt update
+cd ~
+apt install wget zip openjdk-11-jre git openjdk-17-jre -y
+wget https://dl.google.com/android/repository/commandlinetools-linux-10406996_latest.zip
+unzip commandlinetools-linux-10406996_latest.zip
+export PATH=$PATH:/root/cmdline-tools/bin/
+mkdir /root/sdk_root
+export ANDROID_SDK_ROOT=/root/sdk_root/
+sdkmanager --sdk_root=/root/sdk_root/ 'ndk;21.1.6352462'
+```
+
+如果命令执行过程中遇到"Accept?(y/N):"，请按y。
+
+### 3.2 编译systemui apk{#build-systemui}
+
+```
+git clone https://gitee.com/openfde/boringdroidsystemui
+cd boringdroidsystemui
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+./gradlew build
+```
+
+**说明：** 由于sdkmanager要求java 17才能运行，而编译apk只能在java11上编译，所以这里需要重新设置JAVA_HOME为java11。如果使用java17编译的话会报如下错误：
+
+> Unable to make field private final java.lang.String java.io.File.path accessible: module java.base does not "opens java.io" to unnamed module @71cff6a8.
+
+编译完成后可以在`app/build/outputs/apk`目录下找到app/build/outputs/apk/release/BoringdroidSystemUI.apk文件。
+
+### 3.3 编译fdevnc apk{#build-fde-vnc}
+
+```
+cd ~
+git clone https://gitee.com/openfde/remote-desktop-clients 
+cd remote-desktop-clients
+./gradlew :bVNC-app:assembleRelease  -PVersionName="1.0.5"
+```
+
+###  3.4 拷贝apk到aosp源码目录{#copy-apk-to-aosp}
+
+打开新的linux shell终端，将3.2节和3.3节编译好的apk文件从容器中拷贝出来。
+
+```
+docker cp ubuntu_build_apk:/root/boringdroidsystemui/app/build/outputs/apk/release/BoringdroidSystemUI.apk  $AOSP_TOP_DIR/vendor/prebuilts/bdapps/bin/BoringdroidSystemUI.apk
+```
+
+```
+docker cp ubuntu_build_apk:/root/remote-desktop-clients/bVNC-app/build/outputs/apk/release/FdeVncClient.apk $AOSP_TOP_DIR/device/openfde/fde/fde_vnc/
+```
+
+其中$AOSP_TOP_DIR 表示aosp的源码树顶层目录。
