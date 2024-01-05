@@ -19,7 +19,7 @@ author: zhaolixia
 * 内核版本: 5.4.18-85-generic
 * aarch64 
   
-#### 软件{software}
+#### 软件{#software}
 
 * Kylin V10 SP1
 * phyvirt-fde：
