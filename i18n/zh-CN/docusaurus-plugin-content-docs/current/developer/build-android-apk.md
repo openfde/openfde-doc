@@ -55,9 +55,9 @@ cd remote-desktop-clients
 ./gradlew :bVNC-app:assembleRelease  -PVersionName="1.0.5"
 ```
 
-### 5. 拷贝apk到aosp源码目录{#copy-apk-to-aosp}
+### 5. 拷贝APK到AOSP源码目录{#copy-apk-to-aosp}
 
-打开新的linux shell终端，将3.2节和3.3节编译好的apk文件从容器中拷贝出来。
+打开新的linux shell终端，将3.3节和3.4节编译好的apk文件从容器中拷贝出来。
 
 ```
 docker cp ubuntu_build_apk:/root/boringdroidsystemui/app/build/outputs/apk/release/BoringdroidSystemUI.apk  $AOSP_TOP_DIR/vendor/prebuilts/bdapps/bin/BoringdroidSystemUI.apk

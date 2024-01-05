@@ -5,7 +5,7 @@ title: Quick Start
 
 # Quick Start{#quick-start}
 
-This document is intended to guide OpenFDE enthusiasts on how to quickly compile the OpenFDE source code.
+This document is intended to guide OpenFDE enthusiasts on how to quickly compile the OpenFDE source code. The comilation process includes building AOSP code and compiling Linux programs.
 
 ## 1. Build AOSP Source Code{#aosp-build}
 

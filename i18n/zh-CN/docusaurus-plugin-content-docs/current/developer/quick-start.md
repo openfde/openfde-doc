@@ -5,7 +5,7 @@ title: 快速开始
 
 # 快速开始{#quick-start}
 
-&emsp;&emsp;本文档用于指导OpenFDE开发爱好者如何快速编译OpenFDE源码。编译工作包括AOSP代码编译、Android APK编译和Linux程序编译三个部分。
+&emsp;&emsp;本文档用于指导OpenFDE开发爱好者如何快速编译OpenFDE源码。编译工作包括AOSP代码编译和Linux程序编译。
 
 ## 1. AOSP源码编译 {#aosp-build}
 

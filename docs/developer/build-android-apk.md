@@ -58,7 +58,7 @@ cd remote-desktop-clients
 
 ###  5. Copy APK to AOSP{#copy-apk-to-aosp}
 
-Open a new Linux shell terminal and copy the compiled APK files from sections 3.2 and 3.3 out of the container.
+Open a new Linux shell terminal and copy the compiled APK files from sections 3.3 and 3.4 out of the container.
 
 ```
 docker cp ubuntu_build_apk:/root/boringdroidsystemui/app/build/outputs/apk/release/BoringdroidSystemUI.apk  $AOSP_TOP_DIR/vendor/prebuilts/bdapps/bin/BoringdroidSystemUI.apk
