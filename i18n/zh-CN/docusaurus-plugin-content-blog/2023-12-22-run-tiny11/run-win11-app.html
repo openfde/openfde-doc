@@ -365,105 +365,98 @@ code {
           : 'default'
     });
   </script>
-<p>本博客主要介绍如何在OpenFDE用上win11应用，主要在OpenFDE下使用安装下载 cn.com.vapp，导入已有win11镜像qcow2文件创建虚拟机，下载win11应用包并安装使用</p>
+<p>本博客介绍如何在OpenFDE使用win11应用，主要在OpenFDE安装phyvirt-fde，导入已有win11镜像qcow2创建虚拟机，下载win11应用包并安装使用</p>
 <!--truncate-->
 <h3 id="%E8%BD%AF%E7%A1%AC%E4%BB%B6%E8%B5%84%E6%BA%90">软硬件资源</h3>
-<h4 id="%E7%A1%AC%E4%BB%B6">硬件</h4>
 <ul>
-<li>4CPU</li>
-<li>16GB MEM</li>
-<li>硬盘10GB</li>
-<li>内核版本: 5.4.18-85-generic</li>
-<li>aarch64</li>
-</ul>
-<h4 id="%E8%BD%AF%E4%BB%B6">软件</h4>
-<ul>
+<li>4CPU,16GB MEM,硬盘60GB</li>
 <li>Kylin V10 SP1</li>
-<li>cn.com.vapp：
+<li>phyvirt-fde：
 <ul>
-<li>通过命令“sudo apt install cn.com.vapp”安装</li>
+<li>目前版本仅支持Phytium CPU part为0x662和0x663的机器，可使用命令“cat /proc/cpuinfo”查看是否匹配</li>
 </ul>
 </li>
-<li>win11虚拟机qcow2包：tiny11-vm-vapp.qcow2（7.2GB）
+<li>win11虚拟机qcow2：tiny11-vm-vapp.qcow2（7.2GB）
 <ul>
 <li>使用tiny11制作，它是一款对win11进行极致精简的定制系统,它的特点是在资源受限的情况下，用户依然能够获得流畅的使用体验</li>
 <li>该镜像用户名与密码都是pvuser,成功创建虚拟机后可自行修改</li>
-<li>文件存放于夸克网盘，下载地址为 https://pan.quark.cn/s/d1845706339e</li>
-</ul>
-</li>
-<li>vapp镜像文件:vapp-v1.5.6.0-20231107-1540.iso
-<ul>
-<li>安装好cn.com.vapp后存在路径/opt/apps/cn.com.vapp/files/iso/vapp-v1.5.6.0-20231107-1540.iso</li>
+<li>文件存放于夸克网盘，下载链接：https://pan.quark.cn/s/fb58701c4b47</li>
 </ul>
 </li>
 </ul>
 <h3 id="%E5%AE%89%E8%A3%85%E5%89%8D%E6%8F%90">安装前提</h3>
-<p>OpenFDE已安装完毕并登录openfde桌面</p>
+<p>OpenFDE已安装完毕并登录OpenFDE桌面</p>
 <h3 id="%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4">搭建步骤</h3>
 <ol>
-<li>在OpenFDE中点击&quot;开始菜单-&gt;Fusion Linux Application&quot;,找到linux的终端应用Konsole，输入以下命令安装cn.com.vapp及phyvirt安卓应用</li>
+<li>在OpenFDE中点击&quot;开始菜单-&gt;Fusion Linux Application&quot;,找到linux的终端应用Konsole，输入以下命令安装phyvirt-fde</li>
 </ol>
 <pre class="hljs"><code><div>sudo apt update
-sudo apt install cn.com.vapp
+sudo apt install phyvirt-fde -y
 </div></code></pre>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-7-1.png" alt="image"></p>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-14-1.png" alt="image"></p>
+<p><img src="./img/image-7-1.png" alt="Alt text"></p>
+<p><img src="./img/image-14-1.png" alt="Alt text"></p>
 <ol start="2">
 <li>在&quot;开始菜单-&gt;Fusion Linux Application&quot;中打开vapp-demo</li>
 </ol>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-7-1.png" alt="image"></p>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/IMG_20240102_100654.jpg" alt=""></p>
+<p><img src="./img/image-7-1.png" alt="image"></p>
+<p><img src="./img/IMG_20240102_100654.jpg" alt=""></p>
 <ol start="3">
 <li>点击“基于已有镜像创建”，找到已有的win11虚拟机qcow2文件(tiny11-vm-vapp.qcow2)打开</li>
 </ol>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-4.png" alt="image"></p>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/IMG_20240102_101913.jpg" alt=""></p>
+<p><img src="./img/image-4.png" alt="image"></p>
+<p><img src="img/IMG_20240102_101913.jpg" alt=""></p>
 <ol start="4">
 <li>输入虚拟机名，操作系统类型、CPU数量、内存大小等信息，点击右下角确认创建虚拟机后直接关闭vapp-demo</li>
 </ol>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-6.png" alt="image"></p>
+<p><img src="./img/image-6.png" alt="image"></p>
 <ol start="5">
-<li>重启OpenFDE桌面，点击&quot;开始菜单-&gt;phyvirt&quot;打开,可见有新建的虚拟机tiny11</li>
+<li>重启系统进入OpenFDE桌面，点击&quot;开始菜单-&gt;phyvirt&quot;打开,可见有新建的虚拟机tiny11
+<font color="red">ps:当前版本如果不重启会导致之后的步骤phyvirt按钮无法操作</font></li>
 </ol>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-9-1.png" alt="image"></p>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-9-1-1.png" alt="image"></p>
-<p><font color="red">ps:当前版本如果不重启OpenFDE桌面会导致之后的步骤按钮无法操作</font></p>
+<p><img src="img/image-9-1.png" alt="image"></p>
+<p><img src="./img/image-9-1-1.png" alt="image"></p>
 <ol start="6">
 <li>phyvirt上启动虚拟机</li>
 </ol>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-13-1.png" alt="image"></p>
+<p><img src="img/image-13-1.png" alt="image"></p>
 <ol start="7">
 <li>待右下角状态为“就绪”，可点击“RDP”进入虚拟机</li>
 </ol>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-12-1.png" alt="image"></p>
-<p><font color="red">ps:请点击&quot;RDP”正中心，目前版本点击边缘或者“我的桌面”不会响应</font></p>
+<p><img src="img/image-12-1.png" alt="image"></p>
 <ol start="8">
 <li>将窗口全屏就可以正常使用了</li>
 </ol>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/image-26.png" alt="image"></p>
+<p><img src="./img/image-26.png" alt="image"></p>
 <h3 id="%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8">安装应用</h3>
 <ul>
 <li>方法一
 镜像自带有浏览器Edge,可用此下载软件包安装使用</li>
 </ul>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/Screenshot_20231214-135649_aFreeRDP.png" alt="image"></p>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/Screenshot_20231214-135819_aFreeRDP.png" alt="image"></p>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/Screenshot_20231214-140355_aFreeRDP.png" alt="image"></p>
+<p><img src="./img/Screenshot_20231214-135649_aFreeRDP.png" alt="image"></p>
+<p><img src="./img/Screenshot_20231214-140355_aFreeRDP.png" alt="image"></p>
 <ul>
 <li>
 <p>方法二
 phyvirt中默认的共享目录路径为“~/桌面/share&quot;,可将安装包放入其中，在虚拟机中点击安装</p>
 <pre class="hljs"><code><div>cp ~/下载/exe/ ~/桌面/share/ -r
 </div></code></pre>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/Screenshot_20240102-113151_PhyVirt.png" alt="Alt text"></p>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/Screenshot_20240102-133944_PhyVirt.png" alt="Alt text"></p>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/Screenshot_20240102-134228_PhyVirt.png" alt="Alt text"></p>
-<p><img src="file:///home/test/搭建/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-run-tiny11/img/Screenshot_20240102-154048_PhyVirt.png" alt="Alt text"></p>
+<p><img src="img/Screenshot_20240102-113151_PhyVirt.png" alt="Alt text"></p>
+<p><img src="img/Screenshot_20240102-133944_PhyVirt.png" alt="Alt text"></p>
+<p><img src="img/Screenshot_20240102-134228_PhyVirt.png" alt="Alt text"></p>
+<p><img src="img/Screenshot_20240102-154048_PhyVirt.png" alt="Alt text"></p>
 </li>
 </ul>
 <h3 id="%E5%BA%94%E7%94%A8%E5%B1%95%E7%A4%BA">应用展示</h3>
+<ul>
+<li>Xmind</li>
+</ul>
+<p><img src="img/Screenshot_20240102-174640_PhyVirt.png" alt="Alt text"></p>
+<ul>
+<li>Xshell</li>
+</ul>
+<p><img src="img/Screenshot_20240102-180025_PhyVirt.png" alt="Alt text"></p>
 <h3 id="%E8%87%B4%E8%B0%A2">致谢</h3>
-<p>感谢飞腾公司基于phyvirt基础上，为OpenFDE提供了cn.com.vapp</p>
+<p>感谢飞腾公司小伙伴基于phyvirt基础上，为OpenFDE提供了phyvirt-fde</p>
 
 </body>
 </html>
