@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "node script/patch-docusaurus.js",
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "docusaurus start --no-open",
     "build:internal": "cross-env DEPLOY_ENV=internal docusaurus build",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
