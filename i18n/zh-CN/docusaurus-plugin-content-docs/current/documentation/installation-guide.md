@@ -5,7 +5,21 @@ title: 安装指引
 
 # 安装指引{#install-guide}
 
-&emsp;&emsp;本文档主要介绍OpenFDE的安装方法，适用于所有使用OpenFDE的用户，特别是初次使用或想了解OpenFDE的用户，包括研发人员、管理员及维护人员等。使用本手册的用户需要具备基础的Linux系统知识。
+## OpenFDE支持的平台
+
+&emsp;&emsp;OpenFDE是一个基于AOSP、Waydroid、LineageOS打造的可运行android应用的linux桌面环境。它支持在不同的硬件平台下安装，并且根据不同的操作系统类型，安装方式可能不同。下面我们将详细介绍在不同的硬件平台和操作系统上安装OpenFDE的方法。
+
+### Phytium D2000/FT2000平台{#D2000/FT2000}
+
+  - [在Ubuntu上安装OpenFDE](./install-details/install-on-d2000-ft2000#install-openfde-on-kylin)
+  - [在Kylin上安装OpenFDE](./install-details/install-on-d2000-ft2000#install-openfde-on-kylin)
+  
+### Phytium X100平台
+
+  - [Kylin上安装OpenFDE](./install-details/install-on-x100)
+
+### 树莓pi
+  - [Ubuntu]
 
 &emsp;&emsp;当然，如果你想快速安装OpenFDE,可以前往[快速入门](./quick-start#preparation-before-install)。
 
