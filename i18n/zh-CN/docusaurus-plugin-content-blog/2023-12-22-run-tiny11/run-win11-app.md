@@ -9,18 +9,9 @@ author: zhaolixia
 本博客介绍如何在OpenFDE使用win11应用，主要在OpenFDE安装phyvirt-fde，导入已有win11镜像qcow2创建虚拟机，下载win11应用包并安装使用
 <!--truncate-->
 
-### 软硬件资源{#resource}
+### 软硬件资源
 
-#### 硬件
-
-* 4CPU
-* 16GB MEM
-* 硬盘10GB
-* 内核版本: 5.4.18-85-generic
-* aarch64 
-  
-#### 软件
-
+* 内存>8G,硬盘>60G
 * Kylin V10 SP1
 * phyvirt-fde：
   * 目前版本仅支持Phytium CPU part为0x662和0x663的机器，可使用命令“cat /proc/cpuinfo”查看是否匹配
@@ -29,11 +20,11 @@ author: zhaolixia
   * 该镜像用户名与密码都是pvuser,成功创建虚拟机后可自行修改
   * 文件存放于夸克网盘，下载链接：https://pan.quark.cn/s/fb58701c4b47
 
-### 安装前提{#requirements}
+### 安装前提
 
 OpenFDE已安装完毕并登录OpenFDE桌面
 
-### 搭建步骤{#steps}
+### 搭建步骤
 
 1. 在OpenFDE中点击"开始菜单->Fusion Linux Application",找到linux的终端应用Konsole，输入以下命令安装phyvirt-fde
 ```
@@ -84,7 +75,7 @@ OpenFDE已安装完毕并登录OpenFDE桌面
     
   ![image](./img/image-26.png)
 
-### 安装应用{#install-applications}
+### 安装应用
 * 方法一
   镜像自带有浏览器Edge,可用此下载软件包安装使用
 
@@ -104,7 +95,7 @@ OpenFDE已安装完毕并登录OpenFDE桌面
 
   ![Alt text](img/Screenshot_20240102-154048_PhyVirt.png)
 
-### 应用展示{#application-display}
+### 应用展示
 * Xmind
   
   ![Alt text](img/Screenshot_20240102-174640_PhyVirt.png)
@@ -119,7 +110,5 @@ OpenFDE已安装完毕并登录OpenFDE桌面
 
   ![Alt text](img/Screenshot_20240104-134529_PhyVirt.png)
 
-![Alt text](img/Screenshot_20240104-134435_PhyVirt.png)
-
 ### 致谢
-感谢飞腾公司基于phyvirt基础上，为OpenFDE提供了phyvirt-fde
+感谢飞腾公司小伙伴基于phyvirt基础上，为OpenFDE提供了phyvirt-fde

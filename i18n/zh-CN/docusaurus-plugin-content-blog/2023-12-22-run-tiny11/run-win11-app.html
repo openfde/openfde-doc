@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>run-win11-app.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>本博客介绍如何在OpenFDE使用win11应用，主要在OpenFDE安装phyvirt-fde，导入已有win11镜像qcow2创建虚拟机，下载win11应用包并安装使用</p>
+<!--truncate-->
+<h3 id="%E8%BD%AF%E7%A1%AC%E4%BB%B6%E8%B5%84%E6%BA%90">软硬件资源</h3>
+<ul>
+<li>4CPU,16GB MEM,硬盘60GB</li>
+<li>Kylin V10 SP1</li>
+<li>phyvirt-fde：
+<ul>
+<li>目前版本仅支持Phytium CPU part为0x662和0x663的机器，可使用命令“cat /proc/cpuinfo”查看是否匹配</li>
+</ul>
+</li>
+<li>win11虚拟机qcow2：tiny11-vm-vapp.qcow2（7.2GB）
+<ul>
+<li>使用tiny11制作，它是一款对win11进行极致精简的定制系统,它的特点是在资源受限的情况下，用户依然能够获得流畅的使用体验</li>
+<li>该镜像用户名与密码都是pvuser,成功创建虚拟机后可自行修改</li>
+<li>文件存放于夸克网盘，下载链接：https://pan.quark.cn/s/fb58701c4b47</li>
+</ul>
+</li>
+</ul>
+<h3 id="%E5%AE%89%E8%A3%85%E5%89%8D%E6%8F%90">安装前提</h3>
+<p>OpenFDE已安装完毕并登录OpenFDE桌面</p>
+<h3 id="%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4">搭建步骤</h3>
+<ol>
+<li>在OpenFDE中点击&quot;开始菜单-&gt;Fusion Linux Application&quot;,找到linux的终端应用Konsole，输入以下命令安装phyvirt-fde</li>
+</ol>
+<pre class="hljs"><code><div>sudo apt update
+sudo apt install phyvirt-fde -y
+</div></code></pre>
+<p><img src="./img/image-7-1.png" alt="Alt text"></p>
+<p><img src="./img/image-14-1.png" alt="Alt text"></p>
+<ol start="2">
+<li>在&quot;开始菜单-&gt;Fusion Linux Application&quot;中打开vapp-demo</li>
+</ol>
+<p><img src="./img/image-7-1.png" alt="image"></p>
+<p><img src="./img/IMG_20240102_100654.jpg" alt=""></p>
+<ol start="3">
+<li>点击“基于已有镜像创建”，找到已有的win11虚拟机qcow2文件(tiny11-vm-vapp.qcow2)打开</li>
+</ol>
+<p><img src="./img/image-4.png" alt="image"></p>
+<p><img src="img/IMG_20240102_101913.jpg" alt=""></p>
+<ol start="4">
+<li>输入虚拟机名，操作系统类型、CPU数量、内存大小等信息，点击右下角确认创建虚拟机后直接关闭vapp-demo</li>
+</ol>
+<p><img src="./img/image-6.png" alt="image"></p>
+<ol start="5">
+<li>重启系统进入OpenFDE桌面，点击&quot;开始菜单-&gt;phyvirt&quot;打开,可见有新建的虚拟机tiny11
+<font color="red">ps:当前版本如果不重启会导致之后的步骤phyvirt按钮无法操作</font></li>
+</ol>
+<p><img src="img/image-9-1.png" alt="image"></p>
+<p><img src="./img/image-9-1-1.png" alt="image"></p>
+<ol start="6">
+<li>phyvirt上启动虚拟机</li>
+</ol>
+<p><img src="img/image-13-1.png" alt="image"></p>
+<ol start="7">
+<li>待右下角状态为“就绪”，可点击“RDP”进入虚拟机</li>
+</ol>
+<p><img src="img/image-12-1.png" alt="image"></p>
+<ol start="8">
+<li>将窗口全屏就可以正常使用了</li>
+</ol>
+<p><img src="./img/image-26.png" alt="image"></p>
+<h3 id="%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8">安装应用</h3>
+<ul>
+<li>方法一
+镜像自带有浏览器Edge,可用此下载软件包安装使用</li>
+</ul>
+<p><img src="./img/Screenshot_20231214-135649_aFreeRDP.png" alt="image"></p>
+<p><img src="./img/Screenshot_20231214-140355_aFreeRDP.png" alt="image"></p>
+<ul>
+<li>
+<p>方法二
+phyvirt中默认的共享目录路径为“~/桌面/share&quot;,可将安装包放入其中，在虚拟机中点击安装</p>
+<pre class="hljs"><code><div>cp ~/下载/exe/ ~/桌面/share/ -r
+</div></code></pre>
+<p><img src="img/Screenshot_20240102-113151_PhyVirt.png" alt="Alt text"></p>
+<p><img src="img/Screenshot_20240102-133944_PhyVirt.png" alt="Alt text"></p>
+<p><img src="img/Screenshot_20240102-134228_PhyVirt.png" alt="Alt text"></p>
+<p><img src="img/Screenshot_20240102-154048_PhyVirt.png" alt="Alt text"></p>
+</li>
+</ul>
+<h3 id="%E5%BA%94%E7%94%A8%E5%B1%95%E7%A4%BA">应用展示</h3>
+<ul>
+<li>Xmind</li>
+</ul>
+<p><img src="img/Screenshot_20240102-174640_PhyVirt.png" alt="Alt text"></p>
+<ul>
+<li>Xshell</li>
+</ul>
+<p><img src="img/Screenshot_20240102-180025_PhyVirt.png" alt="Alt text"></p>
+<h3 id="%E8%87%B4%E8%B0%A2">致谢</h3>
+<p>感谢飞腾公司小伙伴基于phyvirt基础上，为OpenFDE提供了phyvirt-fde</p>
+
+</body>
+</html>
