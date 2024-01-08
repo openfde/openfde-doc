@@ -69,8 +69,6 @@ You can refer to [blog-guide](./blog-guide.md) to get some guides.
 
 ## Start the openfde-doc
 
-Openfde-doc is built based on Docusaurus version 2.4.3. It is recommended to install **Docusaurus 2.4.3**.
-
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. The default is the English version of the website.
 
 ```bash

@@ -10,16 +10,16 @@ author: zhaolixia
 
 <!--truncate-->
 
-# Tiny11设置中文报错解决方法{#solution-to-chinese-failure}
+# Tiny11设置中文报错解决方法
 
 &emsp;&emsp;tiny11安装默认的是英文版本,想要将操作系统设置为中文简体，但是在点击settings->Time&language->Language&region->Add a language->添加中文简体下载报错，针对这个问题，梳理了具体的操作步骤。
 
 ![image](image.png)
 
-## 具体步骤{#steps}
+## 具体步骤
 &emsp;&emsp;总的分为启用windows更新服务、关闭防火墙、下载中文语言包并设置为系统显示语言、重启五大操作，以下为具体操作。
 
-### 启用windows更新服务{#start-windows-updation}
+### 启用windows更新服务
 1、点击“win”在搜索框内输入"services",打开"Services App"
 
 ![img1](image-1.png)
@@ -38,7 +38,7 @@ author: zhaolixia
 
 5、将Startup type修改为"Automatic"，点击Service status下的“Start”，将其状态修改为running后再点击窗口右下角的“Apply”和“OK”退出选项属性设置（如果其中的start不能点击就将Startup type设置为Automatic，修改退出后再右击鼠标点击“start”）
 
-### 打开防火墙{#open-firewall}
+### 打开防火墙
 1、按“win”在搜索框输入control找到控制面板打开
 
 ![img10](image-10.png)
@@ -51,7 +51,7 @@ author: zhaolixia
 
 ![img12](image-12.png)
 
-### 下载语言包并设置为windows显示语言{#install-language-package}
+### 下载语言包并设置为windows显示语言
 1、按“win”选择settings->Time & language->Language & region
 
 ![img15](image-15.png)
@@ -70,13 +70,13 @@ author: zhaolixia
 4、待下载完成后，在“Windows display language”选择“中文（中华人民共和国）”
 ![img14](image-14.png)
 
-### 重启{#reboot}
+### 重启
 重启系统可见操作系统已经为中文
 
 ![img19](image-19.png)
 ![img13](image-13.png)
 
-### 其他建议{#advise}
+### 其他建议
 在简体中文下下载好基本输入法才可以输入中文
 
 ![img22](image-22.png)

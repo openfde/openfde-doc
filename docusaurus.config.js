@@ -40,7 +40,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-CN'],
+    locales: ['en', 'zh-CN',],
   },
 
   presets: [
@@ -52,8 +52,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editLocalizedFiles: true,
-          editUrl: 'https://gitee.com/openfde/openfde-doc/tree/master',
+           editUrl:
+          'https://gitee.com/openfde/openfde-doc/tree/master',
         },
         blog: {
           showReadingTime: true,
@@ -61,8 +61,8 @@ const config = {
           blogSidebarCount: 5, // 博客侧边栏展示最近访问的5篇博客
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editLocalizedFiles: true,
-          editUrl: 'https://gitee.com/openfde/openfde-doc/tree/master',
+          editUrl:
+            'https://gitee.com/openfde/openfde-doc/tree/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -96,11 +96,11 @@ const config = {
           //    label: 'GitHub',
           //    position: 'right',
           // },
-          {
-            type: 'localeDropdown',
-            position: 'left',
-            persistLocale: true,
-          },
+          //  {
+          //    type: 'localeDropdown',
+          //    position: 'left',
+          //    persistLocale: true,
+          //  }
         ],
       },
       footer: {
@@ -132,7 +132,7 @@ const config = {
               },
               {
                 label: 'Official Account',
-                href: siteUrl + '/img/WeChat-Official.jpg',
+                href: siteUrl + '/img/WeChat-Official.jpg', // OpenFDE社区群
               },
               {
                 label: 'Discord Community',
@@ -145,10 +145,7 @@ const config = {
             items: [
               {
                 label: 'Official Website',
-                href:
-                  process.env.DOCUSAURUS_CURRENT_LOCALE === 'zh-CN'
-                    ? 'https://openfde.com/zh-CN'
-                    : 'https://openfde.com/en',
+                href: 'https://openfde.com',
                 // to: '/blog',
               },
               {

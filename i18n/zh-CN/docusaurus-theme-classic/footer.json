@@ -41,7 +41,7 @@
   },
   "link.item.label.Official Website": {
     "message": "官网",
-    "description": "The label of footer link with label=Official Website linking to https://openfde.com/en"
+    "description": "The label of footer link with label=Official Website linking to https://openfde.com"
   },
   "link.item.label.Gitee": {
     "message": "Gitee",

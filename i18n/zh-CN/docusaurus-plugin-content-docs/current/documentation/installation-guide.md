@@ -16,20 +16,14 @@ title: 安装指引
 - 处理器: 飞腾D2000、FT2000/4两种CPU型号
 - 显卡：AMD Radeon、Phytium X100
 
-> **注意！！！** <u>带x100显卡</u>，如果**内核版本低于5.4.18-85**，你需要首先升级你的内核版本才能正常安装和运行OpenFDE。升级内核步骤如下：
+> **注意！！！** 对于带x100显卡的笔记本，如果**内核版本低于5.4.18-85**，你需要首先升级你的内核版本才能正常安装和运行OpenFDE。升级内核步骤如下：
 ```
 echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restricted universe multiverse | sudo tee /etc/apt/sources.list.d/v10sp12303.list
 sudo apt-get update -y
 sudo apt-get full-upgrade -y
 sudo apt-get autoremove -y 
+sudo apt-get autoclean -y & reboot # 这里必须要重启系统，待新内核生效后再进行后续操作
 ```
-
-<mark>这里必须要重启系统，待新内核生效后再进行后续操作</mark>
-
-```
-sudo apt-get autoclean -y && reboot
-```
-
 > 如果你的X100笔记本不是首次安装OpenFDE：在升级完内核后，安装OpenFDE之前，先执行```sudo apt purge fdeion-dkms```
 > 
 > 如果是首次安装OpenFDE：在升级完内核版本后，执行```sudo apt install fdeion-dkms`` 安装OpenFDE的dkm源
@@ -41,8 +35,6 @@ sudo apt-get autoclean -y && reboot
 - 操作系统：支持麒麟、统信、Ubuntu三种操作系统。
 
 备注：其他Linux 操作系统尚未完全适配和测试，可以尝试手动编译安装，遇到问题请反馈至[这里](https://gitee.com/openfde/problem-feedback/issues)。
-
-
 
 ### 二、安装前准备{#preparation-before-install}
 

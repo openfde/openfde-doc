@@ -39,7 +39,7 @@ const FeatureList = [
     description: (
       <>
       <Link href="/docs/developer/debug-skills">Debug Skills</Link><br/>
-      <Link href="/docs/developer/quick-start">Quick Start </Link><br/>
+      <Link href="/docs/developer/Quick-Start">Quick Start </Link><br/>
       </>
     
     ),
