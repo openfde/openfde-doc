@@ -81,7 +81,11 @@ const config = {
         logo: {
           alt: 'OpenFDE Logo',
           src: 'img/logo.svg',
-          href: 'https://openfde.com',
+          href:
+            (isInternalEnv || isDev
+              ? 'https://internal.openfde.com'
+              : 'https://openfde.com') +
+            (process.env.DOCUSAURUS_CURRENT_LOCALE === 'zh-CN' ? '/zh-CN' : ''),
         },
         items: [
           //  {
