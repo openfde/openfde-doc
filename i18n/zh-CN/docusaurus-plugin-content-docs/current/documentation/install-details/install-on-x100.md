@@ -13,11 +13,11 @@ title: Phytium X100安装OpenFDE
 
 - 如果内核版本低于5.4.18-85，请首先升级你的内核版本[升级内核版本](#upgrade-kernel)。
 
-- 如果内核版本在5.4.18-85及其以上，请直接点击跳转到[更新fdeion-dkms](#update-fdeion-dkms)。
+- 如果内核版本在5.4.18-85及其以上，请直接点击跳转到[安装fdeion-dkms](#install-fdeion-dkms)。
 
 #### 升级内核版本{#upgrade-kernel}
 
-- 更新麒麟系统的源列表
+- 更新源列表
   
 ```
 echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restricted universe multiverse | sudo tee /etc/apt/sources.list.d/v10sp12303.list
@@ -41,17 +41,17 @@ sudo apt-get full-upgrade -y
 sudo apt-get autoremove -y 
 ```
 
-- 重启系统：务必重启系统，待新内核生效以后再安装OpenFDE
+- 重启系统：<mark>请务必重启系统，待新内核生效以后再安装OpenFDE</mark>。
 
 ```
 sudo apt-get autoclean -y && reboot
 ```
 
-内核版本升级完成后，继续执行[更新fdeion-dkms](#update-fdeion-dkms)。
+内核版本升级完成后，继续执行[安装fdeion-dkms](#install-fdeion-dkms)。
 
-### 2. 更新fdeion-dkms{#update-fdeion-dkms}
+### 2. 安装fdeion-dkms{#install-fdeion-dkms}
 
-如果之前已经安装过OpenFDE，在升级完内核版本后，需要先清理旧的fdeion-dkms，再重新[安装fdeion-dkms]。
+如果之前已经安装过OpenFDE，在升级完内核版本后，需要先清理旧的fdeion-dkms。
 
 ```
 sudo apt purge fdeion-dkms
@@ -67,7 +67,7 @@ sudo apt install fdeion-dkms
 
 首次安装OpenFDE时，需要获取完整的软件源，并配置安装源和证书。
 
- **注意**：<mark>如果不是首次安装OpenFDE</mark>，可以跳过“安装前准备”所有环节, 直接进入[安装](#installation)。
+ **注意**：<mark>如果不是首次安装OpenFDE</mark>，可以跳过“配置安装源和证书”所有环节, 直接进入[安装](#installation)。
 
 #### 3.1 安装wget和gpg工具{#install-wget-gpg}
 

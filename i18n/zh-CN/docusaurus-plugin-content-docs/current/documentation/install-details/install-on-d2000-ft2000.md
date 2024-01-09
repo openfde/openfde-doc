@@ -20,7 +20,7 @@ title: Phytium D2000/FT2000安装OpenFDE
 
 首次安装OpenFDE时，需要获取完整的软件源，并配置安装源和证书。
 
- **注意**：<mark>如果不是首次安装OpenFDE</mark>，可以跳过“安装前准备”所有环节, 直接进入[安装](#installation)。
+ **注意**：<mark>如果不是首次安装OpenFDE</mark>，可以跳过“配置安装源和证书”所有环节, 直接进入[安装](#installation)。
 
 #### 2.1 安装wget和gpg工具{#install-wget-gpg}
 
