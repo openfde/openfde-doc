@@ -27,7 +27,7 @@ OpenFDE已安装完毕并登录OpenFDE桌面
 ### 搭建步骤{#steps}
 
 1. 在OpenFDE中点击"开始菜单->Fusion Linux Application",找到linux的终端应用Konsole，输入以下命令安装phyvirt-fde
-```
+  ```
   sudo apt update
   sudo apt install phyvirt-fde -y
   ```
