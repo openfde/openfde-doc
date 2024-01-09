@@ -1,4 +1,4 @@
-## Installation npm 
+## Installation npm
 
 you need to configure some npm proxy options before you start openfde-docs. You need execute these commmands.
 
@@ -28,7 +28,7 @@ git clone  https://gitee.com/openfde/openfde-doc.git
 Our website is currently available in English and Chinese. The default language is English. Theses documentations. The source files for the English version are located in the `docs` directory. And the source files for the Chinese version art located in the `i18n/zh-CN` directory.
 
 Firstly, you should confirm the category to which your document belongs. The structure of document classification is as follows.
-  
+
 ```bash
 docs/
  - documentation
@@ -56,16 +56,27 @@ i18n/zh-CN
 - version: different version update notes of OpenFDE.
 
 Steps to add a new documentation:
+
 - Find the identified document category in the `docs/` directory.
 - Add a new markdown file in the category subdirectory.
-- Execute this command ```npm run write-translations -- --locale zh-CN``` in terminal.
+- Execute this command `npm run write-translations -- --locale zh-CN` in terminal.
 - Copy your new file to the corresponding category subdirectory of the `i18n/zh-CN` directory.
-  
+
 Then You can edit the two new files above. Note that the two document versions should be kept in English and Chinese.
 
 ### Add a new blog
 
 You can refer to [blog-guide](./blog-guide.md) to get some guides.
+
+### Customize image style
+
+If you wanna change the image style in the markdown file, use:
+
+```html
+<img src={require("./path/to/image.png").default} width="120px"/>
+```
+
+While `./path/to/image.png` is an image file relative to the markdown file.
 
 ## Start the openfde-doc
 
@@ -89,6 +100,6 @@ npm run start -- --locale zh-CN
 npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service. 
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 The `build` directory includes static files in multiple languages. You can find the subdirectory `zh-CN` which has static contents hosting service of the website in Chinese.
