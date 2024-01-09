@@ -5,16 +5,18 @@ title: Phytium D2000/FT2000安装OpenFDE
 
 # Phytium D2000/FT2000上安装OpenFDE
 
-## Kylin上安装OpenFDE{#install-openfde-on-kylin}
+本手册分为[Kylin上安装OpenFDE](#install-on-kylin)和[Ubuntu上安装OpenFDE](install-on-ubuntu)。
+
+## 一、Kylin上安装OpenFDE{#install-on-kylin}
 
 ### 1. 系统要求{#system-requirements}
 
 首先确认你的硬件为Phytium D2000/FT2000。
-
-- 支持的Kylin系统版本为：
+  
+- 显卡：AMD Radeon
 - 内存要求：最少8GB，推荐16GB及以上
 
-### 2. 安装前准备{#prerequisites}
+### 2. 配置安装源和证书{#prerequisites}
 
 首次安装OpenFDE时，需要获取完整的软件源，并配置安装源和证书。
 
@@ -38,7 +40,7 @@ wget -qO-  http://openfde.com/keys/openfde.asc | gpg --dearmor > packages.openfd
 sudo install -D -o root -g root -m 644 packages.openfde.gpg /etc/apt/keyrings/packages.openfde.gpg
 ```
 
-#### 2.4 配置openfde的软件源地址{#config-source-address}
+#### 2.4 配置OpenFDE的软件源地址{#config-source-address}
  
 ```
 sudo echo \
@@ -47,7 +49,7 @@ sudo echo \
   sudo tee /etc/apt/sources.list.d/openfde.list > /dev/null
 ```
 
-#### 5. 删除下载的密钥文件{#remove-keys}
+#### 2.5 删除下载的密钥文件{#remove-keys}
 
 ```
 rm -f packages.openfde.gpg
@@ -80,3 +82,7 @@ sudo apt-get update
 ```
 sudo apt-get install openfde
 ```
+
+## 二、Ubuntu上安装OpenFDE{#install-on-ubuntu}
+
+适配研究中，后续会继续补充。
