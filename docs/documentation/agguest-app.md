@@ -11,7 +11,8 @@ This article is a practical guide! Here, I would like to recommend some essentia
 |  :----:  |    :----:   |
 | Office | Baidu Netdisk, [WPS Office](#wps-office), QuickShot, Wink, Butter Camera, Baidu Browser, [Tencent Meeting](#tecent-meeting), [Edge Browser](#edge)  |
 | Games	 | Happy Landlord, Clash of Clans, Cut the Rope 2 |
-|Lifestyle | NetEase Cloud Music, Zhihu, Bilibili, Tencent Video, Xiaohongshu, Douyin, Kwai, Pinduoduo, [XianYu](#xianyu), [WeiDian](#weidian)  | 
+|Lifestyle | NetEase Cloud Music, Zhihu, Bilibili, Tencent Video, Xiaohongshu, Douyin, Kwai| 
+| Shopping | Pinduoduo, [XianYu](#xianyu), [WeiDian](#weidian) |
 | Social | 	WeChat, QQ |
 
 ## Office Applications{#work-app}

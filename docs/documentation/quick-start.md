@@ -5,52 +5,62 @@ title: Quick Start
 
 # Quick Start
 
-OpenFDE(Open Fusion Desktop Environment) is a cool Linux open-source desktop environment. It allows you to run Android software on Linux systems and enjoy Linux applications on Android systems.
-
-Now let me guide you on an easy and enjoyable exploration of OpenFDE! This guide will quickly introduce you to OpenFDE and help you experience its charm in both work and leisure. It's a simple and fun process! Are you ready?
+OpenFDE is a Linux desktop environment built on AOSP (Android Open Source Project), Waydroid, and LineageOS. It supports the installation on different hardware platforms, allowing you to run Android applications on Linux systems and vice versa. With OpenFDE, you can enjoy Android apps on Linux and also run Linux applications on Android systems.
 
 <video width="720" height="405" controls>
     <source src="/img/install-guide.mp4" type="video/mp4" />
 </video>
 
-For more detailed information on installation and usage, you can continue reading the text version below.
+## 1. System Requirements{#system-requirements}
 
-## 1. Installation Preparation{#preparation-before-install}
+We have researched and adapted OpenFDE to support installation on various hardware platforms and operating systems. Currently, we have identified the following hardware platforms and operating systems. Please ensure that your device meets one of the following requirements.
 
-Before starting the installation of OpenFDE, you need to check if your computer whether meets the following system requirements.
+<table style={{textAlign: 'center'}}> 
+  <tr>
+    <th>Hardware</th>
+    <th>Graphics</th>
+    <th>Operating System</th>
+    <th>Kernel</th>
+    <th>Storage</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Phytium D2000、FT2000/4</td>
+    <td rowspan="2">AMD Radeon</td>
+    <td>Galaxy Kylin v10 SP1 2203/2303(ARM64)</td>
+    <td>linux-5.4.18-53 and above</td>
+    <td>Minimum 8GB. Recommended 16GB or higher</td>
+  </tr>
+  <tr>
+    <td>Ubuntu(ARM64)</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Phytium X100 Notebook</td>
+    <td rowspan="2">Phytium X100</td>
+    <td>Galaxy Kylin v10 SP1 2303(ARM64)</td>
+    <td>linux-5.4.18-85 and above</td>
+    <td>Minimum 8GB. Recommended 16GB or higher</td>
+  </tr>
+  <tr>
+    <td>Ubuntu(ARM64)</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td>Rapberry Pi</td>
+    <td>/</td>
+    <td>Ubuntu(ARM64)</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+</table>
 
-**Hardware:**
-- Processor：Phytium D2000、FT2000/4
-  
-> **Attention:** Currently, we have conducted research, development, and adaptation for the two CPU models mentioned within the Phytium ecosystem. We also welcome everyone to conduct their own research and exploration, enabling OpenFDE to be compatible with a broader range of CPU types! You can proceed to [Build and Development](./../developer/Quick-Start) to start your exploration and research.
+If your device meets the above requirements, you can proceed with the following steps for a quick installation.
 
-- Graphics Card：AMD Radeon、Phytium X100
+## 2. Disable Security Controls{#close-security-control}
 
-> **Attention:** If your laptop with an x100 graphics card has **a kernel version lower than 5.4.18-85**, you need to upgrade your kernel before installing and running OpenFDE. Here are the steps to upgrade your kernel:
-
-```
-echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restricted universe multiverse | sudo tee /etc/apt/sources.list.d/v10sp12303.list
-sudo apt-get update -y
-sudo apt-get full-upgrade -y
-sudo apt-get autoremove -y 
-sudo apt-get autoclean -y && reboot  
-```
-you must reboot your computer and wait for the new kernel to take effect before proceeding with further operation
-
->**If you already have OpenFDE installed on your X100 laptop**：After upgrading the kernel and before installing OpenFDE, it's recommended to perform the step ```sudo apt purge fdeion-dkms```
->
-> If you are installing OpenFDE for the first time, after upgrading the kernel version, execute the command ```sudo apt install fdeion-dkms``` to install the OpenFDE DKMS source.
-
-- RAM：At least 8GB. If you want to enjoy a smoother experience, I recommend choosing 16GB or more of RAM. 
-  
-**Software**:
-- Operating System：Currently, we have researched and adapted OpenFDE for three operating systems: **Kylin, UOS, and Ubuntu**. However, other Linux operating systems have not been fully adapted and tested yet.
-
-You can also try manually compiling and installing OpenFDE and see if it can be installed on other operating systems. If you have any better ideas, you can join the discussion [here](https://groups.io/g/openfde/topics) and share your feedback! We look forward to hearing from you!
-
-#### <mark>System Setup Requirements(Importantly！！！)</mark>{#system-settings}
-
-In order to install and start OpenFDE smoothly, before you start installing OpenFDE, you need to turn off all security controls on your current system, select 'Settings - Security' in your current system, and go to Security Center.
+To ensure a smooth installation and startup of OpenFDE, before you begin installing OpenFDE, you need to disable all security controls on your current system. In your current system, go to Settings and navigate to Security. Enter the Security Center or Security Settings.
 
 ![control](./img/control.png)
 
@@ -58,21 +68,37 @@ Using network control as an example, you should disable application internet acc
 
 ![protect](./img/protect.png)
 
-## 2. Installation Steps{#installtion-steps}
+## 3. Quick Installation Steps{#installtion-steps}
 
-Let's take the example of Kylin operating system. First, make sure you have opened the terminal of your current system. Execute the following command for a one-click installation:
+We provide a script for one-click installation of OpenFDE. You can open a new terminal interface and follow the steps below to fetch the script from a remote server and execute it for quick installation of OpenFDE.
+
+#### Step1. install curl{#install-curl}
 
 ```
-sudo apt-get install curl && curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh && sudo sh ./get-openfde.sh
+sudo apt-get install curl
 ```
 
-During the installation process, you may be prompted to enter "y" to confirm certain actions. Simply follow the prompts and enter the requested input as necessary. If you want detailed installation instructions, please refer to the [installation guide](./install-details/installation-guide#preparation-before-install) provided by the OpenFDE project.
+#### Step2. download the script to your local{#get-script}
 
-## 3. Get Started{#happy-use}
+```
+curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh 
+```
 
-### 3.1 Login and Logout{#login-and-logout}
+#### Step3. execute the script file{#execute-script}
 
-#### 3.1.1 Login{#login}
+```
+sudo sh ./get-openfde.sh
+```
+
+> During the installation process, you may be prompted to enter "y" to confirm certain actions. Simply follow the prompts and enter the requested input as necessary.
+
+For more detailed instructions, please refer to the [Quick Start Guide](./install-details/installation-guide) for step-by-step guidance！
+
+## 4. Get Started{#happy-use}
+
+### 4.1 Login and Logout{#login-and-logout}
+
+#### 4.1.1 Login{#login}
 
 - Accessing the Login Page: After completing the initial installation of OpenFDE, follow these steps to reach the login page:
   - Log out of your current system.
@@ -86,13 +112,13 @@ During the installation process, you may be prompted to enter "y" to confirm cer
 
 ![start](./img/start.jpg)
 
-#### 3.1.2 Logout{#logout}
+#### 4.1.2 Logout{#logout}
 
 Clicking on the Start menu, then clicking on the power button icon in the top right corner will bring up three buttons in sequence: Shutdown, Restart, and Logout. Clicking on the Logout button will allow you to exit to the login screen.
 
 ![logout](./img/logout.png)
 
-### 3.2 Configure Input Method{#config-ime}
+### 4.2 Configure Input Method{#config-ime}
 
 OpenFDE comes with the default input method of 'iFlytek Voice Input Method'. To quickly open the iFlytek Voice Input Method, locate it in the Start menu. Selecting the iFlytek Voice Input Method option allows you to enable it and agree to the summary of privacy terms. You can configure input methods, keyboard layouts, and skin fonts according to your preferences.
 
@@ -100,13 +126,13 @@ OpenFDE comes with the default input method of 'iFlytek Voice Input Method'. To 
 
 ![ime-tips](./img/ime-tips.jpg)
 
-### 3.3 Configure Network{#config-network}
+### 4.3 Configure Network{#config-network}
 
 OpenFDE can directly utilize external systems such as Kylin, UOS, Ubuntu for networking. Users can click on the OpenFDE icon in the bottom left corner and open Start Menu, Fusion Linux Application to find the Linux Settings. In the Linux Settings, you can configure the network settings for the system.
 
 ![net-start](./img/net-start.png) 
 
-#### 3.3.1 Wired Network Configuration{#config-wired-network}
+#### 4.3.1 Wired Network Configuration{#config-wired-network}
 
 In the wired network settings, click on Advanced Settings. A pop-up window titled "Ethernet Settings" will appear on the right side.
 
@@ -115,7 +141,7 @@ In the wired network settings, click on Advanced Settings. A pop-up window title
 
 ![ipv4](./img/net-set1.jpg)
 
-#### 3.3.2 Wireless Network Configuration{#config-wlan}
+#### 4.3.2 Wireless Network Configuration{#config-wlan}
 
 In the wireless network settings, click on Advanced Settings. A pop-up window titled "Wireless LAN Settings" will appear on the right side.
 
@@ -124,15 +150,15 @@ In the wireless network settings, click on Advanced Settings. A pop-up window ti
 
 ![wlan](./img/wlan.jpg)
 
-#### 3.3.3 VPN Configuration{#config-vpn}
+#### 4.3.3 VPN Configuration{#config-vpn}
 
 OpenFDE supports interoperability between Android and Linux systems for VPN connectivity, which is a major benefit for remote workers. Taking the popular VPN software EasyConnect as an example, you can directly download the Android version of EasyConnect from the app store or a browser on your Android device.
 
 Once installed, configure the connection to your work VPN. The key point is that there is no need to configure the VPN on the Linux side. You can immediately start your remote work.
 
-### 3.4 Install Application{#install-app}
+### 4.4 Install Application{#install-app}
 
-#### 3.4.1 Install Android Application{#install-android-app}
+#### 4.4.1 Install Android Application{#install-android-app}
 
 There are two ways to install Android applications:
 
@@ -140,11 +166,11 @@ There are two ways to install Android applications:
 
 - Using the built-in Via browser, you can install Android app marketplaces like "AppGallery" and then proceed to install various Android applications from within the app marketplace.
 
-#### 3.4.2 Install Linux Application{#install-linux-app}
+#### 4.4.2 Install Linux Application{#install-linux-app}
 
 OpenFDE integrates Linux applications into the Android system and provides a built-in standalone Linux Fusion Application window. To open the Linux Fusion Application window, click on the penguin icon labeled "Fusion Linux Application" in the Start Menu. The Linux Fusion Application window operates similarly to a regular Linux graphical system, allowing you to run Linux GUI, command-line interfaces, and more. The usage is identical to a typical Linux environment, and further elaboration is unnecessary.
 
-### 3.5 Operational Tips{#use-skills}
+### 4.5 Operational Tips{#use-skills}
 
 Different from the typical PC desktop's keyboard and mouse operation, OpenFDE has its own unique features. Here are some basic operation tips.
 
@@ -167,6 +193,6 @@ Different from the typical PC desktop's keyboard and mouse operation, OpenFDE ha
 
 If you want to drag the desktop application icons or widgets, first, you need to place your mouse cursor over the target application or widget, then **long-press** it, and finally, start dragging the icon to the desired location.
 
-## 4. Learn More{#learn-more}
+## 5. Learn More{#learn-more}
 
 You can continue using OpenFDE to assist you with work and entertainment! For more detailed usage instructions, please refer to the [User Manual](./user-manual)。
