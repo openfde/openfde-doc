@@ -1,11 +1,18 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 title: Agguestion APP
 ---
 
 # APP Recommendation Guide{#agguestion-app}
 
-This is a practical guide! Here, I will recommend some commonly used software applications for work and entertainment, helping you make the most of OpenFDE for productivity and leisure. **Before proceeding with the reading below**, please make sure that you have installed the app store on your OpenFDE. If it is not installed, you can download and install it using the built-in Via browser.
+This article is a practical guide! Here, I would like to recommend some essential software applications for office, social, and daily life purposes, helping you make the most of OpenFDE for work and entertainment. **Before diving into the following recommendations**, make sure you have installed the App Store on your OpenFDE. If it is not installed yet, you can download and install the App Store using the built-in Via browser.
+
+| Category | App Lists |
+|  :----:  |    :----:   |
+| Office | Baidu Netdisk, [WPS Office](#wps-office), QuickShot, Wink, Butter Camera, Baidu Browser, [Tencent Meeting](#tecent-meeting), [Edge Browser](#edge)  |
+| Games	 | Happy Landlord, Clash of Clans, Cut the Rope 2 |
+|Lifestyle | NetEase Cloud Music, Zhihu, Bilibili, Tencent Video, Xiaohongshu, Douyin, Kwai, Pinduoduo, [XianYu](#xianyu), [WeiDian](#weidian)  | 
+| Social | 	WeChat, QQ |
 
 ## Office Applications{#work-app}
 
