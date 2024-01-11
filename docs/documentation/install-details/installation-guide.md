@@ -7,7 +7,7 @@ title: Quick Guide
 
 This document provides an overview of the installation process of OpenFDE. It is suitable for all users of OpenFDE, especially those who are new to it or seeking a better understanding. This includes developers, administrators, and maintainers, among others. Users of this manual are expected to have a basic understanding of Linux system knowledge.
 
-Certainly, if you wish to install OpenFDE quickly, you can visit the [Quick Start](./quick-start#preparation-before-install) guide for step-by-step instructions.
+Certainly, if you wish to install OpenFDE quickly, you can visit the [Quick Start](./../quick-start#preparation-before-install) guide for step-by-step instructions.
 
 ### 1. Hardware and Software Requirements{#requirements}
 
