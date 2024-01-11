@@ -5,49 +5,62 @@ title: 快速入门
 
 # 快速入门
 
-&emsp;&emsp;OpenFDE(Open Fusion Desktop Environment)是一款炫酷的Linux开源桌面。它可以让你在Linux系统上玩安卓的软件，也可以在安卓系统中畅玩Linux应用。
-
-&emsp;&emsp;现在让我来带领你们一起轻松愉快地探索OpenFDE吧！本指南将带你快速了解OpenFDE，让你可以在工作和娱乐中畅享它的魅力。这个过程简单又有趣！准备好了吗？
+&emsp;&emsp;OpenFDE是一个基于AOSP、Waydroid、LineageOS打造的可运行android应用的linux桌面环境。它支持在不同的硬件平台下安装，可以让你在Linux系统上玩安卓的软件，也可以在安卓系统中畅玩Linux应用。
 
 <video width="720" height="405" controls>
     <source src="/img/install-guide.mp4" type="video/mp4" />
 </video>
 
-更多详细的安装和使用了解也可以继续阅读下面的文字版哦~
+## 一、系统要求{#system-requirements}
 
-## 一、安装准备{#preparation-before-install}
+我们研究适配了OpenFDE支持在不同的硬件平台和操作系统下安装，目前我们梳理了以下硬件平台和操作系统，请确保你的设备满足下列要求之一。
 
-在开始安装OpenFDE之前，你要检查你的电脑是否符合下面的配置要求：
+<table style={{textAlign: 'center'}}> 
+  <tr>
+    <th>硬件平台</th>
+    <th>显卡</th>
+    <th>操作系统</th>
+    <th>内核</th>
+    <th>内存</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Phytium D2000、FT2000/4</td>
+    <td rowspan="2">AMD Radeon</td>
+    <td>银河麒麟v10 sp1 2203和2303版本(ARM64)</td>
+    <td>linux-5.4.18-53及其以上</td>
+    <td>最少8GB，推荐16GB及以上</td>
+  </tr>
+  <tr>
+    <td>Ubuntu(支持ARM64)</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Phytium X100笔记本</td>
+    <td rowspan="2">Phytium X100显卡</td>
+    <td>银河麒麟v10 sp1 2303版本(ARM64)</td>
+    <td>linux-5.4.18-85及其以上</td>
+    <td>最少8GB，推荐16GB及以上</td>
+  </tr>
+  <tr>
+    <td>Ubuntu(支持ARM64)</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td>树莓Pi</td>
+    <td>/</td>
+    <td>Ubuntu(支持ARM64)</td>
+    <td>/</td>
+    <td>/</td>
+  </tr>
+</table>
 
-**硬件要求:**
-- 处理器：飞腾D2000、FT2000/4
-  
-> **PS:** 目前我们在飞腾生态中研究、开发并适配了上述两种CPU型号，也欢迎大家自行研究探索，让OpenFDE可以适配更多种类的CPU！你可以前往[构建与开发](./../developer/Quick-Start)去开始你的开发研究。
+如果你的设备已经满足了上述要求，就可以继续后面环节的快速安装操作。
 
-- 显卡：AMD Radeon、Phytium X100
+## 二、关闭安全控制{#close-security-control}
 
-> **注意！！！** 对于带x100显卡的笔记本，如果**内核版本低于5.4.18-85**，你需要首先升级你的内核版本才能正常安装和运行OpenFDE。升级内核步骤如下：
-```
-echo deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2303-updates main restricted universe multiverse | sudo tee /etc/apt/sources.list.d/v10sp12303.list
-sudo apt-get update -y
-sudo apt-get full-upgrade -y
-sudo apt-get autoremove -y 
-sudo apt-get autoclean -y & reboot # 这里必须要重启系统，待新内核生效后再进行后续的操作
-```
-
-**注意：**如果你的X100笔记本不是首次安装OpenFDE：在升级完内核后，安装OpenFDE之前，先执行```sudo apt purge fdeion-dkms```
-
-- 内存：最少8GB，如果你想享受更流畅的体验，推荐选择16GB及以上
-
-**软件要求**
-- 操作系统：我们目前研究适配了**麒麟、统信、ubuntu**三种操作系统，其他Linux 操作系统尚未完全适配和测试。
-
-不过，如果你愿意的话，你可以尝试手动编译安装，试试将OpenFDE安装在其他的操作系统上，有更好的想法可以去[这里](https://groups.io/g/openfde/topics)跟大家交流讨论，期待听到你的反馈！
-
-#### <mark>系统设置要求</mark>{#system-settings}
-
-
-&emsp;&emsp;为顺利安装和启动OpenFDE，在开始安装OpenFDE之前，你需要关闭当前系统所有的安全控制，在当前系统中选择设置-安全，进入安全中心。
+为顺利安装和启动OpenFDE，在开始安装OpenFDE之前，你需要关闭当前系统所有的安全控制，在当前系统中选择设置-安全，进入安全中心。
 
 ![control](./img/control.png)
 
@@ -55,16 +68,33 @@ sudo apt-get autoclean -y & reboot # 这里必须要重启系统，待新内核�
 
 ![protect](./img/protect.png)
 
-## 二、安装步骤{#installtion-steps}
+## 三、快速安装{#installtion-steps}
 
-&emsp;&emsp;让我们以麒麟操作系统为例，首先确保你已经打开了你当前系统的终端界面，执行下列命令一键安装：
+我们提供了一键安装OpenFDE的脚本，你可以打开一个新的终端界面，按照下列操作从远程服务器上获取脚本并执行快速安装OpenFDE。
+
+#### 步骤1. 安装curl工具{#install-curl}
 
 ```
-sudo apt-get install curl && curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh && sudo sh ./get-openfde.sh
+sudo apt-get install curl
 ```
-在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。想要了解详细的安装过程可以参见[安装指引](./installation-guide#preparation-before-install)
 
-## 三、畅快使用{#happy-use}
+#### 步骤2. 下载脚本文件到本地{#get-script}
+
+```
+curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh 
+```
+
+#### 步骤3. 执行脚本文件{#execute-script}
+
+```
+sudo sh ./get-openfde.sh
+```
+
+> 在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。
+
+更多详细教程可移步到[快速导航](./install-details/installation-guide)！
+
+## 四、畅快使用{#happy-use}
 
 ### 1. 登录与注销{#login-and-logout}
 
@@ -155,6 +185,6 @@ sudo apt-get install curl && curl -fsSL https://openfde.com/getopenfde/get-openf
 
 &emsp;&emsp;如果你想拖动桌面的应用图标或者小组件，首先你需要用鼠标放在目标应用或组件上，然后**长按**，再开始拖动图标到你想去的位置。
 
-## 四、更多了解{#know-more}
+## 五、更多了解{#know-more}
 
 你可以继续使用OpenFDE来帮助你办公和娱乐啦！更多详细的使用指导参见[用户手册](./user-manual)。

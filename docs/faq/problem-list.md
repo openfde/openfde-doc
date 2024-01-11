@@ -29,7 +29,6 @@ OpenFDE may currently have some usage issues. If you encounter the following rel
 |The Quik video editing software cannot be opened.|
 |The game interface of Genshin Impact on the X100 is experiencing screen flickering and visual glitches.|
 |The input bar of the input method may occasionally be positioned exactly within the input area, causing obstruction. It should be able to automatically move to a more suitable position.|
-|There is screen flickering and visual glitches in TikTok videos.|
 |When using SSH to connect to the VS Code server in the Linux Fusion application, it is not possible to input special characters in the popped-up password input box.|
 |In the Linux Fusion application, when opening WPS documents in the file manager, there is a probability that the documents cannot be edited or typed into.|
 |Some applications have window display issues where the window size changes are not compatible.|

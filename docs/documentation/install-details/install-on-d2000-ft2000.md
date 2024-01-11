@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: Install OpenFDE on Phytium D2000/FT2000
 ---
 

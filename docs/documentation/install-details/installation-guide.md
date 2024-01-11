@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-title: Installation Guide
+sidebar_position: 1
+title: Quick Guide
 ---
 
 # Installation Guide{#install-guide}
