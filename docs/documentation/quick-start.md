@@ -5,7 +5,7 @@ title: Quick Start
 
 # Quick Start
 
-OpenFDE is a Linux desktop environment built on AOSP (Android Open Source Project), Waydroid, and LineageOS. It supports the installation on different hardware platforms, allowing you to run Android applications on Linux systems and vice versa. With OpenFDE, you can enjoy Android apps on Linux and also run Linux applications on Android systems.
+OpenFDE is a new Linux desktop environment design exploration project. Similar to KDE and GNOME, it aims to provide a cohesive Linux desktop experience from login to running applications. However, what sets OpenFDE apart is its graphical component based on AOSP (Android Open Source Project), which brings a richer ecosystem of applications and games to Linux. It offers a consistent user experience with Android and Linux applications and introduces a unified and innovative approach to Linux desktop application development, providing a fresh perspective on using Linux desktop environments.
 
 <video width="720" height="405" controls>
     <source src="/img/install-guide.mp4" type="video/mp4" />

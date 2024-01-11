@@ -5,7 +5,7 @@ title: 快速入门
 
 # 快速入门
 
-&emsp;&emsp;OpenFDE是一个基于AOSP、Waydroid、LineageOS打造的可运行android应用的linux桌面环境。它支持在不同的硬件平台下安装，可以让你在Linux系统上玩安卓的软件，也可以在安卓系统中畅玩Linux应用。
+&emsp;&emsp;OpenFDE是一个全新的Linux桌面环境设计探索项目，如KDE、GNOME一样，从登录到运行，服从Linux桌面环境体验。不同的是，OpenFDE的图形部分以ASOP为基础，能为Linux带来更丰富的应用软件与游戏，提供Android 与 Linux 应用程序一致的使用体验，和统一且新颖的 Linux 桌面应用开发模式，为Linux 桌面提供一种全新的打开方式。
 
 <video width="720" height="405" controls>
     <source src="/img/install-guide.mp4" type="video/mp4" />
