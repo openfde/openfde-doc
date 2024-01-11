@@ -92,7 +92,7 @@ sudo sh ./get-openfde.sh
 
 > 在安装过程中可能会要输入"y"进行确认，你只需要按照提示正常输入就可以了。
 
-更多详细教程可移步到[快速导航](./install-details/installation-guide)！
+更多详细教程可移步到[快速导航](./install-details/quick-guide)！
 
 ## 四、畅快使用{#happy-use}
 

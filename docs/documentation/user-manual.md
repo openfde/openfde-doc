@@ -18,7 +18,7 @@ OpenFDE features the following characteristics:
 - Efficiently combining Android file access and Linux file access in a unified manner that prioritizes both efficiency and security.
 - OpenFDE provides an Android development environment and platform, allowing developers to directly perform mobile application development on OpenFDE.
 
-For instructions on downloading and installing OpenFDE, please refer to the [Installation Guide](./install-details/installation-guide).
+For instructions on downloading and installing OpenFDE, please refer to the [Quick Guide](./install-details/quick-guide).
 
 ## 1. Customizable Features{#definition-function}
 

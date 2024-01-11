@@ -92,7 +92,7 @@ sudo sh ./get-openfde.sh
 
 > During the installation process, you may be prompted to enter "y" to confirm certain actions. Simply follow the prompts and enter the requested input as necessary.
 
-For more detailed instructions, please refer to the [Quick Start Guide](./install-details/installation-guide) for step-by-step guidance！
+For more detailed instructions, please refer to the [Quick Start Guide](./install-details/quick-guide) for step-by-step guidance！
 
 ## 4. Get Started{#happy-use}
 
