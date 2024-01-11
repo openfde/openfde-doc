@@ -66,7 +66,7 @@ Let's take the example of Kylin operating system. First, make sure you have open
 sudo apt-get install curl && curl -fsSL https://openfde.com/getopenfde/get-openfde.sh -o get-openfde.sh && sudo sh ./get-openfde.sh
 ```
 
-During the installation process, you may be prompted to enter "y" to confirm certain actions. Simply follow the prompts and enter the requested input as necessary. If you want detailed installation instructions, please refer to the [installation guide](./installation-guide#preparation-before-install) provided by the OpenFDE project.
+During the installation process, you may be prompted to enter "y" to confirm certain actions. Simply follow the prompts and enter the requested input as necessary. If you want detailed installation instructions, please refer to the [installation guide](./install-details/installation-guide#preparation-before-install) provided by the OpenFDE project.
 
 ## 3. Get Started{#happy-use}
 

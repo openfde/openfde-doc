@@ -24,7 +24,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        <Link href="/docs/documentation/installation-guide">
+        <Link href="/docs/documentation/install-details/installation-guide">
         Installation Guide </Link><br/>
 
         <Link href="/docs/documentation/user-manual"> 
