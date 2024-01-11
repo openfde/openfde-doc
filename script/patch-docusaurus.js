@@ -42,6 +42,41 @@ function patchPaginationTitleTranslation() {
   fs.writeFileSync(filePath, content);
 }
 
+/** */
+function patchStaticAbsolutePathWithI18n() {
+  console.log('> Patch docusaurus for static resource URL with i18n');
+
+  const filePath = nodePath.join(
+    process.cwd(),
+    'node_modules/@docusaurus/core/lib/commands/start.js'
+  );
+
+  const changes = [
+    {
+      from: 'static: siteConfig.staticDirectories.map((dir) => ({\n            publicPath: baseUrl,',
+      to: 'static: siteConfig.staticDirectories.map((dir) => ({\n            publicPath: baseUrl.endsWith(cliOptions.locale+"/")?baseUrl.slice(0, -cliOptions.locale.length-1):baseUrl,',
+    },
+  ];
+
+  let content = fs.readFileSync(filePath, 'utf-8');
+  let changed = 0;
+  changes.forEach(({ from, to }) => {
+    if (content.includes(to)) {
+      changed += 1;
+    } else if (content.includes(from)) {
+      content = content.replace(from, to);
+      changed += 1;
+    }
+  });
+  if (changes.length !== changed) {
+    console.log(
+      'Not fully patched, maybe the source file is changed after package is upgraded'
+    );
+    return;
+  }
+  fs.writeFileSync(filePath, content);
+}
+
 /**
  * @deprecated
  * See related issue: https://github.com/facebook/docusaurus/issues/8118 .
@@ -70,3 +105,4 @@ function patchPaginationTitleI18n() {
 
 // patchPaginationTitleI18n();
 patchPaginationTitleTranslation();
+patchStaticAbsolutePathWithI18n();
