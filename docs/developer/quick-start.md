@@ -17,7 +17,7 @@ Firstly, you need to prepare a multi-core X86 host with a minimum requirement of
 
 After preparing the host, you need to install Ubuntu 22.04 on your system. Here is a download link for your convenience: https://ubuntu.com/download/server.
 
-### 1.3 Download the Repo Script File{#download-repo}
+### 1.3 Download the Repo Script File{#install-repo}
 
 Android typically uses the "repo" script to manage the source code tree, making it convenient for everyone to download hundreds of repositories with just one command. You need to execute the following commands in order to download the repo script file.
 
