@@ -140,7 +140,7 @@ const config = {
               },
               {
                 label: 'Discord Community',
-                href: siteUrl + '/img/discord-openfde.jpg',
+                href: siteUrl + '/img/discord-openfde.png',
               },
             ],
           },
