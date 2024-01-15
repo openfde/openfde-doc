@@ -8,6 +8,8 @@ title: Build Android APK
 <mark>a multi-core X86 host with a minimum requirement of 16GB of RAM and a minimum disk size of 512GB.
 </mark>
 
+(To be updated.)
+
 ### 1. Install Ubuntu and Run the Container{#install-ubuntu-and-run-the-container}
 
 ```

@@ -158,7 +158,7 @@ Linux程序编译需要在**ARMv8架构**的主机上进行，你需要选定一
 你可以执行下列命令进行一键编译Linux程序。
 
 ```
-git clone https://gitee.com/openfde/quick_start_to_compile_linux_programs && cp -a quick_start_to_compile_linux_programs/build_linux_for_fde.sh . && ./build_linux_for_fde.sh
+cd ~ && sudo apt install git -y && git clone https://gitee.com/openfde/quick_start_to_compile_linux_programs && cp -a quick_start_to_compile_linux_programs/build_linux_for_fde.sh . && ./build_linux_for_fde.sh
 ```
 
 如果想要了解更详细的编译过程和细节，请前往[Kylin2303上编译Linux程序](./build-linux/build-linux-on-kylin2303)。

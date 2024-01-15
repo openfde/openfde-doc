@@ -157,7 +157,7 @@ Before starting the compilation process, please go to System Settings -> Securit
 You can execute the following command to compile Linux programs with a single command.
 
 ```
-git clone https://gitee.com/openfde/quick_start_to_compile_linux_programs && cp -a quick_start_to_compile_linux_programs/build_linux_for_fde.sh . && ./build_linux_for_fde.sh
+cd ~ && sudo apt install git -y && git clone https://gitee.com/openfde/quick_start_to_compile_linux_programs && cp -a quick_start_to_compile_linux_programs/build_linux_for_fde.sh . && ./build_linux_for_fde.sh
 ```
 
 If you want to learn more detailed compilation process and information, please visit [Compiling Linux Programs on Kylin2303](./build-linux/build-linux-on-kylin2303).

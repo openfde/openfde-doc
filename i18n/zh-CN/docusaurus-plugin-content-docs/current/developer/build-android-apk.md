@@ -5,7 +5,7 @@ title: Android APK编译
 
 # Android APK编译{#build-android-apk}
 
-<mark>环境准备：多核的X86主机，内存要求16G，硬盘大小最低要求配备512G。</mark>
+<mark>环境准备：多核的X86主机，内存要求16G，硬盘大小最低要求配备512G。</mark>（后续还会更新）
 
 ### 1. 下载ubuntu镜像并运行容器
 
