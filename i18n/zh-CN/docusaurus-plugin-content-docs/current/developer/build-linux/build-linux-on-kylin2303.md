@@ -5,7 +5,7 @@ title: Kylin2303上编译Linux程序
 
 # Kylin2303上编译Linux程序
 
-## 1. 安装python-gbinder模块{#install-python-gbinder}
+## 1. 安装gbinder-python模块{#install-gbinder-python}
 
 ### 1.1 安装依赖libglibutil{#install-libglibutil}
 
@@ -68,6 +68,7 @@ cd -
 ### 1.3 安装gbinder-python模块{#install-gbinder-python}
 
 - 获取源码
+  
 ```
 git clone https://gitee.com/openfde/gbinder-python.git 
 ```
@@ -99,7 +100,7 @@ sudo python3 setup.py install
 - 安装pyclip
 
 ```
-pip3 install pyclip
+sudo pip3 install pyclip -i https://mirrors.aliyun.com/pypi/simple  
 ```
 
 - 回到上级目录
@@ -141,7 +142,7 @@ sudo apt install wget -y && wget https://go.dev/dl/go1.20.13.linux-arm64.tar.gz 
 - 解压并拷贝到执行路径下
 
 ```
-tar -xf ~/go1.20.13.linux-arm64.tar.gz && cd go && sudo cp -a bin/* /usr/bin/
+cd ~ && tar -xf ~/go1.20.13.linux-arm64.tar.gz && cd go && sudo cp -a bin/* /usr/bin/
 ```
 
 - 设置环境变量并添加到bash环境变量中
@@ -202,7 +203,7 @@ cd -
 git clone https://gitee.com/openfde/fde_tigervncserver.git && cd fde_tigervncserver
 ```
 
-- 安装ubunt版本的deb包
+- 安装ubuntu版本的deb包
 
 ```
 sudo dpkg -i xorg-server-source_2%3a1.20.13-1ubuntu1~20.04.8_all.deb
