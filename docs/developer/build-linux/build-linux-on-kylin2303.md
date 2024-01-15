@@ -21,7 +21,7 @@ sudo apt update
 sudo apt install git make gcc python3 -y
 ```
 
-- Acceess to the `libglibutil` directory and compile.
+- Access to the `libglibutil` directory and compile.
 
 ```
 cd libglibutil && make  
