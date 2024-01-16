@@ -15,7 +15,7 @@ title: 快速开始
 
 ### 1.2 安装Ubuntu22.04{#install-ubuntu22.04}
 
-&emsp;&emsp;准备好主机后，需要在你的环境上安装Ubuntu22.04, 友情提供下载链接：https://ubuntu.com/download/server。
+&emsp;&emsp;准备好主机后，需要在你的环境上安装Ubuntu22.04, 友情提供下载链接：https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04.3
 
 ### 1.3 安装和更新repo依赖{#install-repo}
 
@@ -73,13 +73,13 @@ mkdir fde && cd fde && sudo apt install git git-lfs -y
 git config --global user.name openfde && git config --global user.email openfde@openfde.com
 ```
 
-- 在当前目录中安装repo
+- 下载fde的mainifests仓库
   
 ```
 repo init -u https://gitee.com/openfde/manifests -b 1.0.6 --git-lfs
 ```
 
-其中-u表示指定从中检索清单代码库的地址；-b表示指定代码版本，当前OpenFDE代码版本为1.0.6。
+该步骤会按照fde manifests仓库初始化android源码树目录结构，其中-u表示指定从中检索清单代码库的地址；-b表示指定代码版本，当前OpenFDE代码版本为1.0.6。
 
 在执行repo init这条命令时，可能会出现```Testing colorized output (for 'repo diff', 'repo status'):
 black red green yellow blue  magenta cyan  white bold  dim ul reverse Enable color display in this user account (y/N)? ```, 此时输入y继续执行即可。

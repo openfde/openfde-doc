@@ -15,7 +15,7 @@ To compile the AOSP source code, it is recommended to have a <mark>multi-core X8
 
 ### 1.2 Install Ubuntu22.04{#install-ubuntu22.04}
 
-Once you have prepared the host machine, you need to install Ubuntu 22.04 in your environment. Here is a friendly download link for the Ubuntu 22.04 installation image: https://ubuntu.com/download/server。
+Once you have prepared the host machine, you need to install Ubuntu 22.04 in your environment. Here is a friendly download link for the Ubuntu 22.04 installation image: https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04.3
 
 ### 1.3 Install And Update Repo{#install-repo}
 
@@ -73,13 +73,13 @@ mkdir fde && cd fde && sudo apt install git git-lfs -y
 git config --global user.name openfde && git config --global user.email openfde@openfde.com
 ```
 
-- Install the `repo` in the current directory
+- Download the manifests repository
   
 ```
 repo init -u https://gitee.com/openfde/manifests -b 1.0.6 --git-lfs
 ```
 
-The `-u` flag specifies the URL from which to retrieve the manifest repository, and the `-b` flag specifies the code version. The current OpenFDE code version is 1.0.6.
+This step will initialize the Android source code tree directory structure according to the FDE manifests repository. The `-u` flag specifies the URL from which to retrieve the manifest repository, and the `-b` flag specifies the code version. The current OpenFDE code version is 1.0.6.
 
 When executing this command `repo init`, it is possible to encounter ```Testing colorized output (for 'repo diff', 'repo status'): black red green yellow blue  magenta cyan  white bold  dim ul reverse Enable color display in this user account (y/N)? ```. At this point, simply input 'y' to proceed with the execution.
 

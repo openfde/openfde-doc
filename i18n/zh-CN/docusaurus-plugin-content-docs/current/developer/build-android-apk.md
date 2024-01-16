@@ -5,27 +5,68 @@ title: Android APK编译
 
 # Android APK编译{#build-android-apk}
 
-<mark>环境准备：多核的X86主机，内存要求16G，硬盘大小最低要求配备512G。</mark>（后续还会更新）
+<mark>环境准备：多核的X86主机，内存要求16G，硬盘大小最低要求配备512G。</mark>
 
-### 1. 下载ubuntu镜像并运行容器
+### 1. 下载ubuntu镜像并运行容器{#download-ubuntu}
+
+- 安装docker
 
 ```
 sudo apt install docker.io
+```
+
+- 从docker镜像仓库中拉取ubuntu:22.04镜像
+
+```
 docker pull ubuntu:22.04
+```
+
+- 运行镜像
+
+```
 docker run -it --name ubuntu_build_apk ubuntu:22.04
 ```
 
-### 2. 下载Android cmdline tools和ndk
+### 2. 下载cmdline tools和ndk{#download-cmdline-ndk}
+
+- 更新软件源
 
 ```
 apt update
-cd ~
-apt install wget zip openjdk-11-jre git openjdk-17-jre -y
+```
+
+- 进入家目录，并安装相关工具
+  
+```
+cd ~ && apt install wget zip openjdk-11-jre git openjdk-17-jre -y
+```
+
+- 下载cmdline安装包
+
+```
 wget https://dl.google.com/android/repository/commandlinetools-linux-10406996_latest.zip
+```
+
+- 解压
+  
+```
 unzip commandlinetools-linux-10406996_latest.zip
+```
+
+- 设置PATH环境变量
+
+```
 export PATH=$PATH:/root/cmdline-tools/bin/
-mkdir /root/sdk_root
-export ANDROID_SDK_ROOT=/root/sdk_root/
+```
+
+- 设置ANDROID_SDK_ROOT环境变量
+
+```
+mkdir /root/sdk_root && export ANDROID_SDK_ROOT=/root/sdk_root/
+```
+
+- 安装android ndk21.1.6352462版本
+```
 sdkmanager --sdk_root=/root/sdk_root/ 'ndk;21.1.6352462'
 ```
 
@@ -33,10 +74,21 @@ sdkmanager --sdk_root=/root/sdk_root/ 'ndk;21.1.6352462'
 
 ### 3. 编译systemui apk{#build-systemui}
 
+- 获取源码，并进入boringdroidsystemui目录
+
 ```
-git clone https://gitee.com/openfde/boringdroidsystemui
-cd boringdroidsystemui
+git clone https://gitee.com/openfde/boringdroidsystemui && cd boringdroidsystemui
+```
+
+- 设置JAVA_HOME环境变量
+
+```
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+```
+
+- 执行gradle构建apk
+
+```
 ./gradlew build
 ```
 
@@ -48,14 +100,39 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 
 ### 4. 编译fdevnc apk{#build-fde-vnc}
 
+- 回到家目录，获取fde-vnc源码
+
 ```
-cd ~
-git clone https://gitee.com/openfde/remote-desktop-clients 
-cd remote-desktop-clients
-./gradlew :bVNC-app:assembleRelease  -PVersionName="1.0.5"
+cd ~ && git clone https://gitee.com/openfde/remote-desktop-clients 
 ```
 
-### 5. 拷贝APK到AOSP源码目录{#copy-apk-to-aosp}
+- 进入remote-desktop-clients目录，构建bVNC-app
+
+```
+cd remote-desktop-clients && ./gradlew :bVNC-app:assembleRelease  -PVersionName="1.0.5"
+```
+
+### 5. 编译gallery_fde{#compile-gallery-fde}
+
+- 进入家目录，获取gallery-fde源码
+
+```
+cd ~ && git clone https://gitee.com/openfde/gallery_fde
+```
+
+- 进入gallery-fde目录，并修改目录权限
+
+```
+cd gallery_fde && chmod +x gradlew
+```
+
+- 构建应用
+  
+```
+./gradlew  build -PappVersion=1.0.6
+```
+
+### 6. 拷贝apk文件到aosp源码目录{#copy-apk-to-aosp}
 
 打开新的linux shell终端，将3.3节和3.4节编译好的apk文件从容器中拷贝出来。
 

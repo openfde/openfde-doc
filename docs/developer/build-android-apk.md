@@ -8,27 +8,67 @@ title: Build Android APK
 <mark>a multi-core X86 host with a minimum requirement of 16GB of RAM and a minimum disk size of 512GB.
 </mark>
 
-(To be updated.)
-
 ### 1. Install Ubuntu and Run the Container{#install-ubuntu-and-run-the-container}
+
+
+- Install docker
 
 ```
 sudo apt install docker.io
-docker pull ubuntu:22.04
-docker run -it --name ubuntu_build_apk ubuntu:22.04
 ```
 
-### 2. Install Android cmdline tools和ndk{#install-cmdline-and-ndk}
+- Pull ubuntu:22.04 from the docker repository
+
+```
+docker pull ubuntu:22.04
+```
+
+- Run ubuntu:22.04
+
+```
+docker run -it --name ubuntu_build_apk ubuntu:22.04
+```
+### 2. Install cmdline tools和ndk{#install-cmdline-and-ndk}
+
+- Update the list of package
 
 ```
 apt update
-cd ~
-apt install wget zip openjdk-11-jre git openjdk-17-jre -y
+```
+
+- Go to the `home` directory and install the related tools 
+  
+```
+cd ~ && apt install wget zip openjdk-11-jre git openjdk-17-jre -y
+```
+
+- Install cmdline package
+
+```
 wget https://dl.google.com/android/repository/commandlinetools-linux-10406996_latest.zip
+```
+
+- Unzip the file
+  
+```
 unzip commandlinetools-linux-10406996_latest.zip
+```
+
+- Set PATEH environment variable
+
+```
 export PATH=$PATH:/root/cmdline-tools/bin/
-mkdir /root/sdk_root
-export ANDROID_SDK_ROOT=/root/sdk_root/
+```
+
+- Set ANDROID_SDK_ROOT environment variable
+
+```
+mkdir /root/sdk_root && export ANDROID_SDK_ROOT=/root/sdk_root/
+```
+
+- Install android ndk21.1.6352462
+  
+```
 sdkmanager --sdk_root=/root/sdk_root/ 'ndk;21.1.6352462'
 ```
 
@@ -36,10 +76,21 @@ If you encounter the prompt "Accept?(y/N):" during the command execution, please
 
 ### 3. Build Systemui APK{#build-systemui}
 
+- Get the source code and go to the `boringdroidsystemui` directory
+
 ```
-git clone https://gitee.com/openfde/boringdroidsystemui
-cd boringdroidsystemui
+git clone https://gitee.com/openfde/boringdroidsystemui && cd boringdroidsystemui
+```
+
+- Set JAVA_HOME environment variable
+
+```
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+```
+
+- Execute gradle and build the apk
+
+```
 ./gradlew build
 ```
 
@@ -51,14 +102,39 @@ After compilation is complete, you can find the `BoringdroidSystemUI.apk` file i
 
 ### 4. Build FdeVNC APK{#build-fde-vnc}
 
+- Back to the `home` directory and get the source code of fde-vnc
+
 ```
-cd ~
-git clone https://gitee.com/openfde/remote-desktop-clients 
-cd remote-desktop-clients
-./gradlew :bVNC-app:assembleRelease  -PVersionName="1.0.5"
+cd ~ && git clone https://gitee.com/openfde/remote-desktop-clients 
 ```
 
-###  5. Copy APK to AOSP{#copy-apk-to-aosp}
+- Go tot the `remote-desktop-clients` directory and build bVNC-app
+
+```
+cd remote-desktop-clients && ./gradlew :bVNC-app:assembleRelease  -PVersionName="1.0.5"
+```
+
+### 5. Compile gallery_fde{#compile-gallery-fde}
+
+- Back to the `home` directory and get the source code of gallery-fde
+
+```
+cd ~ && git clone https://gitee.com/openfde/gallery_fde
+```
+
+- Go to the `gallery-fde` and change its mode
+
+```
+cd gallery_fde && chmod +x gradlew
+```
+
+- Build app
+  
+```
+./gradlew  build -PappVersion=1.0.6
+```
+
+###  6. Copy APK to AOSP{#copy-apk-to-aosp}
 
 Open a new Linux shell terminal and copy the compiled APK files from sections 3.3 and 3.4 out of the container.
 
