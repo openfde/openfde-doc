@@ -26,7 +26,7 @@ title: 快速入门
   <tr>
     <td rowspan="2">Phytium D2000、FT2000/4</td>
     <td rowspan="2">AMD Radeon</td>
-    <td>银河麒麟v10 sp1 2203和2303版本(ARM64)</td>
+    <td>银河麒麟V10(SP1) 2203和2303版本(ARM64)</td>
     <td>linux-5.4.18-53及其以上</td>
     <td>最少8GB，推荐16GB及以上</td>
   </tr>
@@ -38,7 +38,7 @@ title: 快速入门
   <tr>
     <td rowspan="2">Phytium X100笔记本</td>
     <td rowspan="2">Phytium X100显卡</td>
-    <td>银河麒麟v10 sp1 2303版本(ARM64)</td>
+    <td>银河麒麟V10(SP1) 2303版本(ARM64)</td>
     <td>linux-5.4.18-85及其以上</td>
     <td>最少8GB，推荐16GB及以上</td>
   </tr>

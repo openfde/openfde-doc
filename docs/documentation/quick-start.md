@@ -26,7 +26,7 @@ We have researched and adapted OpenFDE to support installation on various hardwa
   <tr>
     <td rowspan="2">Phytium D2000、FT2000/4</td>
     <td rowspan="2">AMD Radeon</td>
-    <td>Galaxy Kylin v10 SP1 2203/2303(ARM64)</td>
+    <td>Galaxy Kylin V10(SP1) 2203/2303(ARM64)</td>
     <td>linux-5.4.18-53 and above</td>
     <td>Minimum 8GB. Recommended 16GB or higher</td>
   </tr>
@@ -38,7 +38,7 @@ We have researched and adapted OpenFDE to support installation on various hardwa
   <tr>
     <td rowspan="2">Phytium X100 Notebook</td>
     <td rowspan="2">Phytium X100</td>
-    <td>Galaxy Kylin v10 SP1 2303(ARM64)</td>
+    <td>Galaxy Kylin V10(SP1) 2303(ARM64)</td>
     <td>linux-5.4.18-85 and above</td>
     <td>Minimum 8GB. Recommended 16GB or higher</td>
   </tr>
