@@ -37,7 +37,7 @@
   },
   "link.item.label.Discord Community": {
     "message": "Discord社区",
-    "description": "The label of footer link with label=Discord Community linking to http://localhost:3000/img/discord-openfde.jpg"
+    "description": "The label of footer link with label=Discord Community linking to http://localhost:3000/img/discord-openfde.png"
   },
   "link.item.label.Official Website": {
     "message": "官网",
