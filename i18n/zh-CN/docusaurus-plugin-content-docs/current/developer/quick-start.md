@@ -73,6 +73,8 @@ mkdir fde && cd fde && sudo apt install git git-lfs -y
 git config --global user.name openfde && git config --global user.email openfde@openfde.com
 ```
 
+这里记得把user.name的参数"openfde"和user.email的参数"openfde@openfde.com"换成你自己的用户名和邮箱。
+
 - 下载fde的mainifests仓库
   
 ```

@@ -73,6 +73,8 @@ mkdir fde && cd fde && sudo apt install git git-lfs -y
 git config --global user.name openfde && git config --global user.email openfde@openfde.com
 ```
 
+Please remember to replace the "user.name" parameter with your own username and the "user.email" parameter with your own email address.
+
 - Download the manifests repository
   
 ```

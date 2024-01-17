@@ -18,13 +18,13 @@ sudo apt install docker.io
 - 从docker镜像仓库中拉取ubuntu:22.04镜像
 
 ```
-docker pull ubuntu:22.04
+sudo docker pull ubuntu:22.04
 ```
 
 - 运行镜像
 
 ```
-docker run -it --name ubuntu_build_apk ubuntu:22.04
+sudo docker run -it --name ubuntu_build_apk ubuntu:22.04
 ```
 
 ### 2. 下载cmdline tools和ndk{#download-cmdline-ndk}

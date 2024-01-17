@@ -20,13 +20,13 @@ sudo apt install docker.io
 - Pull ubuntu:22.04 from the docker repository
 
 ```
-docker pull ubuntu:22.04
+sudo docker pull ubuntu:22.04
 ```
 
 - Run ubuntu:22.04
 
 ```
-docker run -it --name ubuntu_build_apk ubuntu:22.04
+sudo docker run -it --name ubuntu_build_apk ubuntu:22.04
 ```
 ### 2. Install cmdline tools和ndk{#install-cmdline-and-ndk}
 
