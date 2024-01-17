@@ -21,6 +21,18 @@ sudo apt update
 sudo apt install git make gcc python3 -y
 ```
 
+- 获取源码
+
+```
+git clone https://gitee.com/openfde/libglibutil.git
+```
+
+- 安装libglib2.0-dev
+
+```
+sudo apt install libglib2.0-dev -y
+```
+
 - 进入libglibutil目录编译
 
 ```
