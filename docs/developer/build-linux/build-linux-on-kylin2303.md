@@ -154,7 +154,7 @@ sudo apt install wget -y && wget https://go.dev/dl/go1.20.13.linux-arm64.tar.gz 
 - Unzip and copy to the execution path
 
 ```
-cd ~ && tar -xf ~/go1.20.13.linux-arm64.tar.gz && cd go && sudo cp -a bin/* /usr/bin/
+tar -xf ~/go1.20.13.linux-arm64.tar.gz && cd go && sudo cp -a bin/* /usr/bin/
 ```
 
 - Set an environment variable and add it to the bash environment variables
