@@ -13,7 +13,7 @@ This guide includes two sections: [Installing OpenFDE on Kylin](#install-on-kyli
 
 - If your kernel version is lower than 5.4.18-85, please [upgrade your kernel version](#upgrade-kernel) first.
 
-- If your kernel version is 5.4.18-85 or higher, please click directly on the link to proceed with the [fdeion-dkms installation](#install-fdeion-dkms)
+- If your kernel version is 5.4.18-85 or higher, please click directly on the link to proceed with the [disable-security-control](#disable-security-control)
 
 #### Upgrade Kernel{#upgrade-kernel}
 
@@ -57,23 +57,13 @@ sudo apt-get autoremove -y
 sudo apt-get autoclean -y && reboot
 ```
 
-Once the kernel version upgrade is completed, continue with the [installation of fdeion-dkms](#install-fdeion-dkms)
-
-### 1.2 Install fdeion-dkms{#install-fdeion-dkms}
-
-If you have previously installed OpenFDE, after upgrading the kernel version, you need to first clean up the old fdeion-dkms. 
+<mark>If you have previously installed OpenFDE, after upgrading the kernel version, you need to first clean up the old fdeion-dkms. </mark>
 
 ```
 sudo apt purge fdeion-dkms
 ```
 
-If you haven't installed OpenFDE before, you can proceed with the installation of fdeion-dkms directly.
-
-```
-sudo apt install fdeion-dkms
-```
-
-### 1.3 Disable Security Controls
+### 1.2 Disable Security Controls{#disable-security-control}
 
 To ensure a smooth installation and startup of OpenFDE, before you begin installing OpenFDE, you need to disable all security controls on your current system. In your current system, go to Settings and navigate to Security. Enter the Security Center or Security Settings.
 
@@ -83,31 +73,31 @@ Using network control as an example, you should disable application internet acc
 
 ![protect](./../img/protect.png)
 
-### 1.4 Configure Installation Source And Certificates{#prerequisites}
+### 1.3 Configure Installation Source And Certificates{#prerequisites}
 
 When installing OpenFDE for the first time, you will need to obtain the complete software source and configure the installation source and certificates.
 
 **Note**: <mark>If this is not your first time installing OpenFDE</mark>, you can skip the "Configure Installation Source and Certificates" section and proceed directly to the [installation steps](#installation).
 
-#### 1.4.1 Install wget and gpg{#install-wget-gpg}
+#### 1.3.1 Install wget and gpg{#install-wget-gpg}
 
 ```
 sudo apt-get install wget gpg
 ```
 
-#### 1.4.2 Download the encryption key file from the official website and decrypt it locally{#download-keys}
+#### 1.3.2 Download the encryption key file from the official website and decrypt it locally{#download-keys}
 
 ```
 wget -qO-  http://openfde.com/keys/openfde.asc | gpg --dearmor > packages.openfde.gpg
 ```
 
-#### 1.4.3 Copy the decrypted key file to the key folder of your local apt tool{#decrypted-keys}
+#### 1.3.3 Copy the decrypted key file to the key folder of your local apt tool{#decrypted-keys}
 
 ```
 sudo install -D -o root -g root -m 644 packages.openfde.gpg /etc/apt/keyrings/packages.openfde.gpg
 ```
 
-#### 1.4.4 Configure the software repository address for OpenFDE{#config-source-address}
+#### 1.3.4 Configure the software repository address for OpenFDE{#config-source-address}
  
 ```
 sudo echo \
@@ -116,27 +106,27 @@ sudo echo \
   sudo tee /etc/apt/sources.list.d/openfde.list > /dev/null
 ```
 
-#### 1.4.5 Delete the downloaded key file{#remove-keys}
+#### 1.3.5 Delete the downloaded key file{#remove-keys}
 
 ```
 rm -f packages.openfde.gpg
 ```
 
-### 1.5 Install OpenFDE{#installation}
+### 1.4 Install OpenFDE{#installation}
 
-#### 1.5.1 Update Software Source{#apt-update}
+#### 1.4.1 Update Software Source{#apt-update}
 
 ```
 sudo apt-get update
 ```
 
-#### 1.5.2 Install OpenFDE{#install-openfde}
+#### 1.4.2 Install OpenFDE{#install-openfde}
 
 ```
-sudo apt-get install openfde 
+sudo apt-get install fdeion-dkms openfde 
 ```
 
-### 1.6 Upgrade OpenFDE{#update-openfde}
+### 1.5 Upgrade OpenFDE{#update-openfde}
 
 Firstly update the software source.
 
