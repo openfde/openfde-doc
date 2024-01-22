@@ -53,5 +53,9 @@ sudo dkms mkdeb -m fdeion -v 1.0
 
 其中“-v 1.0”表示所编译的fdeion的版本，如果你编译fdeion用于个人项目，版本号可以由你自己决定。
 
+- 安装fdeion的deb包
 
+```
+sudo dpkg -i fdeion-dkms.deb
+```
 

@@ -52,3 +52,9 @@ sudo dkms mkdeb -m fdeion -v 1.0
 ```
 
 where "-v 1.0" indicates the version of the compiled fdeion, and if you compile fdeion for personal projects, the version number can be determined by you.
+
+- Install the deb package of fdeion
+
+```
+sudo dpkg -i fdeion-dkms.deb
+```
