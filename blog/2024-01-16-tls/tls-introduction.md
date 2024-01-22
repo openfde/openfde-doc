@@ -77,7 +77,7 @@ TSL(Thread Local Storage)全称为线程本地存储变量，指每个线程有�
     </tr>
 </table>
 
-## TLS数据结构介绍
+## TLS数据结构介绍{#tls-data-structure}
 
 Drepper根据静态加载和动态加载共享对象的不同场景提供了内存布局的两种实现，基本原理类似。
 
@@ -94,7 +94,7 @@ Drepper根据静态加载和动态加载共享对象的不同场景提供了内�
 
 <center>图2 x86_64 TLS基本数据结构</center>
 
-### TLS数据布局
+### TLS数据布局{#data-layout}
 
 这里分别列出gnu和bionic的arrch64 TLS数据布局，gnu的实现与图1的结构类似，bionic的实现的TCB定义不一样，其它类似。
 
@@ -110,7 +110,7 @@ Drepper根据静态加载和动态加载共享对象的不同场景提供了内�
 
 图4为gnu线程栈的物理布局图，地址从下往上增加，静态TLS块内存分配在线程栈上，TCB大小为tcbhead_t数据结构大小（16字节）。静态TLS块紧挨着tcbhead_t数据结构。
 
-### 静态TLS空间
+### 静态TLS空间{#static-tls-space}
 
 涉及静态TLS空间，TCB管理空间（bionic_tcb），线程指针（tp ），动态线程数组（dtv）等。
 
@@ -119,11 +119,11 @@ Drepper根据静态加载和动态加载共享对象的不同场景提供了内�
 - TCB管理空间：记录线程指针、动态线程数组，线程局部数据管理等地址，bionic在aarch64定义的空间大小为9个8字节数组共72字节，比线程指针与第一个TLS变量的偏移大8，因此线程指针指向其第二个元素地址。另外，TCB管理空间涉及字节对齐问题，因此与静态TLS空间的起始地址可能不一样，这可能与bionic的实现相关
 - 动态线程数组：记录每个动态库的TLS程序段的起始位置，其地址保存在线程指针指定的空间中。
 
-### bionic TLS数据结构初始化流程
+### bionic TLS数据结构初始化流程{#bionic-tls-init}
 
 动态链接器对TLS数据结构的初始化分两部分，一部分在加载主程序过程中，称之为静态加载库，另一部分在主程序运行中调用dlopen加载动态库过程中，称之为动态加载库。
 
-#### 静态加载库初始化TLS
+#### 静态加载库初始化TLS{#static-loading-tls}
 
 动态链接器在加载主程序过程中，使用StaticTlsLayout和TlsModules两个全局变量初始化TLS数据结构。
 
@@ -160,7 +160,7 @@ Drepper根据静态加载和动态加载共享对象的不同场景提供了内�
 
 从上面的用例看，TLSDSC访问方式相对于GD来说，对静态TLS块上的TLS变量的访问优化是显著的，TLSDESC方式直接返回GOT表项中的静态TLS块偏移量，而GD方式需要访问dtv数组，计算而得其地址。
 
-#### 动态加载库初始化TLS
+#### 动态加载库初始化TLS{#dynamic-loading-tls}
 
 bionic通过dlopen动态加载库，初始TLS的步骤如下：
 
@@ -173,7 +173,7 @@ bionic通过dlopen动态加载库，初始TLS的步骤如下：
      - a. 初始化TlsDynamicResolverArg中TlsIndex的module id以及offset，offset的值为TLS变量在其TLS程序段的偏移量。另外初始化更新标志为库的更新标志，该标志表示动态库是否有更新;
      - b. 为了存储TlsDynamicResolverArg类型变量，将变量保存在soinfo::tlsdesc_args_数组中，为处理数组重新分配内存，Relocator::deferred_tlsdesc_relocs缓冲重定位信息，当该库的所有重定位操作完成后，再更新TLS变量的GOT表项.
 
-#### 线程创建过程中初始化TLS
+#### 线程创建过程中初始化TLS{#loading-tls-creating-thread}
 
 调用pthread_create创建线程，需要对主程序上的所有TLS数据结构进行拷贝。（pthread_create->__allocate_thread）
 
@@ -184,7 +184,7 @@ bionic通过dlopen动态加载库，初始TLS的步骤如下：
 5. 调用__init_bionic_tls_ptrs更新bionic_tls地址
 6. 调用clone，将静态TLS块地址传递给clone，由内核设置段寄存器tpidr_el0值
 
-#### __tls_get_addr函数实现
+#### __tls_get_addr函数实现{#tls-get-addr}
 
 GD/LD访问方式使用__tls_get_addr函数获取TLS变量绝对地址。__tls_get_addr函数涉及对dtv数据更新，其更新的条件由3个更新标志（generation）控制
 
@@ -280,7 +280,7 @@ update_tls_dtv动态分配dtv数组空间，代码太多不再列出，其实现
    - b. 将dtv数组元素清零
 5. 更新dtv数组的更新标志为全局动态库更新标志
 
-#### TLSDESC访问方式实现
+#### TLSDESC访问方式实现{#tlsdesc}
 
 TLSDESC访问方式有两种方式获取TLS变量相对静态TLS块的偏移地址：一种对于静态TLS块上的TLS变量由tlsdesc_resolver_static获取，另一种对于动态TLS块的TLS变量由tlsdesc_resolver_dynamic获取。这两种方式都采用汇编实现，不遵循C/C++函数调用的寄存器传参规范。其使用规范中的返回值寄存器传参，如aarch64的x0寄存器，x86_64的rax寄存器。
 
@@ -322,7 +322,7 @@ tlsdesc_resolver_dynamic实现步骤：
     a. 返回 dtv[mod_id] + TlsDynamicResolverArg::TlsIndex::offset相对于静态TLS块的偏移
 2. 慢速路径，调用__tls_get_addr获取TLS变量的绝对地址，返回与静态TLS块的相对偏移
 
-### gnu TLS数据结构初始化流程
+### gnu TLS数据结构初始化流程{#gnu-tls-data-structure}
 
 原理与bionic TLS数据结构初始化流程类似，不再详述。两者的差异包括：
 
