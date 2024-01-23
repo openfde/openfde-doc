@@ -1,10 +1,9 @@
 ---
 sidebar_position: 4
-title: 树莓Pi安装OpenFDE
+title: 树莓派安装OpenFDE
 ---
 
-# 树莓派安装OpenFDE
-
+# 树莓派安装OpenFDE{#install-openfde-on-rasberry-pi}
 
 ## 一、Ubuntu22.04上安装OpenFDE{#install-on-ubuntu}
 
@@ -14,11 +13,11 @@ title: 树莓Pi安装OpenFDE
 
 ### 2. 烧写Ubuntu22.04操作系统{#download-imager}
 
-首先下载树莓派镜像烧入工具Raspberry Pi Imager,下载链接https://www.raspberrypi.com/software/
+首先下载树莓派镜像烧入工具Raspberry Pi Imager,友情提供下载链接https://www.raspberrypi.com/software/
 
 ### 3. 配置Ubuntu{#config}
 
-烧写完成后，在树莓派上启动系统，进入Ubuntu，根据设置向导完成配置。(此步骤需要详细)
+烧写完成后，在树莓派上启动系统，进入Ubuntu，根据设置向导完成配置。
 
 ### 4. 安装运行依赖{#install-dependencies}
 
