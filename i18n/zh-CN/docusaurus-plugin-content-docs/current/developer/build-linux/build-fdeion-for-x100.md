@@ -51,11 +51,11 @@ sudo dkms build -m fdeion -v 1.0
 sudo dkms mkdeb -m fdeion -v 1.0
 ```
 
-其中“-v 1.0”表示所编译的fdeion的版本，如果你编译fdeion用于个人项目，版本号可以由你自己决定。
+其中“-v 1.0”表示所编译的fdeion的版本，如果你编译fdeion用于个人项目，版本号可以由你自己决定。该命令执行成功后，会在路径`/var/lib/dkms/fdeion/1.0/deb/`下生成fdeion-dkms_1.0_arm64.deb文件。
 
-- 安装fdeion的deb包
+- 进入到deb包所在的路径，并安装对应的deb包
 
 ```
-sudo dpkg -i fdeion-dkms.deb
+cd /var/lib/dkms/fdeion/1.0/deb/ && sudo dpkg -i fdeion-dkms_1.0_arm64.deb
 ```
 

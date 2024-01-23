@@ -51,10 +51,10 @@ sudo dkms build -m fdeion -v 1.0
 sudo dkms mkdeb -m fdeion -v 1.0
 ```
 
-where "-v 1.0" indicates the version of the compiled fdeion, and if you compile fdeion for personal projects, the version number can be determined by you.
+where "-v 1.0" indicates the version of the compiled fdeion, and if you compile fdeion for personal projects, the version number can be determined by you. After the successful execution of the command, a file named "fdeion-dkms_1.0_arm64.deb" will be generated in the directory `/var/lib/dkms/fdeion/1.0/deb/`.
 
-- Install the deb package of fdeion
+- Navigate to the directory where the deb package is located and install the corresponding deb package.
 
 ```
-sudo dpkg -i fdeion-dkms.deb
+cd /var/lib/dkms/fdeion/1.0/deb/ && sudo dpkg -i fdeion-dkms_1.0_arm64.deb
 ```
