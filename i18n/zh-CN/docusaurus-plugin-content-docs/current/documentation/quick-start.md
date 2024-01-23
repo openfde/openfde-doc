@@ -27,7 +27,7 @@ title: 快速入门
     <td rowspan="2">Phytium D2000、FT2000/4</td>
     <td rowspan="2">AMD Radeon</td>
     <td>银河麒麟V10(SP1) 2203和2303版本(ARM64)</td>
-    <td>linux-5.4.18-53及其以上</td>
+    <td><font color="Red">linux-5.4.18-53及其以上</font></td>
     <td>最少8GB，推荐16GB及以上</td>
   </tr>
   <tr>
@@ -36,16 +36,11 @@ title: 快速入门
     <td>/</td>
   </tr>
   <tr>
-    <td rowspan="2">Phytium X100笔记本</td>
-    <td rowspan="2">Phytium X100显卡</td>
+    <td>Phytium X100笔记本</td>
+    <td>Phytium X100显卡</td>
     <td>银河麒麟V10(SP1) 2303版本(ARM64)</td>
-    <td>linux-5.4.18-85及其以上</td>
+    <td><font color="Red">linux-5.4.18-85及其以上</font></td>
     <td>最少8GB，推荐16GB及以上</td>
-  </tr>
-  <tr>
-    <td>Ubuntu(支持ARM64)</td>
-    <td>/</td>
-    <td>/</td>
   </tr>
   <tr>
     <td>树莓Pi</td>
@@ -56,7 +51,12 @@ title: 快速入门
   </tr>
 </table>
 
-如果你的设备已经满足了上述要求，就可以继续后面环节的快速安装操作。
+- 如果你的设备已经满足了上述要求，就可以继续后面环节的快速安装操作。
+
+- <mark>如果你的设备不满足上述要求，请务必先升级你的设备！！！</mark> 
+  
+- 对于**Phytium X100内核升级**，我们给出了详细的教程，请戳[Phytium X100安装OpenFDE](./install-details/install-on-x100)
+
 
 ## 二、关闭安全控制{#close-security-control}
 

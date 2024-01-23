@@ -27,7 +27,7 @@ We have researched and adapted OpenFDE to support installation on various hardwa
     <td rowspan="2">Phytium D2000、FT2000/4</td>
     <td rowspan="2">AMD Radeon</td>
     <td>Galaxy Kylin V10(SP1) 2203/2303(ARM64)</td>
-    <td>linux-5.4.18-53 and above</td>
+    <td><font color="Red">linux-5.4.18-53 and above</font></td>
     <td>Minimum 8GB. Recommended 16GB or higher</td>
   </tr>
   <tr>
@@ -36,16 +36,11 @@ We have researched and adapted OpenFDE to support installation on various hardwa
     <td>/</td>
   </tr>
   <tr>
-    <td rowspan="2">Phytium X100 Notebook</td>
-    <td rowspan="2">Phytium X100</td>
+    <td>Phytium X100 Notebook</td>
+    <td>Phytium X100</td>
     <td>Galaxy Kylin V10(SP1) 2303(ARM64)</td>
-    <td>linux-5.4.18-85 and above</td>
+    <td><font color="Red">linux-5.4.18-85 and above</font></td>
     <td>Minimum 8GB. Recommended 16GB or higher</td>
-  </tr>
-  <tr>
-    <td>Ubuntu(ARM64)</td>
-    <td>/</td>
-    <td>/</td>
   </tr>
   <tr>
     <td>Rapberry Pi</td>
@@ -56,7 +51,11 @@ We have researched and adapted OpenFDE to support installation on various hardwa
   </tr>
 </table>
 
-If your device meets the above requirements, you can proceed with the following steps for a quick installation.
+- If your device meets the above requirements, you can proceed with the following steps for a quick installation.
+
+- <mark>If your device does not meet the requirements mentioned above, please make sure to upgrade your device first!!!</mark> 
+
+- For **Phytium X100 kernel upgrade**, we have provided a detailed tutorial. Please click [here](./install-details/install-on-x100) for the installation details of OpenFDE on Phytium X100.
 
 ## 2. Disable Security Controls{#close-security-control}
 
