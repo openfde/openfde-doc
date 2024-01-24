@@ -13,13 +13,15 @@ title: 树莓派安装OpenFDE
 
 ### 2. 烧写Ubuntu22.04操作系统{#download-imager}
 
-首先下载树莓派镜像烧入工具Raspberry Pi Imager,友情提供下载链接https://www.raspberrypi.com/software/
+首先下载树莓派镜像烧入工具Raspberry Pi Imager,友情提供下载链接https://www.raspberrypi.com/software/。
 
 ### 3. 配置Ubuntu{#config}
 
-烧写完成后，在树莓派上启动系统，进入Ubuntu，根据设置向导完成配置。
+烧写完成后，在树莓派上启动系统，进入Ubuntu，根据设置向导完成相关配置。
 
 ### 4. 安装运行依赖{#install-dependencies}
+
+登录进入烧写好的Ubuntu系统，打开终端界面
 
 - 更新软件源
 
@@ -49,4 +51,10 @@ sudo apt install mutter i3 phtyon3-pip lxc libibus-1.0-5 tigervnc-standalone-ser
   
 ```
 sudo ln -sf /usr/bin/python3 /usr/bin/python
+```
+
+- 安装deb包
+
+```
+sudo dpkg -i openfde_1.0.6-20240115_arm64.deb
 ```
