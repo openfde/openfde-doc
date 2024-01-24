@@ -13,7 +13,7 @@ title: 树莓派安装OpenFDE
 
 ### 2. 烧写Ubuntu22.04操作系统{#download-imager}
 
-首先下载树莓派镜像烧入工具Raspberry Pi Imager,友情提供下载链接https://www.raspberrypi.com/software/。
+首先下载树莓派镜像烧入工具Raspberry Pi Imager,友情提供下载链接https://www.raspberrypi.com/software/
 
 ### 3. 配置Ubuntu{#config}
 
