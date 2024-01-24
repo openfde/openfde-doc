@@ -77,3 +77,17 @@ sudo apt install linux-modules-extra-`uname -r`
 ```
 sudo apt install openfde
 ```
+
+### 6. 升级OpenFDE{#update-openfde}
+
+首先更新软件源.
+
+```
+sudo apt-get update
+```
+
+升级OpenFDE到最新版本
+
+```
+sudo apt-get install openfde
+```
