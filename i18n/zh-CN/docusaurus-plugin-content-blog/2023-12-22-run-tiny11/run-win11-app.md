@@ -49,6 +49,8 @@ OpenFDE已安装完毕并登录OpenFDE桌面
   ![](./img/IMG_20240102_100654.jpg)
    
 4. 点击“基于已有镜像创建”，找到第一步中下载qcow2文件的位置(tiny11-vm-vapp.qcow2)打开
+
+ps:导入该镜像创建的虚拟机用户名与密码都为“pvuser”
    
   ![image](./img/image-4.png)
 
