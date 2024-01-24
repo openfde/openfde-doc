@@ -2,7 +2,7 @@
 slug: run-win11
 title: OpenFDE玩转win11应用
 description: 介绍如何在OpenFDE用上win11应用
-date: 2023-12-22T14:00
+date: 2024-01-24T14:00
 author: zhaolixia
 ---
 
@@ -18,7 +18,7 @@ author: zhaolixia
 * win11虚拟机qcow2：tiny11-vm-vapp.qcow2（7.2GB）
   * 使用tiny11制作，它是一款对win11进行极致精简的定制系统,它的特点是在资源受限的情况下，用户依然能够获得流畅的使用体验
   * 该镜像用户名与密码都是pvuser,成功创建虚拟机后可自行修改
-  * 文件存放于夸克网盘，下载链接：https://pan.quark.cn/s/fb58701c4b47
+  * 文件存放于夸克网盘，下载链接：https://pan.quark.cn/s/d3b9e4cba2b4
 
 ### 安装前提{#prerequisites}
 
@@ -53,9 +53,7 @@ OpenFDE已安装完毕并登录OpenFDE桌面
   ![image](./img/image-6.png)
 
 
-5. 重启系统进入OpenFDE桌面，点击"开始菜单->phyvirt"打开,可见有新建的虚拟机tiny11
-
-   <font color="red">ps:当前版本如果不重启会导致之后的步骤phyvirt按钮无法操作</font>
+5. 在OpenFDE桌面，点击"开始菜单->phyvirt"打开,可见有新建的虚拟机tiny11
 
   ![image](img/image-9-1.png)
 
