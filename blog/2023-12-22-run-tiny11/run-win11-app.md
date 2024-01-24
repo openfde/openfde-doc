@@ -1,126 +1,112 @@
 ---
-slug: run-tiny11
-title: Run Tiny11
-description: introduction to running tiny11 in OpenFDE
-date: 2023-12-22T14:00
-author: zhaolixia, kuangyangyang
+slug: run-win11
+title: OpenFDE玩转win11应用
+description: 介绍如何在OpenFDE用上win11应用
+date: 2024-01-24T14:00
+author: zhaolixia
 ---
 
-This document provides instructions on how to use Win11 in an OpenFDE environment. The main steps include obtaining the tiny11 image, using phyvirt to install the image as a virtual machine with the operating system language set to Chinese, copying the qcow2 file, and finally attempting to use the virtual machine in the OpenFDE environment.
-
+本博客介绍如何在OpenFDE使用win11应用，主要在OpenFDE安装phyvirt-fde，导入已有win11镜像qcow2创建虚拟机，下载win11应用包并安装使用
 <!--truncate-->
 
-### Software and Hardware Resource
+### 软硬件资源{#resource}
 
-#### Hardware
-
-* 16CPU 
-* 16GB MEM
-* harddisk:40GB
-* kernel: 5.4.18-85-generic
-* aarch64
-  
-#### Software
-
+* 内存>8G,硬盘>60G
 * Kylin V10 SP1
-* phyvirt app ：cn.com.vapp_1.5.6.0_arm64_kylin.deb
-* tiny11 virtual machine qcow2：tiny11_20231221_114340.qcow2
-* vapp iso:vapp-v1.5.6.0-20231107-1540.iso
-    * After successfully installing vapp, it is now located at /opt/apps/cn.com.vapp/files/iso/vapp-v1.5.6.0-20231107-1540.iso
-* Virtual machine for Android:android-build-release-signed.apk
-    * After successfully installing vapp, it is now located at /opt/apps/cn.com.vapp/files/android-build-release-signed.apk
-* Remote Desktop for Android: aFreeRDP-release.apk
-    * After successfully installing vapp, it is now located at /opt/apps/cn.com.vapp/files/aFreeRDP-release.apk
+* phyvirt-fde：
+  * 目前版本仅支持Phytium CPU part为0x662和0x663的机器，可使用命令“cat /proc/cpuinfo”查看是否匹配
+* win11虚拟机qcow2：tiny11-vm-vapp.qcow2（7.2GB）
+  * 使用tiny11制作，它是一款对win11进行极致精简的定制系统,它的特点是在资源受限的情况下，用户依然能够获得流畅的使用体验
+  * 该镜像用户名与密码都是pvuser,成功创建虚拟机后可自行修改
+  * 文件存放于夸克网盘，下载链接：https://pan.quark.cn/s/d3b9e4cba2b4
 
-### Prerequisites
+### 安装前提{#prerequisites}
 
-Openfde is installed and working fine
+OpenFDE已安装完毕并登录OpenFDE桌面
 
-### Steps
+### 搭建步骤{#steps}
 
-1. In Kylin, double-click on "cn.com.vapp_1.5.6.0_arm64_kylin.deb", and click on "One-click Install". After entering the PC password in the prompted Kylin authorization window, the installation process will begin.
+1. 在OpenFDE中点击"开始菜单->Fusion Linux Application",找到linux的终端应用Konsole，输入以下命令安装phyvirt-fde
+  ```
+  sudo apt update
+  sudo apt install phyvirt-fde -y
+  ```
+
+  ![Alt text](./img/image-7-1.png)
+
+  ![Alt text](./img/image-14-1.png)
+
+2. 在"开始菜单->Fusion Linux Application"中打开vapp-demo
    
-![image](./img/image.png)
-![image1](./img/image-1.png)
+  ![image](./img/image-7-1.png)
 
-2. After installation, you can find "vapp-demo" in the application list. Click on it to open. In the system settings, you can see that the default shared directory for the virtual machine is "/home/test/Desktop/share".
+  ![](./img/IMG_20240102_100654.jpg)
    
-![image2](./img/image-2.png)
-
-3. Copy the vapp image file to the shared directory for execution within the virtual machine.
+3. 点击“基于已有镜像创建”，找到已有的win11虚拟机qcow2文件(tiny11-vm-vapp.qcow2)打开
    
-```
-mkdir -p  ~/desktop/share/vm4 
-cp /opt/apps/cn.com.vapp/files/iso/vapp-v1.5.6.0-20231107-1540.iso ~/desktop/share/vm4
-```
-4. Click on "Create Based on Existing Image" and locate the existing qcow2 file of the tiny11 virtual machine. I have placed it in "/mnt/tiny11/" directory. Select any qcow2 file in the specified path to open.
+  ![image](./img/image-4.png)
+
+  ![](img/IMG_20240102_101913.jpg)
+
+4. 输入虚拟机名，操作系统类型、CPU数量、内存大小等信息，点击右下角确认创建虚拟机后直接关闭vapp-demo
    
-![img4](./img/image-4.png)
-![img9](./img/image-9.png)
+  ![image](./img/image-6.png)
 
-5. Enter the virtual machine name, operating system type, CPU quantity, memory size, and other relevant information. Then, click on the confirmation button in the bottom right corner to start creating the virtual machine.
-   
-![img6](./img/image-6.png)
 
-6. Wait for the status in the bottom right corner of the virtual platform to change from "Not Ready" to "Ready". Click on "Debug Desktop" to open the virtual machine desktop. Please note that at this point, the current user is the default user of the virtual machine, which is "pvuser" (both the username and password are "pvuser").
-   
-![img8](./img/image-8.png)
-![img7](./img/image-7.png)
+5. 在OpenFDE桌面，点击"开始菜单->phyvirt"打开,可见有新建的虚拟机tiny11
 
-7. Open the shared directory and locate the vapp image file "vapp-v1.5.6.0-20231107-1540.iso" that was copied in step 3. Double-click to open it.
-   
-![img10](./img/image-10.png)
+  ![image](img/image-9-1.png)
 
-8. Run "phyvirt-app-v1.5.5.0-2023117-1536.exe" as an administrator.
+  ![image](./img/image-9-1-1.png)
 
-![img12](./img/image-12.png)
-![img11](./img/image-11.png)
-![img13](./img/image-13.png)
-![img14](./img/image-14.png)
-![img15](./img/image-15.png)
-![img16](./img/image-16.png)
-![img17](./img/image-17.png)
-![img18](./img/image-18.png)
+6. phyvirt上启动虚拟机
 
-9. After the installation is complete, you need to wait for the corresponding driver installation to finish. A window will appear asking if you want to restart the system. Click "Yes" to restart the system.
+  ![image](img/image-13-1.png)
 
-![img19](./img/image-19.png)
-![img20](./img/image-20.png)
+7. 待右下角状态为“就绪”，可点击“RDP”进入虚拟机
+  
+  ![image](img/image-12-1.png)
 
-10. Log out of the Kylin desktop and enter the OpenFDE desktop. Click on the Start menu, then go to "Fusion Linux Application" and find the Linux terminal application called "Konsole".
+
+8. 将窗口全屏就可以正常使用了
+  
     
-![img21](./img/image-21.png)
-![img22](./img/image-22.png)
+  ![image](./img/image-26.png)
 
-11. Enter the following commands in Konsole to install the Android version of the virtual machine and the Android version of the remote desktop.
+### 安装应用{#install-applications}
+* 方法一
+  镜像自带有浏览器Edge,可用此下载软件包安装使用
 
-```
-waydroid app install /opt/apps/cn.com.vapp/files/android-build-release-signed.apk
-waydroid app install /opt/apps/cn.com.vapp/files/aFreeRDP-release.apk 
-```
+  ![image](./img/Screenshot_20231214-135649_aFreeRDP.png)
 
-![img27](./img/image-27.png)
+  ![image](./img/Screenshot_20231214-140355_aFreeRDP.png)
 
-12. Click on the Start menu and then navigate to the "phyvirt" application. You should see the virtual machine "tiny11" that was created on Kylin.
+* 方法二
+  phyvirt中默认的共享目录路径为“~/桌面/share",可将安装包放入其中，在虚拟机中点击安装
+  ```
+  cp ~/下载/exe/ ~/桌面/share/ -r
+  ```
+  
+  ![Alt text](img/Screenshot_20240102-113151_PhyVirt.png)
 
-![img23](./img/image-23.png)
+  ![Alt text](img/Screenshot_20240102-133944_PhyVirt.png)
 
-13. Start the virtual machine on phyvirt in OpenFDE.
+  ![Alt text](img/Screenshot_20240102-154048_PhyVirt.png)
 
-![img24](./img/image-24.png)
+### 应用展示{#application-use}
+* Xmind
+  
+  ![Alt text](img/Screenshot_20240102-174640_PhyVirt.png)
 
-14. Wait for the status in the bottom right corner to change to "Ready". Then, click on "My Desktop" to enter the virtual machine.
+* Xshell
 
-![img25](./img/image-25.png)
+  ![Alt text](img/Screenshot_20240102-180025_PhyVirt.png)
 
-15. To use it normally, you can go fullscreen by maximizing the window.
-    
-![img26](./img/image-26.png)
+* QQ游戏
+  
+  ![Alt text](img/Screenshot_20240104-134435_PhyVirt.png)
 
-1.  Now you can install the corresponding applications by transferring the installation packages through the shared directory or downloading software packages using a browser for installation and use.
+  ![Alt text](img/Screenshot_20240104-134529_PhyVirt.png)
 
-![screenshot1](./img/Screenshot_20231214-135649_aFreeRDP.png)
-![screenshot2](./img/Screenshot_20231214-135819_aFreeRDP.png)
-![screenshot3](./img/Screenshot_20231214-140355_aFreeRDP.png)
-
-If you want to learn how to sinicize tiny11, head over to the [chinese-tiny11](./../2023-12-22-chinese-tiny/chinese-tiny11.md)
+### 致谢{#thanks}
+感谢飞腾公司小伙伴基于phyvirt基础上，为OpenFDE提供了phyvirt-fde
