@@ -30,6 +30,11 @@ OpenFDE已安装完毕并登录OpenFDE桌面
 部分浏览器存在打开链接看不到文件的情况，请更换浏览器下载
 
 2. 在OpenFDE中点击"开始菜单->Fusion Linux Application",找到linux的终端应用Konsole，依次输入以下两条命令安装phyvirt-fde
+
+  ![Alt text](./img/image-7-1.png)
+
+  ![Alt text](./img/image-14-1.png)
+
 ```
   sudo apt update
 ```
@@ -37,9 +42,6 @@ OpenFDE已安装完毕并登录OpenFDE桌面
   sudo apt install phyvirt-fde -y
 ```
 
-  ![Alt text](./img/image-7-1.png)
-
-  ![Alt text](./img/image-14-1.png)
 
 3. 在"开始菜单->Fusion Linux Application"中打开vapp-demo
    
