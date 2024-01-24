@@ -111,3 +111,15 @@ Similarly, navigate to your Android directory at /home/kyy/openfde/ and copy a f
 ![cp-file-to-linux](./../img/cp-file-to-linux.png)
 
 - You can also use mouse operations to copy and paste: Right-click on the file in /home/kyy/openfde/Download/ and select "Copy," then right-click on an empty space in Linux's /home/kyy/Downloads/ directory and choose "Paste."
+
+### Modify and Delete Files{##edit-or-delete}
+
+If you need to edit, modify, or delete existing files or folders, please make sure to perform these operations in the **original file system**.
+
+- Modify files
+  
+In simple terms, if you copy a file A from the Linux file system to the Android file system, and you need to edit or modify file A, please perform the operation in the Linux file system. **Do not modify the copied file A in the Android file system**. The same operation restrictions apply when copying files and folders from the Android file system to the Linux file system.
+
+- Delete files
+
+Similarly, to ensure file consistency, if you want to delete files or folders, please perform the deletion operation in the respective file system's file manager. In other words, <mark>in the Linux file manager Peony, it is not possible to delete any files or folders in the Android file system "openfde" (fde_fs), and in the Android file system's "Files" application, it is also not possible to delete any files or folders in the Linux Volume.</mark>
