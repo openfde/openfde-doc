@@ -26,7 +26,8 @@ OpenFDE已安装完毕并登录OpenFDE桌面
 
 ### 搭建步骤{#steps}
 
-1. 下载win11虚拟机qcow2，下载地址: https://pan.quark.cn/s/c9afea2e5059
+1. 下载win11虚拟机qcow2，下载地址: https://pan.quark.cn/s/c9afea2e5059 ，
+部分浏览器存在打开链接看不到文件的情况，请更换浏览器下载
 
 2. 在OpenFDE中点击"开始菜单->Fusion Linux Application",找到linux的终端应用Konsole，依次输入以下两条命令安装phyvirt-fde
 ```
