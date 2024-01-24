@@ -19,6 +19,7 @@ author: zhaolixia
   * 使用tiny11制作，它是一款对win11进行极致精简的定制系统,它的特点是在资源受限的情况下，用户依然能够获得流畅的使用体验
   * 该镜像用户名与密码都是pvuser,成功创建虚拟机后可自行修改
   * 文件存放于夸克网盘，下载链接：https://pan.quark.cn/s/c9afea2e5059
+  
 ### 安装前提{#prerequisites}
 
 OpenFDE已安装完毕并登录OpenFDE桌面
@@ -28,12 +29,12 @@ OpenFDE已安装完毕并登录OpenFDE桌面
 1. 下载win11虚拟机qcow2，下载地址: https://pan.quark.cn/s/c9afea2e5059
 
 2. 在OpenFDE中点击"开始菜单->Fusion Linux Application",找到linux的终端应用Konsole，依次输入以下两条命令安装phyvirt-fde
-  ```
+```
   sudo apt update
 ```
 ```
   sudo apt install phyvirt-fde -y
-  ```
+```
 
   ![Alt text](./img/image-7-1.png)
 
@@ -77,7 +78,9 @@ OpenFDE已安装完毕并登录OpenFDE桌面
   ![image](./img/image-26.png)
 
 ### 安装应用{#install-applications}
+
 * 方法一
+  
   镜像自带有浏览器Edge,可用此下载软件包安装使用
 
   ![image](./img/Screenshot_20231214-135649_aFreeRDP.png)
@@ -85,6 +88,7 @@ OpenFDE已安装完毕并登录OpenFDE桌面
   ![image](./img/Screenshot_20231214-140355_aFreeRDP.png)
 
 * 方法二
+  
   phyvirt中默认的共享目录路径为“~/桌面/share",可将安装包放入其中，在虚拟机中点击安装
   ```
   cp ~/下载/exe/ ~/桌面/share/ -r
@@ -97,6 +101,7 @@ OpenFDE已安装完毕并登录OpenFDE桌面
   ![Alt text](img/Screenshot_20240102-154048_PhyVirt.png)
 
 ### 应用展示{#application-use}
+
 * Xmind
   
   ![Alt text](img/Screenshot_20240102-174640_PhyVirt.png)
@@ -112,4 +117,5 @@ OpenFDE已安装完毕并登录OpenFDE桌面
   ![Alt text](img/Screenshot_20240104-134529_PhyVirt.png)
 
 ### 致谢{#thanks}
+
 感谢飞腾公司小伙伴基于phyvirt基础上，为OpenFDE提供了phyvirt-fde
