@@ -125,6 +125,14 @@ OpenFDE comes with the default input method of 'iFlytek Voice Input Method'. To 
 
 ![ime-tips](./img/ime-tips.jpg)
 
+Furthermore, during usage, you may have already finished typing, but the predictive text box of the input method still appears, as shown in the image below:
+
+![ime-lianxiang](./img/ime-lianxiang.png)
+
+For this situation, it is because the predictive text feature of the Xunfei input method is enabled. It is recommended to disable the predictive text feature of the Xunfei input method.
+
+![xunfei-lianxiang](./img/xunfei-lianxiang.jpg)
+
 ### 4.3 Configure Network{#config-network}
 
 OpenFDE can directly utilize external systems such as Kylin, UOS, Ubuntu for networking. Users can click on the OpenFDE icon in the bottom left corner and open Start Menu, Fusion Linux Application to find the Linux Settings. In the Linux Settings, you can configure the network settings for the system.

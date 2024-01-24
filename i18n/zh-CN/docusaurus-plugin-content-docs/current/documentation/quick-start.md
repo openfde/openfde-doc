@@ -122,6 +122,13 @@ sudo sh ./get-openfde.sh
 
 ![ime-tips](./img/ime-tips.jpg)
 
+另外，在使用过程中可能你已经输入完成了，但是输入法的提示词框还依旧出现，像下面的图中这样：
+
+![ime-lianxiang](./img/ime-lianxiang.png)
+
+对于这种情况，是因为打开了讯飞输入法的联想功能，这里建议关闭讯飞输入法的联想功能。
+
+![xunfei-lianxiang](./img/xunfei-lianxiang.jpg)
 
 ### 3. 配置网络{#config-network}
 

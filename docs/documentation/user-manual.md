@@ -77,6 +77,14 @@ OpenFDE supports the built-in iFlytek Voice Input Method. Users can add new lang
 
 ![ime-tips](./img/ime-tips.jpg)
 
+Furthermore, during usage, you may have already finished typing, but the predictive text box of the input method still appears, as shown in the image below:
+
+![ime-lianxiang](./img/ime-lianxiang.png)
+
+For this situation, it is because the predictive text feature of the Xunfei input method is enabled. It is recommended to disable the predictive text feature of the Xunfei input method.
+
+![xunfei-lianxiang](./img/xunfei-lianxiang.jpg)
+
 ## 2. Applications{#applications}
 
 ### 2.1 Install applications{#install-software}
