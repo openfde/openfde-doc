@@ -18,15 +18,14 @@ author: zhaolixia
 * win11虚拟机qcow2：tiny11-vm-vapp.qcow2（7.2GB）
   * 使用tiny11制作，它是一款对win11进行极致精简的定制系统,它的特点是在资源受限的情况下，用户依然能够获得流畅的使用体验
   * 该镜像用户名与密码都是pvuser,成功创建虚拟机后可自行修改
-  * 文件存放于夸克网盘，下载链接：https://pan.quark.cn/s/d3b9e4cba2b4
-
+  * 文件存放于夸克网盘，下载链接：https://pan.quark.cn/s/c9afea2e5059
 ### 安装前提{#prerequisites}
 
 OpenFDE已安装完毕并登录OpenFDE桌面
 
 ### 搭建步骤{#steps}
 
-1. 下载win11虚拟机qcow2，下载地址: https://pan.quark.cn/s/d3b9e4cba2b4
+1. 下载win11虚拟机qcow2，下载地址: https://pan.quark.cn/s/c9afea2e5059
 
 2. 在OpenFDE中点击"开始菜单->Fusion Linux Application",找到linux的终端应用Konsole，依次输入以下两条命令安装phyvirt-fde
   ```
