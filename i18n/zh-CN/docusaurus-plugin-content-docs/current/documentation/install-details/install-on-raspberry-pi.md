@@ -9,11 +9,17 @@ title: 树莓派安装OpenFDE
 
 ### 1. 系统要求{#requirements}
 
-树莓派4B及其以上
+- 硬件：树莓派4B及其以上
+- 内核：我们研究测试和适配通过的<mark>内核版本为5.15.0-1044 raspi</mark>，如果你的内核是其他版本也可以尝试安装，如果在安装过程中遇到问题可以前往[反馈](https://gitee.com/organizations/openfde/issues)。
+- 内存：建议越大越好
 
 ### 2. 烧写Ubuntu22.04操作系统{#download-imager}
 
-首先下载树莓派镜像烧入工具Raspberry Pi Imager,友情提供下载链接https://www.raspberrypi.com/software/
+首先下载树莓派镜像烧入工具Raspberry Pi Imager,友情提供下载链接https://www.raspberrypi.com/software/ 
+
+烧写过程部分示例：
+
+![rapsi-imager](../img/raspi-imager.png)
 
 ### 3. 配置Ubuntu{#config}
 
