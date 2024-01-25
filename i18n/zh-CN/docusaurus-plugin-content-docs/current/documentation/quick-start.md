@@ -132,29 +132,25 @@ sudo sh ./get-openfde.sh
 
 ### 3. 配置网络{#config-network}
 
-&emsp;&emsp;OpenFDE可以直接使用外部系统(麒麟/统信/ubuntu)等网络，用户可以点击左下角的OpenFDE图标，打开"开始菜单-Fusion Linux Application"，找到Linux的Settings, 在linux设置中配置系统的网络。
+&emsp;&emsp;OpenFDE直接与外部系统(麒麟/通信/Ubuntu)共用网络，在登录进入OpenFDE桌面环境后，在开始菜单或者桌面找到“设置”图标，进入"设置-网络"。
 
-![net-start](./img/net-start.png) 
+![network-fde](./img/network-fde.jpg)
 
 #### 3.1 有线网络配置{#config-wired-network}
 
-在有线网络中点击高级设置，在右侧弹出以太网的设置窗口：
-- **添加新的有线网络**：点击左下角的"+"即可添加新的有线网络连接。
-- **配置现有的有线网络**：选中需要修改配置的有线网络连接，点击左下角"设置"按钮，即可弹出窗口修改当前网络连接的配置。
+&emsp;&emsp;点开以太网，默认可配置的接口为enaphyt4i0，选择静态IP配置，配置你的网络ip，点击保存即可。
 
-![ipv4](./img/net-set1.jpg)
+![img](./img/set-youxian.png)
 
 #### 3.2 无线网络配置{#config-wlan}
 
-在无线网络中点击高级设置，在右侧弹出无线局域网的设置窗口：
-- **添加新的无线网络**：点击左下角的"+"即可添加新的无线网络连接。
-- **配置现有的无线网络**：选中需要修改配置的无线网络连接，点击左下角"设置"按钮，即可弹出窗口修改当前网络连接的配置。
+&emsp;&emsp;如果你的设备配有无线网卡，你可以点开“设置-网络-WIFI”进行无线网络的配置，打开WIFI开关，选择你想要连接的WIFI，输入密码即可。
 
-![wlan](./img/wlan.jpg)
+![wlan-set](./img/wlan-set.png)
 
 #### 3.3 VPN配置{#config-vpn}
 
-&emsp;&emsp;OpenFDE支持安卓系统和Linux系统VPN互通，也是需要远程办公的办公族一大福利。我们以常见的VPN软件EasyConnect为例，你可以在安卓系统下的应用宝或者浏览器直接下载安卓版的EasyConnect。安装成功后，配置连接上你的办公VPN，重点是在Linux端无需再配置VPN啦，即刻开启你的远程办公啦。
+&emsp;&emsp;OpenFDE支持安卓系统和Linux系统VPN互通，也是需要远程办公的办公族一大福利。我们以常见的VPN软件奇安信为例，你可以在安卓系统下浏览器直接下载安卓版的奇安信。安装成功后，配置连接上你的办公VPN，重点是在Linux端无需再配置VPN啦，即刻开启你的远程办公啦。
 
 ### 4. 安装应用{#install-app}
 

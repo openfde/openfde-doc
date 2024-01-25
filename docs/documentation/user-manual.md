@@ -125,6 +125,28 @@ Clicking the penguin icon Fusion Linux Application in the Start menu opens a sep
 
 Users can use terminal commands in the Linux terminal application to install Linux applications. Once the application is successfully installed, it will directly appear in the application list of the Linux Fusion Desktop.
 
+### 4.3 Config Network{#config-network}
+
+Users can click on the OpenFDE icon in the bottom left corner and open Start Menu, Fusion Linux Application to find the Linux Settings. In the Linux Settings, you can configure the network settings for the system.
+
+#### 4.3.1 Wired Network Configuration{#config-wired-network}
+
+In the wired network settings, click on Advanced Settings. A pop-up window titled "Ethernet Settings" will appear on the right side.
+
+- **Add a New Wired Network:** To add a new wired network connection, click on the "+" button located in the bottom left corner.
+- **Configure an Existing Wired Network:** select the desired wired network connection, then click on the Settings button located in the bottom left corner. This will open a window where you can modify the configuration of the current network connection.
+
+![ipv4](./img/net-set1.jpg)
+
+#### 4.3.2 Wireless Network Configuration{#config-wlan}
+
+In the wireless network settings, click on Advanced Settings. A pop-up window titled "Wireless LAN Settings" will appear on the right side.
+
+- **Add a New Wireless Network:** To add a new wireless network connection, click on the "+" button located in the bottom left corner.
+- **Configure an Existing Wireless Network:** select the desired wireless network connection, then click on the Settings button located in the bottom left corner. This will open a window where you can modify the configuration of the current network connection.
+
+![wlan](./img/wlan.jpg)
+
 ## 4. File System Fusion{#fusion-file-system}
 
 OpenFDE facilitates the fusion and interoperability of the Android and Linux file systems, allowing seamless access and interaction between the two. This integration enables mutual access to files and folders between the Android and Linux file systems, providing users with the convenience of sharing files and data between both environments.

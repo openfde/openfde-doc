@@ -135,33 +135,25 @@ For this situation, it is because the predictive text feature of the Xunfei inpu
 
 ### 4.3 Configure Network{#config-network}
 
-OpenFDE can directly utilize external systems such as Kylin, UOS, Ubuntu for networking. Users can click on the OpenFDE icon in the bottom left corner and open Start Menu, Fusion Linux Application to find the Linux Settings. In the Linux Settings, you can configure the network settings for the system.
+OpenFDE shares the network directly with the external system (Kylin/UOS/Ubuntu). After logging into the OpenFDE desktop environment, locate the "Settings" icon in the start menu or on the desktop and navigate to "Settings - Network".
 
-![net-start](./img/net-start.png) 
+![network-fde](./img/network-fde.jpg)
 
 #### 4.3.1 Wired Network Configuration{#config-wired-network}
 
-In the wired network settings, click on Advanced Settings. A pop-up window titled "Ethernet Settings" will appear on the right side.
+Click on the Ethernet option, and by default, the available interface is "enaphyt4i0". Select the option for static IP configuration and enter your network IP settings. Once done, click on "Save" to apply the changes.
 
-- Add a New Wired Network: To add a new wired network connection, click on the "+" button located in the bottom left corner.
-- Configure an Existing Wired Network: select the desired wired network connection, then click on the Settings button located in the bottom left corner. This will open a window where you can modify the configuration of the current network connection.
-
-![ipv4](./img/net-set1.jpg)
+![img](./img/set-youxian.png)
 
 #### 4.3.2 Wireless Network Configuration{#config-wlan}
 
-In the wireless network settings, click on Advanced Settings. A pop-up window titled "Wireless LAN Settings" will appear on the right side.
+If your device is equipped with a wireless network card, you can open "Settings - Network - Wi-Fi" to configure the wireless network. Turn on the Wi-Fi switch, select the desired Wi-Fi network, and enter the password to connect.
 
-- Add a New Wireless Network: To add a new wireless network connection, click on the "+" button located in the bottom left corner.
-- Configure an Existing Wireless Network: select the desired wireless network connection, then click on the Settings button located in the bottom left corner. This will open a window where you can modify the configuration of the current network connection.
-
-![wlan](./img/wlan.jpg)
+![wlan-set](./img/wlan-set.png)
 
 #### 4.3.3 VPN Configuration{#config-vpn}
 
-OpenFDE supports interoperability between Android and Linux systems for VPN connectivity, which is a major benefit for remote workers. Taking the popular VPN software EasyConnect as an example, you can directly download the Android version of EasyConnect from the app store or a browser on your Android device.
-
-Once installed, configure the connection to your work VPN. The key point is that there is no need to configure the VPN on the Linux side. You can immediately start your remote work.
+OpenFDE supports VPN connectivity between Android and Linux systems, which is a great benefit for remote office users. Taking the commonly used Qihoo 360 Zero Trust VPN as an example, you can directly download the Android version of Qihoo 360 from the browser on your Android system. After successful installation, configure and connect to your office VPN. The key point is that there is no need to configure VPN on the Linux side. You can start your remote office work immediately.
 
 ### 4.4 Install Application{#install-app}
 
