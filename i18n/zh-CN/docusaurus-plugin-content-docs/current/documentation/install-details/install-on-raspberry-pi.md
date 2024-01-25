@@ -15,13 +15,13 @@ title: 树莓派安装OpenFDE
 
 - Ubuntu Jammy 22.04.3(LTS)，支持ARM64架构。
 
-#### 内核
+#### 内核{#kernel}
 
 - 树莓派4B版本及其以上
 
 &emsp;&emsp;我们研究测试和适配通过的<mark>内核版本为5.15.0-1044 raspi</mark>，如果你的内核是其他版本也可以尝试安装，如果在安装过程中遇到问题可以前往[反馈](https://gitee.com/organizations/openfde/issues)。
 
-#### 内存
+#### 内存{#memory}
 
 &emsp;&emsp;建议越大越好。
 
