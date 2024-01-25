@@ -70,7 +70,9 @@ OpenFDE已安装完毕并登录OpenFDE桌面
 
   ![image](img/image-13-1.png)
 
-8. 待右下角状态为“就绪”，可点击“RDP”进入虚拟机
+8. 待右下角状态为“就绪”，可点击“RDP”进入虚拟机，虚拟机用户名与密码都为“pvuser”
+
+ps:大概耗时1mins左右虚拟机才能完成启动变为“就绪状态”
   
   ![image](img/image-12-1.png)
 
@@ -80,28 +82,6 @@ OpenFDE已安装完毕并登录OpenFDE桌面
     
   ![image](./img/image-26.png)
 
-### 安装应用{#install-applications}
-
-* 方法一
-  
-  镜像自带有浏览器Edge,可用此下载软件包安装使用
-
-  ![image](./img/Screenshot_20231214-135649_aFreeRDP.png)
-
-  ![image](./img/Screenshot_20231214-140355_aFreeRDP.png)
-
-* 方法二
-  
-  phyvirt中默认的共享目录路径为“~/桌面/share",可将安装包放入其中，在虚拟机中点击安装
-  ```
-  cp ~/下载/exe/ ~/桌面/share/ -r
-  ```
-  
-  ![Alt text](img/Screenshot_20240102-113151_PhyVirt.png)
-
-  ![Alt text](img/Screenshot_20240102-133944_PhyVirt.png)
-
-  ![Alt text](img/Screenshot_20240102-154048_PhyVirt.png)
 
 ### 应用展示{#application-use}
 
