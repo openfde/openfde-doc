@@ -139,7 +139,3 @@ Upgrade OpenFDE to the latest version.
 ```
 sudo apt-get install openfde
 ```
-
-## 2. Install OpenFDE on Ubuntu{#install-on-ubuntu}
-
-Adaptation is still under research, and further updates will be added in the future.

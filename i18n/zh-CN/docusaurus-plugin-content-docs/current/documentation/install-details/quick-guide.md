@@ -15,7 +15,6 @@ title: 快速导航
 ### Phytium X100平台
 
   - [Kylin上安装OpenFDE](./install-on-x100#install-on-kylin)
-  - [Ubuntu上安装OpenFDE](./install-on-x100#install-on-ubuntu)
 
 ### 树莓pi
   - [Ubuntu上安装OpenFDE](./install-on-raspberry-pi#install-on-ubuntu)

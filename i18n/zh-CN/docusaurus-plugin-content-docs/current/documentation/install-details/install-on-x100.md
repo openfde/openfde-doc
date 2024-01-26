@@ -139,7 +139,3 @@ sudo apt-get update
 ```
 sudo apt-get install openfde
 ```
-
-## 二、Ubuntu上安装OpenFDE{#install-on-ubuntu}
-
-研究适配中，后期继续补充。
