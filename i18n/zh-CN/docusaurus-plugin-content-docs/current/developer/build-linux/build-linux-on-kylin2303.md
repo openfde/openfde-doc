@@ -154,7 +154,7 @@ sudo apt install wget -y && wget https://go.dev/dl/go1.20.13.linux-arm64.tar.gz 
 - 解压并拷贝到执行路径下
 
 ```
-tar -xf ~/go1.20.13.linux-arm64.tar.gz && cd go && sudo cp -a bin/* /usr/bin/
+cd ~ && tar -xf ~/go1.20.13.linux-arm64.tar.gz && cd go && sudo cp -a bin/* /usr/bin/
 ```
 
 - 设置环境变量并添加到bash环境变量中
