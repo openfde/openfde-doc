@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>chinese-tiny11.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>本博客主要介绍如何将Tiny11设置成中文使用。</p>
+<!--truncate-->
+<h1 id="tiny11%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95solution-to-chinese-failure">Tiny11设置中文报错解决方法{#solution-to-chinese-failure}</h1>
+<p>  tiny11安装默认的是英文版本,想要将操作系统设置为中文简体，但是在点击settings-&gt;Time&amp;language-&gt;Language&amp;region-&gt;Add a language-&gt;添加中文简体下载报错，针对这个问题，梳理了具体的操作步骤。</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image.png" alt="image"></p>
+<h2 id="%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4steps">具体步骤{#steps}</h2>
+<p>  总的分为启用windows更新服务、关闭防火墙、下载中文语言包并设置为系统显示语言、重启五大操作，以下为具体操作。</p>
+<h3 id="%E5%90%AF%E7%94%A8windows%E6%9B%B4%E6%96%B0%E6%9C%8D%E5%8A%A1start-windows-updation">启用windows更新服务{#start-windows-updation}</h3>
+<p>1、点击“win”在搜索框内输入&quot;services&quot;,打开&quot;Services App&quot;</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-1.png" alt="img1"></p>
+<p>2、在services应用程序窗口中,查找后台智能传输服务，右键单击它选择属性Properties，如图所示</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-2.png" alt="img2"></p>
+<p>3、将Startup type修改为&quot;Automatic&quot;或者“Automatic（Delayed Start）”，点击Service status下的“Start”，将其状态修改为running后再点击窗口右下角的“Apply”和“OK”退出选项属性设置</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-3.png" alt="img3"></p>
+<p>4、在services应用程序窗口中，找到windows更新服务，右键单击它选择属性Properties，如图所示</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-4.png" alt="img4"></p>
+<p>5、将Startup type修改为&quot;Automatic&quot;，点击Service status下的“Start”，将其状态修改为running后再点击窗口右下角的“Apply”和“OK”退出选项属性设置（如果其中的start不能点击就将Startup type设置为Automatic，修改退出后再右击鼠标点击“start”）</p>
+<h3 id="%E6%89%93%E5%BC%80%E9%98%B2%E7%81%AB%E5%A2%99open-firewall">打开防火墙{#open-firewall}</h3>
+<p>1、按“win”在搜索框输入control找到控制面板打开</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-10.png" alt="img10"></p>
+<p>2、找到“Windows Defender Firewall”点击进入</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-11.png" alt="img11"></p>
+<p>3、点击左列选项中的“Turn Windows Defender Firewall on or off”关闭两项防火墙</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-12.png" alt="img12"></p>
+<h3 id="%E4%B8%8B%E8%BD%BD%E8%AF%AD%E8%A8%80%E5%8C%85%E5%B9%B6%E8%AE%BE%E7%BD%AE%E4%B8%BAwindows%E6%98%BE%E7%A4%BA%E8%AF%AD%E8%A8%80install-language-package">下载语言包并设置为windows显示语言{#install-language-package}</h3>
+<p>1、按“win”选择settings-&gt;Time &amp; language-&gt;Language &amp; region</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-15.png" alt="img15"></p>
+<p>2、点击“Add a language”,输入china添加“中文(中华人民共和国)”，点击Next</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-16.png" alt="img16"></p>
+<p>3、按需要勾选有用的的项后点击“install”，可见已经可以正常下载语言包</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-21.png" alt="img21">
+<img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-18.png" alt="img18"></p>
+<p><font color="blue">ps：Text-to-speed、speech recognition、handwriting 分别是文本转化为语音的包、语音识别的包、手写输入文字的包，没有需求可以不下载，这几个包安装好占4GB左右</font></p>
+<p>4、待下载完成后，在“Windows display language”选择“中文（中华人民共和国）”
+<img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-14.png" alt="img14"></p>
+<h3 id="%E9%87%8D%E5%90%AFreboot">重启{#reboot}</h3>
+<p>重启系统可见操作系统已经为中文</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-19.png" alt="img19">
+<img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-13.png" alt="img13"></p>
+<h3 id="%E5%85%B6%E4%BB%96%E5%BB%BA%E8%AE%AEadvise">其他建议{#advise}</h3>
+<p>在简体中文下下载好基本输入法才可以输入中文</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-22.png" alt="img22"></p>
+<p>将“管理语言设置”中“更改修通区域设置”修改为中文，否则安装软件包会出现乱码的情况</p>
+<p><img src="file:///d:/Work/FDE/web/openfde-doc/i18n/zh-CN/docusaurus-plugin-content-blog/2023-12-22-chinese-tiny/image-24.png" alt="img24"></p>
+
+</body>
+</html>
